@@ -76,12 +76,12 @@ disqusShortname = "yourdiscussshortname"
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 4
-    url = "www.linkedin.com/in/tjbrailey"
+    url = "https://www.linkedin.com/in/tjbrailey/"
 [[params.social]]
     name = "RSS"
     icon = "fas fa-rss"
     weight = 6
-    url = "https://myhugosite.com/index.xml"
+    url = "https://rss.app/feeds/JPPbq02GMOROJtcy.xml"
     rel = "alternate"
     type = "application/rss+xml"
 
