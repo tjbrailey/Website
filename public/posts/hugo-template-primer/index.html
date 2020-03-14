@@ -18,7 +18,7 @@ This document is a brief primer on using go templates."/>
 <meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/www.tjbrailey.netlify.com/posts/hugo-template-primer/" />
+<meta property="og:url" content="/posts/hugo-template-primer/" />
 <meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" />
 
@@ -26,14 +26,14 @@ This document is a brief primer on using go templates." />
 
 
     
-      <base href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/posts/hugo-template-primer/">
+      <base href="/posts/hugo-template-primer/">
     
     <title>
   (Hu)go Template Primer · johndoe
 </title>
 
     
-      <link rel="canonical" href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/posts/hugo-template-primer/">
+      <link rel="canonical" href="/posts/hugo-template-primer/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@ This document is a brief primer on using go templates." />
     
       
       
-      <link rel="stylesheet" href="/www.tjbrailey.netlify.com/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -52,7 +52,7 @@ This document is a brief primer on using go templates." />
       
         
         
-        <link rel="stylesheet" href="/www.tjbrailey.netlify.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
       
     
 
@@ -62,8 +62,8 @@ This document is a brief primer on using go templates." />
 
     
 
-    <link rel="icon" type="image/png" href="/www.tjbrailey.netlify.com/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/www.tjbrailey.netlify.com/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.67.0" />
   </head>
@@ -76,7 +76,7 @@ This document is a brief primer on using go templates." />
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/www.tjbrailey.netlify.com/">
+    <a class="navigation-title" href="/">
       johndoe
     </a>
     
@@ -86,19 +86,19 @@ This document is a brief primer on using go templates." />
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/about/">About</a>
+            <a class="navigation-link" href="/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/posts/">Blog</a>
+            <a class="navigation-link" href="/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/projects/">Projects</a>
+            <a class="navigation-link" href="/projects/">Projects</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/contact/">Contact me</a>
+            <a class="navigation-link" href="/contact/">Contact me</a>
           </li>
         
       
@@ -116,7 +116,7 @@ This document is a brief primer on using go templates." />
               
             
             <li class="navigation-item">
-              <a href="/www.tjbrailey.netlify.com/www.tjbrailey.netlify.com/pt-br/">Português</a>
+              <a href="/pt-br/">Português</a>
             </li>
           
         
@@ -150,21 +150,21 @@ This document is a brief primer on using go templates." />
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="/www.tjbrailey.netlify.com/categories/development/">Development</a>
+    <a href="/categories/development/">Development</a>
       <span class="separator">•</span>
-    <a href="/www.tjbrailey.netlify.com/categories/golang/">golang</a></div>
+    <a href="/categories/golang/">golang</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="/www.tjbrailey.netlify.com/tags/go/">go</a>
+    <a href="/tags/go/">go</a>
       <span class="separator">•</span>
-    <a href="/www.tjbrailey.netlify.com/tags/golang/">golang</a>
+    <a href="/tags/golang/">golang</a>
       <span class="separator">•</span>
-    <a href="/www.tjbrailey.netlify.com/tags/templates/">templates</a>
+    <a href="/tags/templates/">templates</a>
       <span class="separator">•</span>
-    <a href="/www.tjbrailey.netlify.com/tags/themes/">themes</a>
+    <a href="/tags/themes/">themes</a>
       <span class="separator">•</span>
-    <a href="/www.tjbrailey.netlify.com/tags/development/">development</a></div>
+    <a href="/tags/development/">development</a></div>
 
         </div>
       </header>
@@ -208,7 +208,7 @@ functions.</p>
 <p>Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="/www.tjbrailey.netlify.com/layout/variables">variables</a> page.</p>
+<a href="/layout/variables">variables</a> page.</p>
 <p>A variable is accessed by referencing the variable name.</p>
 <pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
 </code></pre>
@@ -219,7 +219,7 @@ page you are rendering. More details are available on the
 <h2 id="functions">Functions</h2>
 <p>Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="/www.tjbrailey.netlify.com/layout/functions">Hugo template
+available functions with their own. <a href="/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -350,7 +350,7 @@ type (supported by your front matter/config format) and use them however
 you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="/www.tjbrailey.netlify.com/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="/content/front-matter">front matter</a>.</p>
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
@@ -425,13 +425,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
+              <a href="/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
             </li>
           
         
@@ -449,7 +449,7 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
+              <a href="/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
             </li>
           
         
@@ -461,13 +461,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/theme-demo/">Theme Demo</a>
+              <a href="/posts/theme-demo/">Theme Demo</a>
             </li>
           
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/creating-a-new-theme/">Creating a New Theme</a>
+              <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
             </li>
           
         
@@ -475,7 +475,7 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="/www.tjbrailey.netlify.com/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         

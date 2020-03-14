@@ -3,138 +3,138 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/categories/blog/</loc>
+    <loc>/pt-br/categories/blog/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/categories/</loc>
+    <loc>/pt-br/categories/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/categories/"
+                href="/pt-br/categories/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/posts/dummy/</loc>
+    <loc>/pt-br/posts/dummy/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/tags/hugo/</loc>
+    <loc>/pt-br/tags/hugo/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/tags/hugo/"
+                href="/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/tags/hugo/"
+                href="/pt-br/tags/hugo/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/tags/i18n/</loc>
+    <loc>/pt-br/tags/i18n/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/</loc>
+    <loc>/pt-br/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/"
+                href="/pt-br/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/posts/</loc>
+    <loc>/pt-br/posts/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/tags/</loc>
+    <loc>/pt-br/tags/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/tags/"
+                href="/pt-br/tags/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/contact/</loc>
+    <loc>/pt-br/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/contact/"
+                href="/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/contact/"
+                href="/pt-br/contact/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/projects/</loc>
+    <loc>/pt-br/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/projects/"
+                href="/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/projects/"
+                href="/pt-br/projects/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/series/</loc>
+    <loc>/pt-br/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/series/"
+                href="/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/series/"
+                href="/pt-br/series/"
                 />
   </url>
   
   <url>
-    <loc>/www.tjbrailey.netlify.com/pt-br/about/</loc>
+    <loc>/pt-br/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/www.tjbrailey.netlify.com/about/"
+                href="/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/www.tjbrailey.netlify.com/pt-br/about/"
+                href="/pt-br/about/"
                 />
   </url>
   
