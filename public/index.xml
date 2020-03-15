@@ -36,16 +36,16 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>About Hugo</title>
+      <title>About Me</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>Hello!
+My name is Thomas and I am a fourth year Political Science: Data Analytics major and UC San Diego.
+I am also a research assistant at the Center for the Study of African Political Economy and a lab assistant the Center for Peace and Security Studies.
+I am interested in political institutions, elections, secession, and conflict in developing democracies, with a particular focus in sub-Saharan Africa.
+My CV can be found here</description>
     </item>
     
     <item>
@@ -54,7 +54,12 @@ Setup Some fun facts about Hugo:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description>Follow me, @johndoe.</description>
+      <description>Thank you for reaching out! Whether it be to talk about politics, music, or just to say &amp;ldquo;hi&amp;rdquo;, it would be great to get to know you!
+You can reach me at:
+tbrailey@ucsd.edu
+thomasjbrailey@gmail.com
++1 (858) 610-2437
+Or feel free to follow me on GitHub, LinkedIn, Twitter (links on my homepage).</description>
     </item>
     
     <item>

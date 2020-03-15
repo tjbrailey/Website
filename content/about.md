@@ -1,29 +1,14 @@
 ---
 slug: about
-title: About Hugo
+title: About Me
 ---
 
-Hugo is a static site engine written in Go.
+Hello! 
 
+My name is Thomas and I am a fourth year Political Science: Data Analytics major and UC San Diego. 
 
-It makes use of a variety of open source projects including:
+I am also a research assistant at the Center for the Study of African Political Economy and a lab assistant the [Center for Peace and Security Studies](https://cpass.ucsd.edu/).
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+I am interested in political institutions, elections, secession, and conflict in developing democracies, with a particular focus in sub-Saharan Africa. 
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+My CV can be found [here]()
