@@ -11,4 +11,4 @@ tbrailey@ucsd.edu \
 thomasjbrailey@gmail.com \
 +1 (858) 610-2437
 
-Or feel free to follow me on GitHub, LinkedIn, Twitter (links on my homepage). 
+Or feel free to follow me on GitHub, LinkedIn, or Twitter (links on my homepage). 
