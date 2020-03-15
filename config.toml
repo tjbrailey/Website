@@ -20,7 +20,7 @@ disqusShortname = "yourdiscussshortname"
     description = "Tom Brailey's personal website"
     keywords = "research associate,political science,personal"
     info = "Political Science Researcher"
-    avatarurl = "images/tom1.jpeg"
+    avatarurl = ""
     #gravatar = "john.doe@example.com"
     footercontent = "The real lessons are the institutions we destroy along the way."
 
