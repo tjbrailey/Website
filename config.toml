@@ -22,7 +22,7 @@ disqusShortname = "yourdiscussshortname"
     info = "Political Science Researcher"
     avatarurl = "/images/tom1.jpeg"
     #gravatar = "john.doe@example.com"
-    footercontent = "The real lessons are the institutions we destroy along the way."
+    footercontent = "'The real lessons are the institutions we destroy along the way.'"
 
     dateformat = "January 2, 2006"
 
