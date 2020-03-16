@@ -113,35 +113,35 @@ disqusShortname = "yourdiscussshortname"
             url = "contact/"
 
 
-#    [languages.pt-br]
- #       languagename = "Português"
-  #      title = "João Ninguém"
-#
- #       [languages.pt-br.params]
-  #          author = "João Ninguém"
-   #         info = "Full Stack DevOps e Mágico"
-    #        description = "Sítio pessoal de João Ninguém"
-     #       keywords = "blog,desenvolvedor,pessoal"
-      #      footercontent = "Coloque algum texto aqui."
-#
- #       [languages.pt-br.menu]
-#
- #           [[languages.pt-br.menu.main]]
-  #          name = "Sobre"
-   #         weight = 1
-    #        url = "about/"
-#
- #           [[languages.pt-br.menu.main]]
-  #          name = "Blog"
-   #         weight = 2
-    #        url = "posts/"
-#
- #           [[languages.pt-br.menu.main]]
-  #          name = "Projetos"
-   #         weight = 3
-    #        url = "projects/"
-#
- #           [[languages.pt-br.menu.main]]
-  #          name = "Contato"
-   #         weight = 5
-    #        url = "contact/"
+    [languages.pt-br]
+        languagename = "Français"
+        title = "thomasjbrailey"
+
+        [languages.pt-br.params]
+            author = "Thomas J. Brailey"
+            info = "Chercheur en Sciences Politiques"
+            description = "Site Web Personnel de Tom"
+            keywords = "associé de recherche, science politique, personnel"
+            footercontent = "'Les véritables leçons sont les institutions que nous détruisons en cours de route.'"
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "À propos de Moi"
+            weight = 1
+            url = "about/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Projets"
+            weight = 3
+            url = "projects/"
+
+            [[languages.pt-br.menu.main]]
+            name = "Contactez Moi"
+            weight = 5
+            url = "contact/"

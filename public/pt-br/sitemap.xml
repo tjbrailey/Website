@@ -3,13 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/pt-br/categories/blog/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/pt-br/categories/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,94 +13,6 @@
                 rel="alternate"
                 hreflang="pt-br"
                 href="/pt-br/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>/pt-br/posts/dummy/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/pt-br/tags/hugo/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/tags/hugo/"
-                />
-  </url>
-  
-  <url>
-    <loc>/pt-br/tags/i18n/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/pt-br/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/"
-                />
-  </url>
-  
-  <url>
-    <loc>/pt-br/posts/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/pt-br/tags/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>/pt-br/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>/pt-br/projects/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/projects/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/projects/"
                 />
   </url>
   
@@ -125,16 +31,30 @@
   </url>
   
   <url>
-    <loc>/pt-br/about/</loc>
+    <loc>/pt-br/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/about/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/about/"
+                href="/pt-br/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/pt-br/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="/pt-br/"
                 />
   </url>
   
