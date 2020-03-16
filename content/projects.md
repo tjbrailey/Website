@@ -3,4 +3,11 @@ slug: projects
 title: Projects
 ---
 
-Nothing to see here... Move along!
+# Finished Papers and Projects
+Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy \
+Paper: \
+Replication Package: 
+
+# Works in Progress
+
+# Miscellaneous
