@@ -5,12 +5,12 @@ title: Projects
 
 # Finished Papers and Projects
 Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy \
-Paper: \
-Replication Package: \
+Paper: Coming Soon\
+Replication Package: Coming Soon \
 \
 After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's Autonomous Region \
-Paper: \
-Replication Package:
+[Paper](https://github.com/tjbrailey/RegionalAutonomyGIS/blob/master/paper/reg_aut_mali.pdf) \
+[Replication Package](https://github.com/tjbrailey/RegionalAutonomyGIS)
 
 
 # Works in Progress
