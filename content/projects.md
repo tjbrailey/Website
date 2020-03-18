@@ -3,7 +3,7 @@ slug: projects
 title: Projects
 ---
 
-# Finished Papers and Projects
+# Finished Papers
 Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy \
 Paper: Coming Soon\
 Replication Package: Coming Soon \
@@ -17,5 +17,7 @@ Paper: Coming Soon \
 Replicaiton Package: Coming Soon
 
 # Works in Progress
+
+# Datasets
 
 # Miscellaneous
