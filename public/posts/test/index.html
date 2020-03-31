@@ -246,10 +246,10 @@
 <ol start="2" style="list-style-type: decimal">
 <li>So now we have our data ready. There are a few columns that can probably get removed once we have calculated electoral proximity, but you never know when they might come in handy.</li>
 </ol>
-<p>To elucidate:
-<span class="math inline">\(\textit{leg_elect_year}\)</span> = <span class="math inline">\(L_t\)</span>
-<span class="math inline">\(\textit{pres_elect_year_fill}\)</span> = <span class="math inline">\(P_{t-1}\)</span>
-<span class="math inline">\(\textit{next_election}\)</span> = <span class="math inline">\(P_{t+1}\)</span></p>
+<p>To elucidate:</p>
+<p><span class="math inline">\(\textit{leg_elect_year}\)</span> = <span class="math inline">\(L_t\)</span></p>
+<p><span class="math inline">\(\textit{pres_elect_year_fill}\)</span> = <span class="math inline">\(P_{t-1}\)</span></p>
+<p><span class="math inline">\(\textit{next_election}\)</span> = <span class="math inline">\(P_{t+1}\)</span></p>
 <pre class="r"><code>burkina_faso &lt;- burkina_faso %&gt;% 
 
   #&#39; We can now, in one fell swoop, calculate Cox&#39;s electoral proximity. 
@@ -259,7 +259,25 @@
                                     leg_elect_year - pres_elect_year_fill) /
                                           (next_election - pres_elect_year_fill) - (1/2)
                                   ), NA),
-                cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox))</code></pre>
+                cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox)) %&gt;% 
+  
+  #&#39; Fill out the variable.
+  tidyr::fill(cox_prox)</code></pre>
+</div>
+<div id="burkina-fasos-electoral-proximity" class="section level1">
+<h1>Burkina Faso’s Electoral Proximity</h1>
+<p>Let’s plot how electoral proximity changes over time in Burkina Faso.</p>
+<pre class="r"><code>ggplot(burkina_faso, aes(x = year)) + 
+  geom_line(aes(y = cox_prox), size = 2, color = &quot;purple&quot;) +
+  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = &quot;dotted&quot;) +
+  labs(title = paste0(&quot;Electoral Proximity in &quot;, unique(burkina_faso$country_name)),
+       x = &quot;Year&quot;, 
+       y = &quot;Electoral Proximity (Cox, 1997)&quot;) +
+  theme_classic()
+## Warning: Removed 18 rows containing missing values (geom_path).
+## Warning: Removed 51 rows containing missing values (geom_vline).</code></pre>
+<p><img src="/posts/test_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I’m going to plot a few more countries and see if I find any more intresting patterns.</p>
 </div>
 
       </div>

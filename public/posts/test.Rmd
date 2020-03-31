@@ -10,6 +10,7 @@ tags: ["R", "electoral proximity", "making votes count"]
 knitr::opts_chunk$set(collapse = TRUE)
 
 library(magrittr)
+library(ggplot2)
 burkina_faso <- rio::import("C:/Users/tbrai/Dropbox/Constitutions Project/Data/Election Data/Cleaned Data/cp_af_full.csv") %>%
   dplyr::select(country_name, year, 
                        leg_elect_dum, leg_elect_year, 
@@ -71,9 +72,13 @@ burkina_faso <- burkina_faso %>%
 2. So now we have our data ready. There are a few columns that can probably get removed once we have calculated electoral proximity, but you never know when they might come in handy. 
 
 To elucidate: 
+
 $\textit{leg_elect_year}$ = $L_t$
+
 $\textit{pres_elect_year_fill}$ = $P_{t-1}$
+
 $\textit{next_election}$ = $P_{t+1}$
+
 ```{r}
 burkina_faso <- burkina_faso %>% 
 
@@ -84,11 +89,25 @@ burkina_faso <- burkina_faso %>%
                                     leg_elect_year - pres_elect_year_fill) /
                                           (next_election - pres_elect_year_fill) - (1/2)
                                   ), NA),
-                cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox))
-
+                cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox)) %>% 
+  
+  #' Fill out the variable.
+  tidyr::fill(cox_prox)
 ```
 
+# Burkina Faso's Electoral Proximity
 
+Let's plot how electoral proximity changes over time in Burkina Faso.
+```{r}
+ggplot(burkina_faso, aes(x = year)) + 
+  geom_line(aes(y = cox_prox), size = 2, color = "purple") +
+  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = "dotted") +
+  labs(title = paste0("Electoral Proximity in ", unique(burkina_faso$country_name)),
+       x = "Year", 
+       y = "Electoral Proximity (Cox, 1997)") +
+  theme_classic()
+```
+Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I'm going to plot a few more countries and see if I find any more intresting patterns.
 
 
 
