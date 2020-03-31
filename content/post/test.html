@@ -1,7 +1,7 @@
 ---
 title: "Calculating Electoral Proximity in R"
-author: "Frida Gomam"
-date: 3-30-2020
+author: "Tom Brailey"
+date: \March 30, 2020\
 categories: ["R"]
 tags: ["R", "electoral proximity", "making votes count"]
 ---
@@ -10,22 +10,15 @@ tags: ["R", "electoral proximity", "making votes count"]
 
 <div id="what-is-electoral-proximity" class="section level1">
 <h1>What is Electoral Proximity?</h1>
-<p>Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<p>Electoral proximity is the measure of fractionalization between a presidential and legislative election. That is, how temporally separated a state’s legislative and presidential elections might be. If presidential and legislative elections occur on the same day, they are considered to be proximally maximal. If there is a considerable gap between elections, then there is considered to be less proximity between elections. Gary Cox termed this phrase in Making Votes Count (1997) and builds off of the work of Matthew Shugart, John Carey, Rein Taagepera, and others. Why is electoral proximity important? Cox suggests that it taps into executive-legislative behaviors; others note that greater proximity of presidential and legislative elections tend tends to reduce the number of effective parties in a state. In any case, being able to calculate a state’s electoral proximity could open the door to some interesting studies.</p>
+</div>
+<div id="how-is-electoral-proximity-calculated" class="section level1">
+<h1>How is Electoral Proximity Calculated?</h1>
+<p>Per Cox (1997), electoral proximity can be estimated as follows:</p>
+<p><span class="math display">\[ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  \]</span></p>
+<p>and while this is a lovely equation, it is difficult to implement on your own.</p>
+</div>
+<div id="whats-the-issue" class="section level1">
+<h1>What’s the Issue?</h1>
+<p>I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable.</p>
 </div>
