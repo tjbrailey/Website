@@ -13,10 +13,3 @@ knitr::opts_chunk$set(collapse = TRUE)
 # What is Electoral Proximity?
 
 Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
-
-
-```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
-```
