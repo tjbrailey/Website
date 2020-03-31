@@ -1,0 +1,12 @@
+---
+title: "My Senior Thesis"
+author: "Tom Brailey"
+date: "2019-12-1"
+categories: ["R"]
+tags: ["senior thesis", "segmental autonomy", "power sharing"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
