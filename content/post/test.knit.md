@@ -1,14 +1,12 @@
 ---
 title: "Calculating Electoral Proximity in R"
 author: "Tom Brailey"
-date: \`r format(Sys.Date(), "%B %d, %Y")`\
+date: \March 30, 2020\
 categories: ["R"]
 tags: ["R", "electoral proximity", "making votes count"]
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
+
 
 # What is Electoral Proximity?
 

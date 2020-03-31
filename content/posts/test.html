@@ -1,7 +1,7 @@
 ---
 title: "Calculating Electoral Proximity in R"
 author: "Tom Brailey"
-date: \March 30, 2020\
+date: "2020-03-30"
 categories: ["R"]
 tags: ["R", "electoral proximity", "making votes count"]
 ---
@@ -20,5 +20,28 @@ tags: ["R", "electoral proximity", "making votes count"]
 </div>
 <div id="whats-the-issue" class="section level1">
 <h1>What’s the Issue?</h1>
-<p>I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable.</p>
+<p>I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable. However, the dataset we were using had several more country-year observations (not showing-off, we were just measuring different things) and so we couldn’t simply join the electoral proximity variable to our dataset. After spending a few hours trying to find a package that would make my life a whole bunch easier, I realized that I would have to hard-code a way of calculating electoral fractionalization.</p>
+</div>
+<div id="strategy" class="section level1">
+<h1>Strategy</h1>
+<p>I wanted to test my coding skills on a country that exhibited three types of proximity: where <span class="math inline">\(L_t\)</span> = <span class="math inline">\(P_t\)</span>, <span class="math inline">\(L_t\)</span> = <span class="math inline">\(1-P_t\)</span>, and <span class="math inline">\(L_t\)</span> = <span class="math inline">\(1+P_t\)</span>. That way I could determine whether my function <span class="math inline">\(\textit{actually}\)</span> worked on all potential electoral proximities. One country that exhibits such electoral variation is Burkina Faso. Let’s check out the data.</p>
+<pre class="r"><code>head(burkina_faso)
+##   country_name year leg_elect_dum leg_elect_year pres_elect_year
+## 1 Burkina Faso 1960            NA             NA              NA
+## 2 Burkina Faso 1961            NA             NA              NA
+## 3 Burkina Faso 1962            NA             NA              NA
+## 4 Burkina Faso 1963            NA             NA              NA
+## 5 Burkina Faso 1964            NA             NA              NA
+## 6 Burkina Faso 1965             1           1965              NA
+##   pres_elect_year_fill
+## 1                   NA
+## 2                   NA
+## 3                   NA
+## 4                   NA
+## 5                   NA
+## 6                   NA</code></pre>
+<p>So our unit of analysis is country-year. The variables we need for this function to work is a dummy for when a legislative election took place (<span class="math inline">\(\textit{leg_elect_dum}\)</span>), the year of that election for each country-year observation (<span class="math inline">\(\textit{leg_elect_year}\)</span>), a variable that takes the value of the year of a presidential election, and <span class="math inline">\(NA\)</span> otherwise (<span class="math inline">\(\textit{pres_elect_year}\)</span>) and a ``filled’’ version of the presidential election year (<span class="math inline">\(\textit{pres_elect_year_fill}\)</span>).</p>
+</div>
+<div id="the-function" class="section level1">
+<h1>The Function</h1>
 </div>

@@ -3,19 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/test/</loc>
-  </url>
-  
-  <url>
     <loc>/posts/test/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -29,49 +23,33 @@
   </url>
   
   <url>
-    <loc>/contact/</loc>
-  </url>
-  
-  <url>
     <loc>/tags/electoral-proximity/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/making-votes-count/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-  </url>
-  
-  <url>
-    <loc>/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="/pt-br/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/series/"
-                />
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -86,6 +64,7 @@
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -95,6 +74,40 @@
                 rel="alternate"
                 hreflang="en"
                 href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/test/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/test.knit/</loc>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="/pt-br/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/series/"
                 />
   </url>
   

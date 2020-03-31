@@ -24,4 +24,4 @@ and while this is a lovely equation, it is difficult to implement on your own.
 
 # What's the Issue? 
 
-I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable.  
+I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable.
