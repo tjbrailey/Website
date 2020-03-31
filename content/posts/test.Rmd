@@ -18,9 +18,7 @@ Electoral proximity is the measure of fractionalization between a presidential a
 
 Per Cox (1997), electoral proximity can be estimated as follows: 
 
-```{=latex}
 $$ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  $$
-```
 
 and while this is a lovely equation, it is difficult to implement on your own. 
 
