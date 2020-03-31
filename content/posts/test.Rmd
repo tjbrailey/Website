@@ -1,7 +1,7 @@
 ---
 title: "Calculating Electoral Proximity in R"
 author: "Tom Brailey"
-date: 3-30-2020
+date: \`r format(Sys.Date(), "%B %d, %Y")`\
 categories: ["R"]
 tags: ["R", "electoral proximity", "making votes count"]
 ---
@@ -18,8 +18,12 @@ Electoral proximity is the measure of fractionalization between a presidential a
 
 Per Cox (1997), electoral proximity can be estimated as follows: 
 
+```{=latex}
 $$ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  $$
+```
 
 and while this is a lovely equation, it is difficult to implement on your own. 
 
 # What's the Issue? 
+
+I was assigned to work on a replication project that involved having to run a regression using electoral proximity as an independent variable.  
