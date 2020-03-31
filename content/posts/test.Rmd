@@ -72,9 +72,13 @@ burkina_faso <- burkina_faso %>%
 2. So now we have our data ready. There are a few columns that can probably get removed once we have calculated electoral proximity, but you never know when they might come in handy. 
 
 To elucidate: 
+
 $\textit{leg_elect_year}$ = $L_t$
+
 $\textit{pres_elect_year_fill}$ = $P_{t-1}$
+
 $\textit{next_election}$ = $P_{t+1}$
+
 ```{r}
 burkina_faso <- burkina_faso %>% 
 
