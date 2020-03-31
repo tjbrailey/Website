@@ -6,21 +6,9 @@
     <description>Recent content on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
     
     <item>
       <title>About Me</title>
@@ -33,6 +21,26 @@ My name is Thomas and I am a fourth year Political Science: Data Analytics major
 I am also a research assistant at the Center for the Study of African Political Economy and a lab assistant the Center for Peace and Security Studies.
 I am interested in political institutions, elections, secession, and conflict in developing democracies, with a particular focus in sub-Saharan Africa.
 My CV can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Calculating Electoral Proximity in R</title>
+      <link>/post/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description>What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &amp;lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17.</description>
+    </item>
+    
+    <item>
+      <title>Calculating Electoral Proximity in R</title>
+      <link>/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/test/</guid>
+      <description>What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &amp;lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17.</description>
     </item>
     
     <item>
@@ -55,30 +63,21 @@ Or feel free to follow me on GitHub, LinkedIn, or Twitter (links on my homepage)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
-      <description>Finished Papers Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy
-Paper: Coming Soon
-Replication Package: Coming Soon
+      <description>Here is a list of my projects and works in progress. Feel free to give them a read through and leave comments/suggestions!
+Finished Papers Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy
+Paper
+Replication Package
 After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali&amp;rsquo;s Autonomous Region
 Paper
 Replication Package
 Predicting Rogue State Missile Launches
-Paper: Coming Soon
-Replicaiton Package: Coming Soon
+Paper
+Replicaiton Package
 Works in Progress Datasets Provisions of Power-Sharing
 .xlsx
 .csv
 .sav
 Miscellaneous </description>
-    </item>
-    
-    <item>
-      <title>Untitled</title>
-      <link>/posts/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/test/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</description>
     </item>
     
   </channel>

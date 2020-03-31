@@ -10,23 +10,27 @@
     <meta name="keywords" content="research associate,political science,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Tom Brailey&#39;s personal website"/>
+<meta name="twitter:title" content="Calculating Electoral Proximity in R"/>
+<meta name="twitter:description" content="What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17."/>
 
-    <meta property="og:title" content="Posts" />
-<meta property="og:description" content="Tom Brailey&#39;s personal website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/post/" />
+    <meta property="og:title" content="Calculating Electoral Proximity in R" />
+<meta property="og:description" content="What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/test/" />
 
 
-
-    
-      <base href="/post/">
-    
-    <title>Posts · thomasjbrailey</title>
 
     
-      <link rel="canonical" href="/post/">
+      <base href="/post/test/">
+    
+    <title>
+  Calculating Electoral Proximity in R · thomasjbrailey
+</title>
+
+    
+      <link rel="canonical" href="/post/test/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -58,7 +62,6 @@
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-    <link rel="alternate" type="application/rss+xml" href="/post/index.xml" title="thomasjbrailey" />
     <meta name="generator" content="Hugo 0.67.0" />
   </head>
 
@@ -123,28 +126,38 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Posts</h1>
-  <ul>
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Calculating Electoral Proximity in R</h1>
+    </header>
+
     
-    <li>
-      <span class="date">January 1, 0001</span>
-      <a class="title" href="/post/test/">Calculating Electoral Proximity in R</a>
-    </li>
-    
-    <li>
-      <span class="date">January 1, 0001</span>
-      <a class="title" href="/posts/test/">Calculating Electoral Proximity in R</a>
-    </li>
-    
-  </ul>
-  
 
 
+<div id="what-is-electoral-proximity" class="section level1">
+<h1>What is Electoral Proximity?</h1>
+<p>Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
 
-
-
-
+  </article>
 </section>
 
 

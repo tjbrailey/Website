@@ -10,13 +10,13 @@
     <meta name="keywords" content="research associate,political science,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Untitled"/>
-<meta name="twitter:description" content="R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:"/>
+<meta name="twitter:title" content="Calculating Electoral Proximity in R"/>
+<meta name="twitter:description" content="What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17."/>
 
-    <meta property="og:title" content="Untitled" />
-<meta property="og:description" content="R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:" />
+    <meta property="og:title" content="Calculating Electoral Proximity in R" />
+<meta property="og:description" content="What is Electoral Proximity?Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00fit &lt;- lm(dist ~ speed, data = cars)fit## ## Call:## lm(formula = dist ~ speed, data = cars)## ## Coefficients:## (Intercept) speed ## -17." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/test/" />
 
@@ -26,7 +26,7 @@ When you click the Knit button a document will be generated that includes both c
       <base href="/posts/test/">
     
     <title>
-  Untitled · thomasjbrailey
+  Calculating Electoral Proximity in R · thomasjbrailey
 </title>
 
     
@@ -130,7 +130,7 @@ When you click the Knit button a document will be generated that includes both c
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Untitled</h1>
+          <h1 class="title">Calculating Electoral Proximity in R</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -145,8 +145,18 @@ When you click the Knit button a document will be generated that includes both c
               1-minute read
             </span>
           </div>
-          
-          
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="/categories/r/">R</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="/tags/r/">R</a>
+      <span class="separator">•</span>
+    <a href="/tags/electoral-proximity/">electoral proximity</a>
+      <span class="separator">•</span>
+    <a href="/tags/making-votes-count/">making votes count</a></div>
+
         </div>
       </header>
 
@@ -155,24 +165,26 @@ When you click the Knit button a document will be generated that includes both c
         
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
+<div id="what-is-electoral-proximity" class="section level1">
+<h1>What is Electoral Proximity?</h1>
+<p>Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
 ##  Median :15.0   Median : 36.00  
 ##  Mean   :15.4   Mean   : 42.98  
 ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-</div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="/posts/test_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
 </div>
 
       </div>
