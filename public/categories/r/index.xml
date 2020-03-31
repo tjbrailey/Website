@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>My Senior Thesis</title>
+      <link>/posts/thesis/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Calculating Electoral Proximity in R</title>
       <link>/post/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>/post/test.knit/</guid>
       <description>What is Electoral Proximity? Electoral proximity is the measure of fractionalization between a presidential and legislative election. That is, how temporally separated a state&amp;rsquo;s legislative and presidential elections might be. If presidential and legislative elections occur on the same day, they are considered to be proximally maximal. If there is a considerable gap between elections, then there is considered to be less proximity between elections. Gary Cox termed this phrase in Making Votes Count (1997) and builds off of the work of Matthew Shugart, John Carey, Rein Taagepera, and others.</description>
-    </item>
-    
-    <item>
-      <title>My Senior Thesis</title>
-      <link>/posts/thesis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/thesis/</guid>
-      <description></description>
     </item>
     
   </channel>
