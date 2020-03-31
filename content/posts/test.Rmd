@@ -1,6 +1,6 @@
 ---
 title: "Calculating Electoral Proximity in R"
-author: "Frida Gomam"
+author: "Tom Brailey"
 date: 3-30-2020
 categories: ["R"]
 tags: ["R", "electoral proximity", "making votes count"]
@@ -12,4 +12,14 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 # What is Electoral Proximity?
 
-Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+Electoral proximity is the measure of fractionalization between a presidential and legislative election. That is, how temporally separated a state's legislative and presidential elections might be. If presidential and legislative elections occur on the same day, they are considered to be proximally maximal. If there is a considerable gap between elections, then there is considered to be less proximity between elections. Gary Cox termed this phrase in Making Votes Count (1997) and builds off of the work of Matthew Shugart, John Carey, Rein Taagepera, and others. Why is electoral proximity important? Cox suggests that it taps into executive-legislative behaviors; others note that greater proximity of presidential and legislative elections tend tends to reduce the number of effective parties in a state. In any case, being able to calculate a state's electoral proximity could open the door to some interesting studies. 
+
+# How is Electoral Proximity Calculated? 
+
+Per Cox (1997), electoral proximity can be estimated as follows: 
+
+$$ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  $$
+
+and while this is a lovely equation, it is difficult to implement on your own. 
+
+# What's the Issue? 
