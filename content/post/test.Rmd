@@ -1,0 +1,22 @@
+---
+title: "Calculating Electoral Proximity in R"
+author: "Frida Gomam"
+date: 3-30-2020
+categories: ["R"]
+tags: ["R", "electoral proximity", "making votes count"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# What is Electoral Proximity?
+
+Electoral proximity is the measure of fractionalization between a presidential and legislative election \footnote(Cox 1997)
+
+
+```{r cars}
+summary(cars)
+fit <- lm(dist ~ speed, data = cars)
+fit
+```
