@@ -16,7 +16,7 @@ tags: ["R", "electoral proximity", "making votes count"]
 <h1>How is Electoral Proximity Calculated?</h1>
 <p>Per Cox (1997), electoral proximity can be estimated as follows:</p>
 <p><span class="math display">\[ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  \]</span></p>
-<p>and while this is a lovely equation, it is difficult to implement on your own.</p>
+<p>and while this is a lovely equation, it might be difficult to implement on one’s own.</p>
 </div>
 <div id="whats-the-issue" class="section level1">
 <h1>What’s the Issue?</h1>
@@ -51,18 +51,21 @@ tags: ["R", "electoral proximity", "making votes count"]
 <pre class="r"><code>burkina_faso &lt;- burkina_faso %&gt;% 
   
   #&#39; Group by country and legislative election. 
+  
   dplyr::group_by(country_name, leg_elect_year) %&gt;%
   
   #&#39; Use &quot;first&quot; and &quot;na.omit&quot; to find the next presidential
   #&#39; election in the data. Using these two commands will find 
   #&#39; the first non-NA value in a column. This new variable is 
   #&#39; called &quot;next_election&quot;.
+  
   dplyr::mutate(next_election = dplyr::first(na.omit(pres_elect_year))) %&gt;% 
   
   #&#39; Regroup by just country. We don&#39;t care about years at this point.
   #&#39; Then we fill out the &quot;next_election&quot; variable. Instead of filling 
   #&#39; down the data, we want to fill up (imagine we are dragging the future
   #&#39; election up to the current legislative election). 
+  
   dplyr::group_by(country_name) %&gt;% 
   tidyr::fill(next_election, .direction = &quot;up&quot;)</code></pre>
 <ol start="2" style="list-style-type: decimal">
@@ -75,6 +78,7 @@ tags: ["R", "electoral proximity", "making votes count"]
 <pre class="r"><code>burkina_faso &lt;- burkina_faso %&gt;% 
 
   #&#39; We can now, in one fell swoop, calculate Cox&#39;s electoral proximity. 
+  
   dplyr::mutate(cox_prox = ifelse(leg_elect_dum == 1,  
                                 2 * abs(
                                   (
@@ -84,20 +88,21 @@ tags: ["R", "electoral proximity", "making votes count"]
                 cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox)) %&gt;% 
   
   #&#39; Fill out the variable.
+  
   tidyr::fill(cox_prox)</code></pre>
 </div>
 <div id="burkina-fasos-electoral-proximity" class="section level1">
 <h1>Burkina Faso’s Electoral Proximity</h1>
 <p>Let’s plot how electoral proximity changes over time in Burkina Faso.</p>
 <pre class="r"><code>ggplot(burkina_faso, aes(x = year)) + 
-  geom_line(aes(y = cox_prox), size = 2, color = &quot;purple&quot;) +
-  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = &quot;dotted&quot;) +
+  geom_line(aes(y = cox_prox), size = 2, color = &quot;purple&quot;, na.rm = TRUE) +
+  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = &quot;dotted&quot;, na.rm=TRUE) +
   labs(title = paste0(&quot;Electoral Proximity in &quot;, unique(burkina_faso$country_name)),
        x = &quot;Year&quot;, 
        y = &quot;Electoral Proximity (Cox, 1997)&quot;) +
-  theme_classic()
-## Warning: Removed 18 rows containing missing values (geom_path).
-## Warning: Removed 51 rows containing missing values (geom_vline).</code></pre>
-<p><img src="/posts/test_files/figure-html/unnamed-chunk-4-1.png" width="672" />
-Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I’m going to plot a few more countries and see if I find any more intresting patterns.</p>
+  theme_classic()</code></pre>
+<p><img src="/posts/test_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I’m going to plot a few more countries and see if I find any more intresting patterns.</p>
+<p>In the meantime, feel free to check out the related code for this post <a href="https://github.com/tjbrailey/Functions">here</a>. Please leave any comments and feedback in the “Issues” section of GitHub.</p>
+<p>Thanks for reading!</p>
 </div>

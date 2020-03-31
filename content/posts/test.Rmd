@@ -20,7 +20,7 @@ burkina_faso <- rio::import("C:/Users/tbrai/Dropbox/Constitutions Project/Data/E
 
 # What is Electoral Proximity?
 
-Electoral proximity is the measure of fractionalization between a presidential and legislative election. That is, how temporally separated a state's legislative and presidential elections might be. If presidential and legislative elections occur on the same day, they are considered to be proximally maximal. If there is a considerable gap between elections, then there is considered to be less proximity between elections. Gary Cox termed this phrase in Making Votes Count (1997) and builds off of the work of Matthew Shugart, John Carey, Rein Taagepera, and others. Why is electoral proximity important? Cox suggests that it taps into executive-legislative behaviors; others note that greater proximity of presidential and legislative elections tend tends to reduce the number of effective parties in a state. In any case, being able to calculate a state's electoral proximity could open the door to some interesting studies. 
+Electoral proximity is the measure of fractionalization between a presidential and legislative election. That is, how temporally separated a state's legislative and presidential elections might be. If presidential and legislative elections occur on the same day, they are considered to be proximally maximal. If there is a considerable gap between elections, then there is considered to be less proximity between elections. Gary Cox termed this phrase in Making Votes Count (1997) and builds off of the work of Matthew Shugart, John Carey, Rein Taagepera, and others. Why is electoral proximity important? Cox suggests that it taps into executive-legislative behaviors; others note that greater proximity of presidential and legislative elections tend tends to reduce the number of effective parties in a state. In any case, being able to calculate a state's electoral proximity could open the door to some interesting studies.
 
 # How is Electoral Proximity Calculated? 
 
@@ -28,7 +28,7 @@ Per Cox (1997), electoral proximity can be estimated as follows:
 
 $$ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  $$
 
-and while this is a lovely equation, it is difficult to implement on your own. 
+and while this is a lovely equation, it might be difficult to implement on one's own. 
 
 # What's the Issue? 
 
@@ -53,18 +53,21 @@ Here is a step-by-step run-through of how I calculated electoral proximity in Bu
 burkina_faso <- burkina_faso %>% 
   
   #' Group by country and legislative election. 
+  
   dplyr::group_by(country_name, leg_elect_year) %>%
   
   #' Use "first" and "na.omit" to find the next presidential
   #' election in the data. Using these two commands will find 
   #' the first non-NA value in a column. This new variable is 
   #' called "next_election".
+  
   dplyr::mutate(next_election = dplyr::first(na.omit(pres_elect_year))) %>% 
   
   #' Regroup by just country. We don't care about years at this point.
   #' Then we fill out the "next_election" variable. Instead of filling 
   #' down the data, we want to fill up (imagine we are dragging the future
   #' election up to the current legislative election). 
+  
   dplyr::group_by(country_name) %>% 
   tidyr::fill(next_election, .direction = "up")
 ```
@@ -83,6 +86,7 @@ $\textit{next_election}$ = $P_{t+1}$
 burkina_faso <- burkina_faso %>% 
 
   #' We can now, in one fell swoop, calculate Cox's electoral proximity. 
+  
   dplyr::mutate(cox_prox = ifelse(leg_elect_dum == 1,  
                                 2 * abs(
                                   (
@@ -92,6 +96,7 @@ burkina_faso <- burkina_faso %>%
                 cox_prox = ifelse(is.nan(cox_prox), 1, cox_prox)) %>% 
   
   #' Fill out the variable.
+  
   tidyr::fill(cox_prox)
 ```
 
@@ -100,14 +105,19 @@ burkina_faso <- burkina_faso %>%
 Let's plot how electoral proximity changes over time in Burkina Faso.
 ```{r}
 ggplot(burkina_faso, aes(x = year)) + 
-  geom_line(aes(y = cox_prox), size = 2, color = "purple") +
-  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = "dotted") +
+  geom_line(aes(y = cox_prox), size = 2, color = "purple", na.rm = TRUE) +
+  geom_vline(aes(xintercept = ifelse(leg_elect_dum == 1, year, NA)), linetype = "dotted", na.rm=TRUE) +
   labs(title = paste0("Electoral Proximity in ", unique(burkina_faso$country_name)),
        x = "Year", 
        y = "Electoral Proximity (Cox, 1997)") +
   theme_classic()
 ```
-Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I'm going to plot a few more countries and see if I find any more intresting patterns.
+
+Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I'm going to plot a few more countries and see if I find any more intresting patterns. 
+
+In the meantime, feel free to check out the related code for this post [here](https://github.com/tjbrailey/Functions). Please leave any comments and feedback in the "Issues" section of GitHub. 
+
+Thanks for reading! 
 
 
 
