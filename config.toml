@@ -8,6 +8,7 @@ defaultcontentlanguage = "en"
 
 paginate = 20
 canonifyurls = true
+math = true
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
