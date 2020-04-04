@@ -6,10 +6,19 @@
     <description>Recent content in segmental autonomy on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/segmental-autonomy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Senior Thesis: Ontology</title>
+      <link>/posts/thesis_ontology/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/thesis_ontology/</guid>
+      <description>Progress is slow but rewarding. I have a skeleton of my thesis and am working dilligently to fill out the rest of it.</description>
+    </item>
     
     <item>
       <title>My Senior Thesis</title>
@@ -17,7 +26,8 @@
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/posts/thesis/</guid>
-      <description></description>
+      <description>I was fortunate enough to have been invited into the political science honors program at UC San Diego. As part of the program, I am required to write a thesis on a topic of my choosing. The program consists of a weekly three-hour seminar, plus regular meeting with an advisor, and I will have two quarters to complete the paper.
+I am incredibly lucky to have Professors Kaare Strom and Daniel Butler leading the seminar, and Professor Gareth Nellis as my thesis advisor.</description>
     </item>
     
   </channel>
