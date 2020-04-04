@@ -21,16 +21,26 @@
     </item>
     
     <item>
+      <title>Senior Thesis: Complete!</title>
+      <link>/posts/thesis_fin/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/thesis_fin/</guid>
+      <description>It is done! After two busy quarters, a suprisingly grueling winter break, and a frantic spring break, I have finished my senior thesis. The guidance and support from Professor Nellis, the seminar leaders, and the numerous graduate students I have interacted with, have helped to make my thesis a document that I am genuinely proud of. This experience has also made me a far better scholar and researcher, and I strongly encourage anyone who has the opportunity to undertake such a project to do so.</description>
+    </item>
+    
+    <item>
       <title>Senior Thesis: Ontology</title>
       <link>/posts/thesis_ontology/</link>
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/thesis_ontology/</guid>
-      <description>Progress is slow but rewarding. I have a skeleton of my thesis and am working dilligently to fill out the rest of it.</description>
+      <description>Thesis progress is slow but rewarding. I have a skeleton of my thesis and am working dilligently to fill out the rest of it. One thing that I have to show is my power-sharing ontology. It’s a jargon-y word, I know, but it’s a fun concept to implement in R.
+OntologyOntology is just a fancy word for family-tree. An ontology helps to visualize the relationship between upper-nodes and lower-nodes; parents and children.</description>
     </item>
     
     <item>
-      <title>My Senior Thesis</title>
+      <title>Senior Thesis: Introduction</title>
       <link>/posts/thesis/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       

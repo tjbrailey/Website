@@ -1,8 +1,8 @@
 ---
-title: "My Senior Thesis"
+title: "Senior Thesis: Introduction"
 author: "Tom Brailey"
 date: "2019-12-01"
-categories: ["R"]
+categories: ["Writing"]
 tags: ["senior thesis", "segmental autonomy", "power sharing"]
 ---
 
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I was fortunate enough to have been invited into the political science honors program at UC San Diego. As part of the program, I am required to write a thesis on a topic of my choosing. The program consists of a weekly three-hour seminar, plus regular meeting with an advisor, and I will have two quarters to complete the paper. 
 
-I am incredibly lucky to have Professors Kaare Strom and Daniel Butler leading the seminar, and [Professor Gareth Nellis](garethnellis.github.io) as my thesis advisor. I have looked up to these professors throughout my undergraduate career and cannot wait to work with them. 
+I am incredibly lucky to have Professors Kaare Strom and Daniel Butler leading the seminar, and [Professor Gareth Nellis](https://garethnellis.github.io/) as my thesis advisor. I have looked up to these professors throughout my undergraduate career and cannot wait to work with them. 
 
 # Focus
 
