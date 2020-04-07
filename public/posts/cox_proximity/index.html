@@ -194,7 +194,7 @@
 <h1>How is Electoral Proximity Calculated?</h1>
 <p>Per Cox (1997), electoral proximity can be estimated as follows:</p>
 <p><span class="math display">\[ PROXIMITY = 2 * \left| \frac{L_{t} - P_{t-1}}{P_{t+1} - P_{t-1}} - \frac{1}{2} \right|  \]</span></p>
-<p>and while this is a lovely equation, it might be difficult to implement on one’s own.</p>
+<p>In plain English: take the year of a given legislative election and subtract the year of the most recent presidential election. Divide this by the year of the upcoming presidential election minus the year of the most recent presidential election. Subtract one half from that value, take the absolute value, and multiply by two.</p>
 </div>
 <div id="whats-the-issue" class="section level1">
 <h1>What’s the Issue?</h1>
