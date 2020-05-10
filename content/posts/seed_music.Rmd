@@ -2,7 +2,6 @@
 title: '''Seed Music'''
 author: "Tom Brailey"
 date: '2020-05-01'
-tags:
 categories: ["Music"]
 tags: ["seed music", "melody generation", "r", "math-rock"]
 ---
