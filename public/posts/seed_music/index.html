@@ -166,20 +166,8 @@
               4-minute read
             </span>
           </div>
-          <div class="categories">
-  <i class="fas fa-folder"></i>
-    <a href="/categories/music/">Music</a></div>
-
-          <div class="tags">
-  <i class="fas fa-tag"></i>
-    <a href="/tags/seed-music/">seed music</a>
-      <span class="separator">•</span>
-    <a href="/tags/melody-generation/">melody generation</a>
-      <span class="separator">•</span>
-    <a href="/tags/r/">r</a>
-      <span class="separator">•</span>
-    <a href="/tags/math-rock/">math-rock</a></div>
-
+          
+          
         </div>
       </header>
 
@@ -243,23 +231,21 @@
  
 }</code></pre>
 <p>And here is an example of what I would be given to work with (note that every time I update my website this image will change):</p>
-<pre><code>## Warning: Removed 3 rows containing missing values (geom_point).</code></pre>
-<pre><code>## Warning: Removed 3 rows containing missing values (geom_vline).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_point).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_vline).</code></pre>
 <p><img src="/posts/seed_music_files/figure-html/unnamed-chunk-4-1.png" width="50%" /></p>
 </div>
 <div id="so-how-does-it-sound" class="section level1">
 <h1>So how does it sound?</h1>
 <p>I expected that whatever I ended up writing would be somewhat avante-garde. I wasn’t wrong. Here is an example of how I turned some random data into a really weird 13/8 mathy riff.</p>
 <p>This was the first plot that came out of my function. An ungodly splattering of notes which I had to coerce into G# Mixolydian (the most popular mode, right?). By the way, as a sort-of-afterthought, I wanted the title to the plot to be a series of random letters to serve as a word-cloud to further encourage my creativity. This part certainly needs some work given that “gyzjsgsfpz awnkbzyvho” doesn’t really make me feel anything. Still though, perhaps one day it will spit out something so inspiring that I go on to write a hit-single. We shall see…</p>
-<p><img src="C:/Users/tbrai/Dropbox/github_private/Website/static/images/gyzjsgsfpz%20awnkbzyvho.png" width="1050" /></p>
-<p>I then transposed these dots onto a staff, deciding that 13/8 would be a fun meter for this melody. These notes in C major sound truly awful, so I’m glad ggplot2 made me transpose this melody into something else.
-<img src="C:/Users/tbrai/Dropbox/github_private/Website/static/images/basic_melody%20.png" width="271" /></p>
-<p>Here’s where I exert some “creative control” shall we say. Somewhere between that initial transcription and the final melody, some notes were moved around and whatnot, but I really did do my best to stay true to whatever the function gave me. This is what I turned the basic melody into:
-<img src="C:/Users/tbrai/Dropbox/github_private/Website/static/images/full_melody.png" width="424" /></p>
+<p><img src="/posts/seed_music_files/gyzjsgsfpz%20awnkbzyvho.png" /></p>
+<p>I then transposed these dots onto a staff, deciding that 13/8 would be a fun meter for this melody. These notes in C major sound truly awful, so I’m glad ggplot2 made me transpose this melody into something else.</p>
+<p><img src="/posts/seed_music_files/basic_melody%20.png" /></p>
+<p>Here’s where I exert some “creative control” shall we say. Somewhere between that initial transcription and the final melody, some notes were moved around and whatnot, but I really did do my best to stay true to whatever the function gave me. This is what I turned the basic melody into:</p>
+<p><img src="/posts/seed_music_files/full_melody.png" /></p>
 <p>And here is what it sounds like (with a little hi-hat in the background).</p>
-<audio controls>
-<source src="Seed 1.wav" type="audio/wav"/>
-</audio>
+<p><embed src="/posts/seed_music_files/Seed%201.wav" /></p>
 <p>As you can tell, I can’t really call a twelve-second excerpt a song. But these four bars give some insight into the flavor of this tune. In any case, I am pretty chuffed that I actually managed to get something workable out of this idea. Seed Music is a project that I will be continuing for the foreseeable future, and I will try to post reguarly my ideas and creations. More to follow!</p>
 </div>
 

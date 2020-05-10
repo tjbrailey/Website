@@ -6,19 +6,10 @@
     <description>Recent content in R on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>&#39;Seed Music&#39;</title>
-      <link>/posts/seed_music/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/seed_music/</guid>
-      <description>Birds / SurfersEarlier this month, one of my favorite guitarists, Plini, made an Instagram post describing how a photograph of surfers out on the seas resembled notes on a staff, inspiring him to create a short piece of music. You can view the post and listen to an excerpt of his song “Surfers” here. Plini followed the same melody-generating process using an image of a flock of birds which is equally awesome.</description>
-    </item>
     
     <item>
       <title>Calculating Electoral Proximity in R</title>
