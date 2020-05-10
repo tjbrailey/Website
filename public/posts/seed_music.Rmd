@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(magrittr)
 library(ggplot2)
+library(png)
 
 eg <- paste0(here::here(), "/content/posts/gyzjsgsfpz awnkbzyvho.png")
 basic_melody <- paste0(here::here(), "/content/posts/basic_melody .png")
@@ -115,19 +116,32 @@ knitr::include_graphics(eg)
 ```
 
 I then transposed these dots onto a staff, deciding that 13/8 would be a fun meter for this melody. These notes in C major sound truly awful, so I'm glad ggplot2 made me transpose this melody into something else. 
-```{r, echo = F, fig.show="hold", out.width = "50%", align = "center"}
-knitr::include_graphics(basic_melody)
+```{r}
+basic_melody <- readPNG(basic_melody)
+basic_melody
 ```
 
 Here's where I exert some "creative control" shall we say. Somewhere between that initial transcription and the final melody, some notes were moved around and whatnot, but I really did do my best to stay true to whatever the function gave me. This is what I turned the basic melody into: 
-```{r, echo = F, fig.show="hold", out.width = "50%", align = "center"}
-knitr::include_graphics(full_melody)
+```{r}
+full_melody <- readPNG(full_melody)
+full_melody
 ```
 
 And here is what it sounds like (with a little hi-hat in the background). 
 
-<audio controls>
-  <source src="Seed 1.wav" type="audio/wav">
-</audio>
+```{r include = FALSE}
+html_tag_audio <- function(file,
+                           type = "wav")
+{
+  htmltools::tags$audio(controls = NA,
+                        htmltools::tags$source(src = file,
+                                               type = glue::glue("audio/{type}",
+                                                                 type = type)))
+}
+
+
+#`r html_tag_audio("Seed 1.wav")`
+```
+
 
 As you can tell, I can't really call a twelve-second excerpt a song. But these four bars give some insight into the flavor of this tune. In any case, I am pretty chuffed that I actually managed to get something workable out of this idea. Seed Music is a project that I will be continuing for the foreseeable future, and I will try to post reguarly my ideas and creations. More to follow! 
