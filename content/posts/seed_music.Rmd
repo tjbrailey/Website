@@ -3,10 +3,8 @@ title: '''Seed Music'''
 author: "Tom Brailey"
 date: '2020-05-01'
 tags:
-- seed music
-- melody generation
-- r
-categories: Music
+categories: ["Music"]
+tags: ["seed music", "melody generation", "r", "math-rock"]
 ---
 
 ```{r setup, include=FALSE}
@@ -85,8 +83,6 @@ plot_music <- function(){
   return(plot)
  
 }
-
-
 ```
 
 And here is an example of what I would be given to work with (note that every time I update my website this image will change): 
@@ -136,10 +132,8 @@ html_tag_audio <- function(file,
                                                type = glue::glue("audio/{type}",
                                                                  type = type)))
 }
-
-
-#`r html_tag_audio("Seed 1.wav")`
 ```
 
+`r html_tag_audio("Seed 1.wav")`
 
 As you can tell, I can't really call a twelve-second excerpt a song. But these four bars give some insight into the flavor of this tune. In any case, I am pretty chuffed that I actually managed to get something workable out of this idea. Seed Music is a project that I will be continuing for the foreseeable future, and I will try to post reguarly my ideas and creations. More to follow! 
