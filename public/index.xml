@@ -6,10 +6,20 @@
     <description>Recent content on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Electoral Violence in Papua New Guinea </title>
+      <link>/posts/png_violence/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/png_violence/</guid>
+      <description>For the past few months, I have been working as a research assistant for Professors Gareth Nellis and Jasper Cooper. The project focuses on Papua New Guinea’s shift from first-past-the-post to the alternative vote in 2007. One outcome measure we are interested in is electoral-related violence, and whether incidents of violence increased or decreased following the implementation of the alternative vote.
+Data on violence in PNG is sparse, and so I was tasked with creating a dataset of all election-related violent incidents around the 2002 and 2007 election periods.</description>
+    </item>
     
     <item>
       <title>&#39;Seed Music&#39;</title>
