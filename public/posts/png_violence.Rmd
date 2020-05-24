@@ -88,7 +88,7 @@ DataExplorer::plot_missing(png_violence)
 
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 Amelia::missmap(png_violence)
 
@@ -128,7 +128,7 @@ Here is that graph in tabular format:
           col.names = kableExtra::linebreak(c("Date", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -144,7 +144,7 @@ Now we aggregate those counts by year:
           col.names = kableExtra::linebreak(c("Year", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -163,7 +163,7 @@ png_violence %>%
           col.names = kableExtra::linebreak(c("Province", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -292,18 +292,24 @@ map <-
   shadow_mark(color = "grey20", alpha = .5) + 
   labs(x = "Longitude", 
        y = "Latitude", 
-       title = "Election-related violence across the 2002, 2007, and 2012 election periods")
+       caption = "Election-related violence across the 2002, 2007, and 2012 election periods") + 
   theme_minimal()  
 
 animate(map, fps = 5, nframes = 300)
 
-# Note: in order to visualize the entire dataset, you need to set nframes in the animate() function to be twice the number of observations you are plotting. In this case, map_prep has about 145 unique days to plot, so I have set nframes to be 300. Given that the default setting for nframes is 100 (so 50 distinct observations), this plot takes a long time to render. 
+# Note: in order to visualize the entire dataset, 
+# you need to set nframes in the animate() function 
+# to be twice the number of observations you are plotting. 
+# In this case, map_prep has about 145 unique days to 
+# plot, so I have set nframes to be 300. Given that the 
+# default setting for nframes is 100 (so 50 distinct 
+# observations), this plot takes a long time to render. 
 
 ```
 
 Below is the code to facet the animated map by year. Running all of this code crashes the website, but I left it here for those who are interested.
 
-```{r, warning=FALSE, message=FALSE, results="asis",include=F}
+```{r, warning=FALSE, message=FALSE, results="asis"}
 
 #map_2002 <- 
 #  map_prep %>% 

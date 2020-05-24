@@ -88,7 +88,7 @@ DataExplorer::plot_missing(png_violence)
 
 ```
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
 Amelia::missmap(png_violence)
 
@@ -128,7 +128,7 @@ Here is that graph in tabular format:
           col.names = kableExtra::linebreak(c("Date", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -144,7 +144,7 @@ Now we aggregate those counts by year:
           col.names = kableExtra::linebreak(c("Year", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -163,7 +163,7 @@ png_violence %>%
           col.names = kableExtra::linebreak(c("Province", "Violent Incidents"), align = "c"),
           caption = "",
           linesep = "") %>%
-  kableExtra::column_spec(1:2, width = "5em")
+  kableExtra::column_spec(1:2, width = "10em")
 
 ```
 
@@ -309,7 +309,7 @@ animate(map, fps = 5, nframes = 300)
 
 Below is the code to facet the animated map by year. Running all of this code crashes the website, but I left it here for those who are interested.
 
-```{r, warning=FALSE, message=FALSE, results="asis",include=F}
+```{r, warning=FALSE, message=FALSE, results="asis"}
 
 #map_2002 <- 
 #  map_prep %>% 

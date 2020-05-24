@@ -165,7 +165,7 @@ Data on violence in PNG is sparse, and so I was tasked with creating a dataset o
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              21-minute read
+              12-minute read
             </span>
           </div>
           <div class="categories">
@@ -199,11 +199,7 @@ Data on violence in PNG is sparse, and so I was tasked with creating a dataset o
 DataExplorer::plot_missing(png_violence)</code></pre>
 <p><img src="/posts/png_violence_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>
-Amelia::missmap(png_violence)
-## Warning: Unknown or uninitialised column: `arguments`.
-
-## Warning: Unknown or uninitialised column: `arguments`.
-## Warning: Unknown or uninitialised column: `imputations`.</code></pre>
+Amelia::missmap(png_violence)</code></pre>
 <p><img src="/posts/png_violence_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>Next, I make a bunch of tabulations that look at the relationship between violence, time, and location. The first plot shows the count of violent incidents across each of the three elections in the dataset.</p>
 <pre class="r"><code>
@@ -233,7 +229,7 @@ ggplot(violence_day, aes(x = date_incident, y = n)) +
           col.names = kableExtra::linebreak(c(&quot;Date&quot;, &quot;Violent Incidents&quot;), align = &quot;c&quot;),
           caption = &quot;&quot;,
           linesep = &quot;&quot;) %&gt;%
-  kableExtra::column_spec(1:2, width = &quot;5em&quot;)</code></pre>
+  kableExtra::column_spec(1:2, width = &quot;10em&quot;)</code></pre>
 <table>
 <caption>
 <span id="tab:unnamed-chunk-6">Table 1: </span>
@@ -250,554 +246,554 @@ Violent Incidents
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-17
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 13
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-18
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 7
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-06-11
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 7
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 7
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-04
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 7
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-23
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 7
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-04-15
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 6
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 6
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-24
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-01
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-09
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-10
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-11
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-19
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-04-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-08-20
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 5
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-15
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-06-30
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-09
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-16
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-28
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-07-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-04-11
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-05-17
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-05-27
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-03
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-08
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-22
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-03
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-30
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-09-10
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-06-04
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-05-05
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-05-13
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-14
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-25
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-06-26
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-07
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-12
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-13
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-07-31
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-05
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-08
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-09
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-16
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002-08-19
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-04-23
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-05-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-05-12
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-05-15
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-05-20
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-06-03
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-06-04
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-06-29
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-07-01
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-08-02
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-08-05
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-08-06
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-08-07
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-09-03
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007-09-24
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-04-28
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-06-25
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-07-07
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-07-16
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-07-30
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-08-19
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-09-10
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012-09-23
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
@@ -813,7 +809,7 @@ Violent Incidents
           col.names = kableExtra::linebreak(c(&quot;Year&quot;, &quot;Violent Incidents&quot;), align = &quot;c&quot;),
           caption = &quot;&quot;,
           linesep = &quot;&quot;) %&gt;%
-  kableExtra::column_spec(1:2, width = &quot;5em&quot;)</code></pre>
+  kableExtra::column_spec(1:2, width = &quot;10em&quot;)</code></pre>
 <table>
 <caption>
 <span id="tab:unnamed-chunk-7">Table 2: </span>
@@ -830,26 +826,26 @@ Violent Incidents
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2002
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 140
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2007
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 125
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 2012
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 37
 </td>
 </tr>
@@ -868,7 +864,7 @@ png_violence %&gt;%
           col.names = kableExtra::linebreak(c(&quot;Province&quot;, &quot;Violent Incidents&quot;), align = &quot;c&quot;),
           caption = &quot;&quot;,
           linesep = &quot;&quot;) %&gt;%
-  kableExtra::column_spec(1:2, width = &quot;5em&quot;)</code></pre>
+  kableExtra::column_spec(1:2, width = &quot;10em&quot;)</code></pre>
 <table>
 <caption>
 <span id="tab:unnamed-chunk-8">Table 3: </span>
@@ -885,162 +881,162 @@ Violent Incidents
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 western highlands
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 63
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 southern highlands
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 53
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 national capital
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 35
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 enga
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 34
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 morobe
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 28
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 chimbu
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 23
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 eastern highlands
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 12
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 jiwaka
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 10
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 east sepik
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 8
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 bougainville
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 6
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 madang
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 6
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 central
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 west new britain
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 hela
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 northern
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 west sepik
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 east new britain
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 milne bay
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 western
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 5em; ">
+<td style="text-align:left;width: 10em; ">
 gulf
 </td>
-<td style="text-align:right;width: 5em; ">
+<td style="text-align:right;width: 10em; ">
 1
 </td>
 </tr>
@@ -3443,398 +3439,75 @@ map &lt;-
   shadow_mark(color = &quot;grey20&quot;, alpha = .5) + 
   labs(x = &quot;Longitude&quot;, 
        y = &quot;Latitude&quot;, 
-       title = &quot;Election-related violence across the 2002, 2007, and 2012 election periods&quot;)
+       caption = &quot;Election-related violence across the 2002, 2007, and 2012 election periods&quot;) + 
   theme_minimal()  
-## List of 93
-##  $ line                      :List of 6
-##   ..$ colour       : chr &quot;black&quot;
-##   ..$ size         : num 0.5
-##   ..$ linetype     : num 1
-##   ..$ lineend      : chr &quot;butt&quot;
-##   ..$ arrow        : logi FALSE
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
-##  $ rect                      :List of 5
-##   ..$ fill         : chr &quot;white&quot;
-##   ..$ colour       : chr &quot;black&quot;
-##   ..$ size         : num 0.5
-##   ..$ linetype     : num 1
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_rect&quot; &quot;element&quot;
-##  $ text                      :List of 11
-##   ..$ family       : chr &quot;&quot;
-##   ..$ face         : chr &quot;plain&quot;
-##   ..$ colour       : chr &quot;black&quot;
-##   ..$ size         : num 11
-##   ..$ hjust        : num 0.5
-##   ..$ vjust        : num 0.5
-##   ..$ angle        : num 0
-##   ..$ lineheight   : num 0.9
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : logi FALSE
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ title                     : NULL
-##  $ aspect.ratio              : NULL
-##  $ axis.title                : NULL
-##  $ axis.title.x              :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 1
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 2.75points 0points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.title.x.top          :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 0
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 2.75points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.title.x.bottom       : NULL
-##  $ axis.title.y              :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 1
-##   ..$ angle        : num 90
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 2.75points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.title.y.left         : NULL
-##  $ axis.title.y.right        :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 0
-##   ..$ angle        : num -90
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 2.75points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.text                 :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : chr &quot;grey30&quot;
-##   ..$ size         : &#39;rel&#39; num 0.8
-##   ..$ hjust        : NULL
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.text.x               :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 1
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 2.2points 0points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.text.x.top           :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : num 0
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 2.2points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.text.x.bottom        : NULL
-##  $ axis.text.y               :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : num 1
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 2.2points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.text.y.left          : NULL
-##  $ axis.text.y.right         :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : num 0
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 0points 2.2points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ axis.ticks                : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ axis.ticks.x              : NULL
-##  $ axis.ticks.x.top          : NULL
-##  $ axis.ticks.x.bottom       : NULL
-##  $ axis.ticks.y              : NULL
-##  $ axis.ticks.y.left         : NULL
-##  $ axis.ticks.y.right        : NULL
-##  $ axis.ticks.length         : &#39;simpleUnit&#39; num 2.75points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ axis.ticks.length.x       : NULL
-##  $ axis.ticks.length.x.top   : NULL
-##  $ axis.ticks.length.x.bottom: NULL
-##  $ axis.ticks.length.y       : NULL
-##  $ axis.ticks.length.y.left  : NULL
-##  $ axis.ticks.length.y.right : NULL
-##  $ axis.line                 : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ axis.line.x               : NULL
-##  $ axis.line.x.top           : NULL
-##  $ axis.line.x.bottom        : NULL
-##  $ axis.line.y               : NULL
-##  $ axis.line.y.left          : NULL
-##  $ axis.line.y.right         : NULL
-##  $ legend.background         : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ legend.margin             : &#39;margin&#39; num [1:4] 5.5points 5.5points 5.5points 5.5points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ legend.spacing            : &#39;simpleUnit&#39; num 11points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ legend.spacing.x          : NULL
-##  $ legend.spacing.y          : NULL
-##  $ legend.key                : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ legend.key.size           : &#39;simpleUnit&#39; num 1.2lines
-##   ..- attr(*, &quot;unit&quot;)= int 3
-##  $ legend.key.height         : NULL
-##  $ legend.key.width          : NULL
-##  $ legend.text               :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : &#39;rel&#39; num 0.8
-##   ..$ hjust        : NULL
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ legend.text.align         : NULL
-##  $ legend.title              :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : num 0
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ legend.title.align        : NULL
-##  $ legend.position           : chr &quot;right&quot;
-##  $ legend.direction          : NULL
-##  $ legend.justification      : chr &quot;center&quot;
-##  $ legend.box                : NULL
-##  $ legend.box.just           : NULL
-##  $ legend.box.margin         : &#39;margin&#39; num [1:4] 0cm 0cm 0cm 0cm
-##   ..- attr(*, &quot;unit&quot;)= int 1
-##  $ legend.box.background     : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ legend.box.spacing        : &#39;simpleUnit&#39; num 11points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ panel.background          : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ panel.border              : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ panel.spacing             : &#39;simpleUnit&#39; num 5.5points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ panel.spacing.x           : NULL
-##  $ panel.spacing.y           : NULL
-##  $ panel.grid                :List of 6
-##   ..$ colour       : chr &quot;grey92&quot;
-##   ..$ size         : NULL
-##   ..$ linetype     : NULL
-##   ..$ lineend      : NULL
-##   ..$ arrow        : logi FALSE
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
-##  $ panel.grid.major          : NULL
-##  $ panel.grid.minor          :List of 6
-##   ..$ colour       : NULL
-##   ..$ size         : &#39;rel&#39; num 0.5
-##   ..$ linetype     : NULL
-##   ..$ lineend      : NULL
-##   ..$ arrow        : logi FALSE
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_line&quot; &quot;element&quot;
-##  $ panel.grid.major.x        : NULL
-##  $ panel.grid.major.y        : NULL
-##  $ panel.grid.minor.x        : NULL
-##  $ panel.grid.minor.y        : NULL
-##  $ panel.ontop               : logi FALSE
-##  $ plot.background           : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ plot.title                :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : &#39;rel&#39; num 1.2
-##   ..$ hjust        : num 0
-##   ..$ vjust        : num 1
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 5.5points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ plot.title.position       : chr &quot;panel&quot;
-##  $ plot.subtitle             :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : num 0
-##   ..$ vjust        : num 1
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 0points 0points 5.5points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ plot.caption              :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : &#39;rel&#39; num 0.8
-##   ..$ hjust        : num 1
-##   ..$ vjust        : num 1
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 5.5points 0points 0points 0points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ plot.caption.position     : chr &quot;panel&quot;
-##  $ plot.tag                  :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : &#39;rel&#39; num 1.2
-##   ..$ hjust        : num 0.5
-##   ..$ vjust        : num 0.5
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ plot.tag.position         : chr &quot;topleft&quot;
-##  $ plot.margin               : &#39;margin&#39; num [1:4] 5.5points 5.5points 5.5points 5.5points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ strip.background          : list()
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_blank&quot; &quot;element&quot;
-##  $ strip.background.x        : NULL
-##  $ strip.background.y        : NULL
-##  $ strip.placement           : chr &quot;inside&quot;
-##  $ strip.text                :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : chr &quot;grey10&quot;
-##   ..$ size         : &#39;rel&#39; num 0.8
-##   ..$ hjust        : NULL
-##   ..$ vjust        : NULL
-##   ..$ angle        : NULL
-##   ..$ lineheight   : NULL
-##   ..$ margin       : &#39;margin&#39; num [1:4] 4.4points 4.4points 4.4points 4.4points
-##   .. ..- attr(*, &quot;unit&quot;)= int 8
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ strip.text.x              : NULL
-##  $ strip.text.y              :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : NULL
-##   ..$ angle        : num -90
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  $ strip.switch.pad.grid     : &#39;simpleUnit&#39; num 2.75points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ strip.switch.pad.wrap     : &#39;simpleUnit&#39; num 2.75points
-##   ..- attr(*, &quot;unit&quot;)= int 8
-##  $ strip.text.y.left         :List of 11
-##   ..$ family       : NULL
-##   ..$ face         : NULL
-##   ..$ colour       : NULL
-##   ..$ size         : NULL
-##   ..$ hjust        : NULL
-##   ..$ vjust        : NULL
-##   ..$ angle        : num 90
-##   ..$ lineheight   : NULL
-##   ..$ margin       : NULL
-##   ..$ debug        : NULL
-##   ..$ inherit.blank: logi TRUE
-##   ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;element_text&quot; &quot;element&quot;
-##  - attr(*, &quot;class&quot;)= chr [1:2] &quot;theme&quot; &quot;gg&quot;
-##  - attr(*, &quot;complete&quot;)= logi TRUE
-##  - attr(*, &quot;validate&quot;)= logi TRUE
 
 animate(map, fps = 5, nframes = 300)</code></pre>
 <p><img src="/posts/png_violence_files/figure-html/unnamed-chunk-13-1.gif" /><!-- --></p>
 <pre class="r"><code>
-# Note: in order to visualize the entire dataset, you need to set nframes in the animate() function to be twice the number of observations you are plotting. In this case, map_prep has about 145 unique days to plot, so I have set nframes to be 300. Given that the default setting for nframes is 100 (so 50 distinct observations), this plot takes a long time to render. </code></pre>
+# Note: in order to visualize the entire dataset, 
+# you need to set nframes in the animate() function 
+# to be twice the number of observations you are plotting. 
+# In this case, map_prep has about 145 unique days to 
+# plot, so I have set nframes to be 300. Given that the 
+# default setting for nframes is 100 (so 50 distinct 
+# observations), this plot takes a long time to render. </code></pre>
 <p>Below is the code to facet the animated map by year. Running all of this code crashes the website, but I left it here for those who are interested.</p>
+<pre class="r"><code>
+#map_2002 &lt;- 
+#  map_prep %&gt;% 
+#  dplyr::filter(year_incident == 2002)
+
+#map1 &lt;- 
+ # ggplot(png_2) + 
+  #geom_sf() +
+#  geom_point(map_prep, mapping = aes(x = lon, y = lat), color = &quot;red&quot;) +
+#  ggtitle(&quot;{closest_state}&quot;) +
+#  transition_states(states = date_incident) +
+#  ease_aes(&#39;linear&#39;) +
+#  shadow_mark(color = &quot;black&quot;, alpha = .5) + 
+#  theme_minimal()
+  
+#gif1 &lt;- animate(map1, fps = 5, nframes = 118)
+ 
+#map_2007 &lt;- 
+#  map_prep %&gt;% 
+#  dplyr::filter(year_incident == 2007)
+
+#map2 &lt;- 
+#  ggplot(png_2) + 
+#  geom_sf() +
+#  geom_point(map_2007, mapping = aes(x = lon, y = lat), color = &quot;red&quot;) +
+#  ggtitle(&quot;{closest_state}&quot;) +
+#  transition_states(states = date_incident) +
+#  ease_aes(&#39;linear&#39;) +
+#  shadow_mark(color = &quot;black&quot;, alpha = .5) + 
+#  theme_minimal() 
+
+#gif2 &lt;-animate(map2, fps = 5, nframes = 120)
+
+#map_2012 &lt;- 
+#  map_prep %&gt;% 
+#  dplyr::filter(year_incident == 2012)
+
+#map3 &lt;- 
+#  ggplot(png_2) + 
+#  geom_sf() +
+#  geom_point(map_2012, mapping = aes(x = lon, y = lat), color = &quot;red&quot;) +
+#  ggtitle(&quot;{closest_state}&quot;) +
+#  transition_states(states = date_incident) +
+#  ease_aes(&#39;linear&#39;) +
+#  shadow_mark(color = &quot;black&quot;, alpha = .5) + 
+#  theme_minimal()
+
+#gif3 &lt;-animate(map3, fps = 5, nframes = 48)
+
+#gif1
+
+#gif2
+
+#gif3
+</code></pre>
 </div>
 
       </div>
