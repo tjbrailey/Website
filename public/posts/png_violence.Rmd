@@ -228,7 +228,7 @@ png_violence %>%
 
 ```
 
-Given that across all three elections, the election periods are roughly similar, we cam facet our plot by year and compare how violent incidents relate with the onset of the election across 2002, 2007, and 2012. 
+Given that across all three elections, the election periods are roughly similar, we can facet our plot by year and compare how violent incidents relate to the onset of the actual election in 2002, 2007, and 2012. 
 
 ```{r, warning=FALSE, message=FALSE, results="asis"}
 
