@@ -8,7 +8,7 @@ tags: ["R", "elections", "papuea new guinea"]
 
 For the past few months, I have been working as a research assistant for Professors [Gareth Nellis](https://garethnellis.github.io/index.html) and [Jasper Cooper](http://jasper-cooper.com/). The project focuses on Papua New Guinea's shift from first-past-the-post to the alternative vote in 2007. One outcome measure we are interested in is electoral-related violence, and whether incidents of violence increased or decreased following the implementation of the alternative vote. 
 
-Data on violence in PNG is sparse, and so I was tasked with creating a dataset of all election-related violent incidents around the 2002 and 2007 election periods. To do this, I used PNG's Post-Courier newspaper to track down any reports of election-related violenc and property destruction, making note of the province, district, and village in which the violence occured, as well as the perpetrator and the victim of the violence.
+Data on violence in PNG is sparse, and so I was tasked with creating a dataset of all election-related violent incidents around the 2002 and 2007 election periods. To do this, I used PNG's Post-Courier newspaper to track down any reports of election-related violence and property destruction, making note of the province, district, and village in which the violence occurred, as well as the perpetrator and the victim of the violence.
 
 ```{r, include=FALSE}
 ### Preliminaries
