@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scale_fill_identity on thomasjbrailey</title>
+    <link>/tags/scale_fill_identity/</link>
+    <description>Recent content in scale_fill_identity on thomasjbrailey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/scale_fill_identity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text</title>
+      <link>/posts/niche_plots_i/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/niche_plots_i/</guid>
+      <description>Hello and welcome to the first episode in a series I like to call “Ridiculously Niche Plots”! An intermittent series where I give a brief rundown of especially strange plots that I have spent hours trying to crack, in the hope that someone, somewhere, struggling to understand the ins and outs of gridExtra or who are hitting their head against a wall because ggplot2 is throwing out a horrifically labyrinthine error, might stumble on this article and have all of their questions answered.</description>
+    </item>
+    
+  </channel>
+</rss>
