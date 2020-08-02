@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArcGIS on thomasjbrailey</title>
+    <link>/tags/arcgis/</link>
+    <description>Recent content in ArcGIS on thomasjbrailey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/arcgis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ridiculously Niche Plots Episode II: Vessel Range from Coastline in ArcGIS</title>
+      <link>/posts/niche_plots_ii/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/niche_plots_ii/</guid>
+      <description>Hello and welcome to the second episode of Ridiculously Niche Plots! Today, we are moving away from R into the realm of ArcGIS. Arc is quite a bit different to R, and reproducing outputs can be a little complicated. While there is no code to show per se, I will run through the model which is laid out in a sort of flowchart format.
+ContextThis project was part of my work at cPASS, specifically, Andres Gannon’s dissertation on military specialization.</description>
+    </item>
+    
+  </channel>
+</rss>

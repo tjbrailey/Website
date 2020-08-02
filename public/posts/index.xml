@@ -6,13 +6,43 @@
     <description>Recent content in Posts on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text</title>
+      <title>Ridiculously Niche Plots Episode II: Vessel Range from Coastline in ArcGIS</title>
+      <link>/posts/niche_plots_ii/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/niche_plots_ii/</guid>
+      <description>Hello and welcome to the second episode of Ridiculously Niche Plots! Today, we are moving away from R into the realm of ArcGIS. Arc is quite a bit different to R, and reproducing outputs can be a little complicated. While there is no code to show per se, I will run through the model which is laid out in a sort of flowchart format.
+ContextThis project was part of my work at cPASS, specifically, Andres Gannon’s dissertation on military specialization.</description>
+    </item>
+    
+    <item>
+      <title>From RA to RA</title>
+      <link>/posts/research_associate/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/research_associate/</guid>
+      <description>In June 2020, I finished up my research assistant positions at UC San Diego’s (UCSD) political science department, and in July, I began working as a research associate for J-PAL’s Payments and Governance Research Program (PGRP), also at UCSD. Now I have been working there for about a month, I wanted to ruminate about the transition from RA to RA.
+Me, being my naive and excitable self, dove head first into PGRP, assuming it to be a full-time version of the work I had been doing for the political science department.</description>
+    </item>
+    
+    <item>
+      <title>A Brief Note on Replication in R</title>
+      <link>/posts/replicability/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/replicability/</guid>
+      <description>Replication studies – repeating an existing study/experiment/analysis to see if the results hold up – in the social sciences are essential for the advancement of scientific understanding. See this Vox article for a primer.
+On a smaller scale, labs often get their researchers to run what are known as “code audits”. If one researcher is working on an analysis, they hand it over to another researcher for them to run and see if the results are replicable.</description>
+    </item>
+    
+    <item>
+      <title>Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots</title>
       <link>/posts/niche_plots_i/</link>
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       

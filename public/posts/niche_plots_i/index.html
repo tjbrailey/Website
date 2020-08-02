@@ -10,10 +10,10 @@
     <meta name="keywords" content="research associate,political science,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text"/>
+<meta name="twitter:title" content="Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots"/>
 <meta name="twitter:description" content="Hello and welcome to the first episode in a series I like to call “Ridiculously Niche Plots”! An intermittent series where I give a brief rundown of especially strange plots that I have spent hours trying to crack, in the hope that someone, somewhere, struggling to understand the ins and outs of gridExtra or who are hitting their head against a wall because ggplot2 is throwing out a horrifically labyrinthine error, might stumble on this article and have all of their questions answered."/>
 
-    <meta property="og:title" content="Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text" />
+    <meta property="og:title" content="Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots" />
 <meta property="og:description" content="Hello and welcome to the first episode in a series I like to call “Ridiculously Niche Plots”! An intermittent series where I give a brief rundown of especially strange plots that I have spent hours trying to crack, in the hope that someone, somewhere, struggling to understand the ins and outs of gridExtra or who are hitting their head against a wall because ggplot2 is throwing out a horrifically labyrinthine error, might stumble on this article and have all of their questions answered." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/niche_plots_i/" />
@@ -25,7 +25,7 @@
       <base href="/posts/niche_plots_i/">
     
     <title>
-  Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text · thomasjbrailey
+  Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots · thomasjbrailey
 </title>
 
     
@@ -151,7 +151,7 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text</h1>
+          <h1 class="title">Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -197,7 +197,7 @@
 
 <p>Hello and welcome to the first episode in a series I like to call “Ridiculously Niche Plots”! An intermittent series where I give a brief rundown of especially strange plots that I have spent hours trying to crack, in the hope that someone, somewhere, struggling to understand the ins and outs of gridExtra or who are hitting their head against a wall because ggplot2 is throwing out a horrifically labyrinthine error, might stumble on this article and have all of their questions answered. I have certainly spent many hours hoping for the same…</p>
 <p>In today’s episode, we will be looking at radar plots, specifically, radar plots faceted by country, more specifically, scaled faceted radar plots with axis labels that corresponds to its legend, which groups percentages of military equipment by the domain in which they operate, and where if that percentage is 0, the axis text is grayed-out.</p>
-<p>To many of you I’m sure this sounds elementary, but, honestly, when I figured this out I felt a sense of achievement like no other. So, in the interesting of reliving that euphoric moment, here we go!</p>
+<p>To many of you I’m sure this sounds elementary, but, honestly, when I figured this out I felt a sense of achievement like no other. So, in the interest of reliving that euphoric moment, here we go!</p>
 <p>Firstly, I do some top-secret data cleaning.</p>
 <p>…</p>
 <p>beep boop</p>
@@ -205,7 +205,7 @@
 <p>Okay, so here’s what our data looks like:</p>
 <pre class="r"><code>DT::datatable(tbl[1:20,])</code></pre>
 <p><div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],["Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Albania","Albania","Albania","Albania","Albania","Albania","Albania","Algeria","Algeria","Algeria","Algeria","Algeria","Algeria"],[1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961,1961],["value 3","value 3","value 3","value 15","value 15","value 15","value 17","value 3","value 3","value 3","value 15","value 15","value 15","value 17","value 3","value 3","value 3","value 15","value 15","value 15"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],["domain c","domain c","domain c","domain b","domain b","domain b","domain b","domain c","domain c","domain c","domain b","domain b","domain b","domain b","domain c","domain c","domain c","domain b","domain b","domain b"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>country<\/th>\n      <th>year<\/th>\n      <th>var_name<\/th>\n      <th>unit_count<\/th>\n      <th>domain<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],["Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan","Afghanistan"],[1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970,1970],["value 2","value 2","value 3","value 3","value 3","value 3","value 3","value 3","value 3","value 3","value 3","value 3","value 4","value 5","value 5","value 6","value 6","value 8","value 8","value 11"],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],["domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain c","domain b","domain a","domain a","domain a","domain a","domain c","domain c","domain c"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>country<\/th>\n      <th>year<\/th>\n      <th>var_name<\/th>\n      <th>unit_count<\/th>\n      <th>domain<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 Now we do a little bit of work to create functions and whatnot:</p>
 <pre class="r"><code># This function gets all the legend information from a given ggplot object
 get_legend &lt;-
@@ -296,9 +296,13 @@ for(i in my_sub){
 }</code></pre>
 <pre><code>## Warning: Factor `country` contains implicit NA, consider using
 ## `forcats::fct_explicit_na`</code></pre>
+<pre><code>## Warning: Factor `domain` contains implicit NA, consider using
+## `forcats::fct_explicit_na`</code></pre>
 <pre><code>## Warning: Vectorized input to `element_text()` is not officially supported.
 ## Results may be unexpected or may change in future versions of ggplot2.</code></pre>
 <pre><code>## Warning: Factor `country` contains implicit NA, consider using
+## `forcats::fct_explicit_na`</code></pre>
+<pre><code>## Warning: Factor `domain` contains implicit NA, consider using
 ## `forcats::fct_explicit_na`</code></pre>
 <pre><code>## Warning: Vectorized input to `element_text()` is not officially supported.
 ## Results may be unexpected or may change in future versions of ggplot2.</code></pre>
@@ -316,10 +320,10 @@ p &lt;-
   grid.arrange(arrangeGrob(
   grobs = my_list,
   nrow = round(length(my_sub)/2, 0),
-  left = textGrob(&quot;X axis&quot;,
+  left = textGrob(&quot;Y axis&quot;,
                     gp = gpar(fontsize = 20),
                     rot = 90),
-  bottom = textGrob(&quot;Y axis&quot;,
+  bottom = textGrob(&quot;X axis&quot;,
                       gp = gpar(fontsize = 20),
                       vjust = -3),
   top = textGrob(&quot;Big plot&quot;,

@@ -6,13 +6,23 @@
     <description>Recent content in R on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text</title>
+      <title>A Brief Note on Replication in R</title>
+      <link>/posts/replicability/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/replicability/</guid>
+      <description>Replication studies – repeating an existing study/experiment/analysis to see if the results hold up – in the social sciences are essential for the advancement of scientific understanding. See this Vox article for a primer.
+On a smaller scale, labs often get their researchers to run what are known as “code audits”. If one researcher is working on an analysis, they hand it over to another researcher for them to run and see if the results are replicable.</description>
+    </item>
+    
+    <item>
+      <title>Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots</title>
       <link>/posts/niche_plots_i/</link>
       <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       
