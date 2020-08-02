@@ -1,5 +1,5 @@
 ---
-title: "Ridiculously Niche Plots Episode I: Scaled Faceted Radar Plots with Colorful Text"
+title: "Ridiculously Niche Plots Episode I: Scaled and Faceted Radar Plots"
 author: "Tom Brailey"
 date: "2020-06-17"
 categories: ["R"]
@@ -10,7 +10,7 @@ Hello and welcome to the first episode in a series I like to call "Ridiculously 
 
 In today's episode, we will be looking at radar plots, specifically, radar plots faceted by country, more specifically, scaled faceted radar plots with axis labels that corresponds to its legend, which groups percentages of military equipment by the domain in which they operate, and where if that percentage is 0, the axis text is grayed-out. 
 
-To many of you I'm sure this sounds elementary, but, honestly, when I figured this out I felt a sense of achievement like no other. So, in the interesting of reliving that euphoric moment, here we go! 
+To many of you I'm sure this sounds elementary, but, honestly, when I figured this out I felt a sense of achievement like no other. So, in the interest of reliving that euphoric moment, here we go! 
 
 Firstly, I do some top-secret data cleaning. 
 
@@ -208,10 +208,10 @@ p <-
   grid.arrange(arrangeGrob(
   grobs = my_list,
   nrow = round(length(my_sub)/2, 0),
-  left = textGrob("X axis",
+  left = textGrob("Y axis",
                     gp = gpar(fontsize = 20),
                     rot = 90),
-  bottom = textGrob("Y axis",
+  bottom = textGrob("X axis",
                       gp = gpar(fontsize = 20),
                       vjust = -3),
   top = textGrob("Big plot",
