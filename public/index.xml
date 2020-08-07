@@ -134,6 +134,15 @@ Or feel free to follow me on GitHub, LinkedIn, or Twitter (links on my homepage)
     </item>
     
     <item>
+      <title>Music</title>
+      <link>/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/music/</guid>
+      <description>In addition to doing political science research and data analysis and such, I like to write and record music. I&amp;rsquo;m currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10. I write music for The Water Chestnuts, and we have a demo and single here.</description>
+    </item>
+    
+    <item>
       <title>Projects</title>
       <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -148,12 +157,7 @@ Paper
 Replication Package
 Predicting Rogue State Missile Launches
 Paper
-Replicaiton Package
-Works in Progress Datasets Provisions of Power-Sharing
-.xlsx
-.csv
-.sav
-Miscellaneous </description>
+Replicaiton Package</description>
     </item>
     
   </channel>
