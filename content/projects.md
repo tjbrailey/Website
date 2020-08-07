@@ -17,12 +17,3 @@ After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's
 Predicting Rogue State Missile Launches \
 [Paper](https://github.com/tjbrailey/MissileTest/blob/master/paper/rouge_state_missiles.pdf) \
 [Replicaiton Package](https://github.com/tjbrailey/MissileTest)
-
-# Works in Progress
-
-# Datasets
-Provisions of Power-Sharing \
-[.xlsx]() \
-[.csv]() \
-[.sav]()
-# Miscellaneous
