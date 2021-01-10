@@ -1,13 +1,5 @@
----
-title: "Ridiculously Niche Plots Episode III: Optimal Paths Within Clusters (Lots of Travelling Salespeople)"
-author: "Tom Brailey"
-date: "2020-12-20"
-categories: ["R"]
-tags: ["R", "TSP", "hierarchical-clustering"]
----
-
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+<link href="niche_plots_III_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="niche_plots_III_files/anchor-sections/anchor-sections.js"></script>
 
 
 <p>Hello and welcome to a new episode of ridiculously niche plots. Today’s post is a continuation of my post on constrained k-means clustering for stratification and randomization purposes, which you can read <a href="https://tjbrailey.netlify.app/posts/constrained_kmeans/">here</a>.</p>
@@ -116,7 +108,7 @@ path_distances &lt;-
   theme(title = element_text(size = 16))
 
 path_distances</code></pre>
-<p><img src="/posts/niche_plots_III_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<p><img src="niche_plots_III_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 The plot above shows the total distance for each block. You can tweak the TSP algorithm which will usually result in different path distances. Simply take the average value across all blocks to see which specification performs best on average.</p>
 <p>We can also visualize the paths between each unit within a cluster as below. Using <code>geom_path</code>, one can “eyeball” whether the paths look about right, and if there are any particular cases that seem incorrect.</p>
 <pre class="r"><code># Visualize the networks
@@ -150,5 +142,5 @@ optimum_path_by_cluster &lt;-
     )
 
 optimum_path_by_cluster</code></pre>
-<p><img src="/posts/niche_plots_III_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="niche_plots_III_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>This is our niche plot for the day. Though the code to produce the output isn’t particularly complicated, the concept behind it—the setup for the visualization—proved to be a fun challenge. More to come!</p>
