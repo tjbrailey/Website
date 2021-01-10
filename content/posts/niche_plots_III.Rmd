@@ -1,5 +1,5 @@
 ---
-title: "Ridiculously Niche Plots Episode III: Optimal Paths Within Clusters (Lots of Travelling Salespeople)"
+title: "Ridiculously Niche Plots Episode III: Optimal Paths Within Clusters"
 author: "Tom Brailey"
 date: "2020-12-20"
 categories: ["R"]
