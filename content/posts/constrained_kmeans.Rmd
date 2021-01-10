@@ -1,5 +1,5 @@
 ---
-title: "Constrained k-means clustering for stratification"
+title: "Constrained K-means Clustering for Stratification"
 author: "Tom Brailey"
 date: "2020-09-29"
 categories: ["R"]

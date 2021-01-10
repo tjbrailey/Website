@@ -1,0 +1,166 @@
+---
+title: "Ridiculously Niche Plots Episode III: Optimal Paths Within Clusters (Lots of Travelling Salespeople)"
+author: "Tom Brailey"
+date: "2020-12-20"
+categories: ["R"]
+tags: ["R", "TSP", "hierarchical-clustering"]
+---
+
+Hello and welcome to a new episode of ridiculously niche plots. Today's post is a continuation of my post on constrained k-means clustering for stratification and randomization purposes, which you can read [here](https://tjbrailey.netlify.app/posts/constrained_kmeans/). 
+
+Having created clusters of units at the level of treatment assignment, how would we figure out what is the most efficient way to survey each unit. Say a team were able to survey each of the units within a cluster, and we needed to calculate which order is most spatially efficient for each cluster in our experiment. Obviously, this is a hypothetical, and what might be a geographically efficient combination of units might not work well with the measurement cadence of the survey. In other words, we might not want to survey a unit if it has yet to be treated, so a geographically optimum path might not be as useful. In any case, this hypothetical lets us play around with some interesting code and produce some cool plots! 
+
+Finding a route between a set of points that minimizes the total distance travelled is known as the travelling salesperson problem (TSP). If we wanted to write this out in mathematical terms, we can do so:
+
+$min \sum_{i=1}^{n} \sum_{j \neq i, j = 1}^{n} c_{ij}x_{ij}:$
+
+$\sum_{i = 1, i \neq j}^{n} x_{ij} = 1 \qquad \qquad \qquad \quad j = 1,...,n;$
+
+$\sum_{j = 1, j \neq 1}^{n} x_{ij} = 1 \qquad \qquad \qquad \quad i = 1,...,n;$
+
+$\sum_{i \in Q} \sum_{j \neq i, j \in Q} x_{ij} \leq |Q| - 1 \qquad \forall Q \subsetneq	\{1,...,n\}, |Q| \geq 2$
+
+Where each unit (in the TSP example, a unit is a city is numbered 1 through $n$. When the path connects unit $i$ to unit $j$, $x_{ij}$ is equal to 1, and if there is no connection, $x_{ij}$ takes the value of 0. Lastly, the term $c_{ij}$ is defined as the distance from unit $i$ to unit $j$ and must (intuitively) be strictly greater than 0.  
+
+Let's start by setting up our environment and creating a user-defined function for calculating euclidean distances. 
+
+```{r, eval = TRUE}
+# Load packages
+library(magrittr)
+library(ggplot2)
+
+# Define functions
+# Euclidean distance
+total_dist <- 
+  function(x, y){
+    sum(sqrt((x - dplyr::lag(x)) ^ 2 + (y - dplyr::lag(y)) ^ 2), na.rm = TRUE)
+  }
+```
+
+Now let's read in our data. Recall from the previous blog post that this dataset contains variables for latitude, longitude, and population (all three of which have been rescaled such that latitude and longitude have a larger weight on them), as well as block or cluster information.  
+
+```{r, eval = TRUE}
+# Set seed for reproducibility
+set.seed(1234)
+
+dat <- 
+  tibble::as_tibble(
+  readRDS(
+    paste0(here::here(), "/content/kmeans_cluster_dat.rds")
+    )
+  )
+
+dat
+```
+
+We begin by creating a list object that contains a dataframe for each of the unique block IDs that we have. 
+
+```{r, eval = TRUE}
+dat_by_block <- 
+  dat %>% 
+  dplyr::group_by(block) %>%
+  dplyr::group_split(.)
+```
+
+Next, we create an empty list that we will fill with datasets that we have applied the TSP algorithm to. This list---and the datasets therein---will have the exact same dimensions as the ``dat_by_block`` list that we just defined. We then run the path finding algorithm (the fabulous ``TSP::`` function) on each of the 106 block-wise datasets that we have. Lastly, we bind the list together to create a final singular dataframe. 
+
+```{r, eval = TRUE}
+# Initiate empty list 
+all_block_paths_list <- list()
+
+# Run the TSP function
+for(i in 1:length(dat_by_block)){
+  
+  set.seed(1234)
+  
+  # Calculate optimum path
+  tsp <- TSP::TSP(dist(dat_by_block[[i]][,c("x_cent", "y_cent")]))
+  
+  tsp <- TSP::insert_dummy(tsp, label = "cut")
+  
+  initial_tour <- TSP::solve_TSP(tsp)
+  
+  tour <- TSP::solve_TSP(tsp, model = "two_opt", control = list(tour = initial_tour))
+  
+  path.tsp <- unname(TSP::cut_tour(tour, "cut"))
+  
+  # Save new datasets in list
+  all_block_paths_list[[i]] <- dat_by_block[[i]][path.tsp,]
+}
+
+# Bind list together
+all_block_paths_df <- dplyr::bind_rows(all_block_paths_list)
+```
+
+How do we know that the TSP function worked? We can visualize the path distances within each cluster:
+
+```{r, eval = TRUE}
+# Confirm distances within clusters
+investigate_paths <- 
+  all_block_paths_df %>%
+  dplyr::group_by(block) %>% 
+  dplyr::summarise(total_distance = total_dist(x_cent, y_cent))
+
+# Plot path distances within clusters
+path_distances <- 
+  ggplot() + 
+  geom_bar(
+    investigate_paths, 
+    mapping = aes(
+      x = block, 
+      y = total_distance
+      ), 
+    stat = "identity"
+    ) +
+  scale_x_continuous(
+    breaks = scales::pretty_breaks(n = 10)
+    ) +
+  labs(
+    title = "Path distance", 
+    x = "Block", 
+    y = "Total distance"
+    ) + 
+  theme_bw() +
+  theme(title = element_text(size = 16))
+
+path_distances
+```
+The plot above shows the total distance for each block. You can tweak the TSP algorithm which will usually result in different path distances. Simply take the average value across all blocks to see which specification performs best on average. 
+
+We can also visualize the paths between each unit within a cluster as below. Using ``geom_path``, one can "eyeball" whether the paths look about right, and if there are any particular cases that seem incorrect. 
+
+```{r, eval = TRUE}
+# Visualize the networks
+optimum_path_by_cluster <- 
+  ggplot() + 
+  geom_point(
+    all_block_paths_df, 
+    mapping = aes(
+      x = x_cent, 
+      y = y_cent, 
+      color = factor(block)
+      ), 
+    size = 2
+    ) +
+  geom_path(
+    all_block_paths_df, 
+    mapping = aes(
+      x = x_cent, 
+      y = y_cent, 
+      color = factor(block)
+      )
+    ) +
+  labs(
+    title = "Optimum path distance by cluster", 
+    x = "", 
+    y = "") +
+  theme_bw() + 
+  theme(
+    title = element_text(size = 16),
+    legend.position = "none"
+    )
+
+optimum_path_by_cluster
+```
+
+This is our niche plot for the day. Though the code to produce the output isn't particularly complicated, the concept behind it---the setup for the visualization---proved to be a fun challenge. More to come! 
