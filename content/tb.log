@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.16)  18 FEB 2021 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.16)  12 AUG 2021 22:15
 entering extended mode
 **./tb.tex
 (tb.tex
@@ -173,7 +173,7 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 33--33
 Here is how much of TeX's memory you used:
  1597 strings out of 492484
  23003 string characters out of 3121601
- 98131 words of memory out of 3000000
+ 99131 words of memory out of 3000000
  5960 multiletter control sequences out of 15000+200000
  7639 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -186,7 +186,7 @@ rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/tbrai/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/tbrai/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb>
-Output written on tb.pdf (2 pages, 88392 bytes).
+Output written on tb.pdf (2 pages, 94566 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

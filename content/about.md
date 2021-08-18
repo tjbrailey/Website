@@ -9,6 +9,6 @@ My name is Thomas and I am a pre-doctoral fellow with J-PAL's [Payments and Gove
 
 I have served as a research assistant for the Center for the Study of African Political Economy and as a lab assistant for the [Center for Peace and Security Studies](https://cpass.ucsd.edu/).
 
-I am interested in political institutions, elections, secession, and conflict in developing democracies, with a particular focus in sub-Saharan Africa. 
+I am broadly interested in political institutions and how they account for minorities and diasporic populations. 
 
 My CV can be found [here](/tb.pdf).
