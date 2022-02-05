@@ -69,22 +69,22 @@ pygmentscodefencesguesssyntax = true
     weight = 1
     url = "https://github.com/tjbrailey/"
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/tjbrailey/"
-[[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/tjbrailey/"
 [[params.social]]
-    name = "RSS"
-    icon = "fas fa-rss"
-    weight = 6
-    url = "https://rss.app/feeds/JPPbq02GMOROJtcy.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+    name = "OSF"
+    icon = "fab fa-twitter"
+    weight = 4
+    url = "https://osf.io/c9ptf/"
+#[[params.social]]
+#    name = "RSS"
+#    icon = "fas fa-rss"
+#    weight = 6
+#    url = "https://rss.app/feeds/JPPbq02GMOROJtcy.xml"
+#    rel = "alternate"
+#    type = "application/rss+xml"
 
 
 [languages]
@@ -104,12 +104,12 @@ pygmentscodefencesguesssyntax = true
             url = "posts/"
             
             [[languages.en.menu.main]]
-            name = "Research, Projects, and Miscellanea"
+            name = "Research"
             weight = 3
             url = "research/"
             
             [[languages.en.menu.main]]
-            name = "Music"
+            name = "Reading and Listening"
             weight = 4
             url = "music/"
 
@@ -128,7 +128,7 @@ pygmentscodefencesguesssyntax = true
             info = "Chercheur en Sciences Politiques"
             description = "Site Web Personnel de Tom"
             keywords = "associé de recherche, science politique, personnel"
-            footercontent = "'Les véritables leçons sont les institutions que nous détruisons en cours de route.'"
+            #footercontent = "'Les véritables leçons sont les institutions que nous détruisons en cours de route.'"
 
         [languages.pt-br.menu]
 
@@ -145,7 +145,12 @@ pygmentscodefencesguesssyntax = true
             [[languages.pt-br.menu.main]]
             name = "Projets"
             weight = 3
-            url = "projects/"
+            url = "research/"
+            
+            [[languages.pt-br.menu.main]]
+            name = "Reading and listening"
+            weight = 4
+            url = "music/"
 
             [[languages.pt-br.menu.main]]
             name = "Contactez Moi"
