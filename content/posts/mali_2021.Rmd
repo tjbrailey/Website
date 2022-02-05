@@ -17,7 +17,7 @@ After conducting extensive research into Mali's political system for my senior t
 
 ## Exploratory analysis
 
-I started by downloading ACLED data on conflict types in Africa. ACLED provides information on paramilitary groups (you can see Wagner come up a bunch of times), but it doesn't provide explicit information on the country of origin of these paramilitary groups. So the first step is to download the data and back out these countries of origin.
+I started by downloading ACLED data on conflict types in Africa. ACLED provides information on paramilitary groups (you can see Wagner come up a bunch of times), but it doesn't provide explicit information on the country of origin of these paramilitary groups. So the first step is to download the data and back out these countries of origin. To learn more about my (very much a work in progress) country finder function, read about it [here]().
 
 ```{r data, eval=TRUE, include=FALSE}
 
