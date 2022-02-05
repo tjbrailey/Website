@@ -38,7 +38,7 @@ title: Reading and listening
 
 **Dinner Party**: Dinner Party: Some of the hottest names in jazz/RnB conform to create a relaxed, minimalist, and highly enjoyable, if a little brief, album.   
 
-**Haru Nemuri**: harutosyura J-rock artist Haru Nemuri is exhilarating---catchy vocal lines, blistering guitar work, and very well-paced. 
+**Haru Nemuri**: harutosyura: J-rock artist Haru Nemuri is exhilarating---catchy vocal lines, blistering guitar work, and very well-paced. 
 
 **Stargazer**: Perihelion: 8-bit synths, quintuplet swings, and constant polyrhythms, Stargazer's second album is a marked improvement over their first outing and a really fun listen.
 
