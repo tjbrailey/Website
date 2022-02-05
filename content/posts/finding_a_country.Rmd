@@ -8,3 +8,4 @@ tags: ["R", "functions", "web-scraping"]
 
 # Introduction
 
+I tasked myself with the challenge of writing a function that, given a input phrase or name of a group, returns the corresponding country of origin. 
