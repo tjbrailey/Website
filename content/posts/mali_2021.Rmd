@@ -1,0 +1,208 @@
+---
+title: "What's happening in Mali?"
+author: "Tom Brailey"
+date: "2021-06-04"
+categories: ["Misc"]
+tags: ["Mali", "Paramilitary"]
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE)
+
+library(magrittr)
+library(ggplot2)
+library(rvest)
+library(httr)
+library(data.table)
+
+```
+
+## Introduction - WORK IN PROGRESS
+
+After conducting extensive research into Mali's political system for my senior thesis, I have been staying up to date with Mali's current events. One particular event stuck out for me in 2021. This was a report on the Russian paramilitary group Wagner operating in Mali, and the Mali government announcing it's support for their intervention. The Mali government even went so far as to proclaim their preference for Wagner's operations over the French military, who, even now, are slowly withdrawing their troops from the region. I was struck by how overt, and how positively-received (at least by the hosts), this display of foreign intervention was, and I wanted to learn more about the Wagner group, and foreign paramilitary movements more generally.
+
+## Exploratory analysis
+
+I started by downloading ACLED data on conflict types in Africa. ACLED provides information on paramilitary groups (you can see Wagner come up a bunch of times), but it doesn't provide explicit information on the country of origin of these paramilitary groups. So the first step is to download the data and back out these countries of origin.
+
+```{r data, eval=TRUE, include=FALSE}
+googlesheets4::gs4_deauth()
+
+# Election data
+elec  <- 
+  googlesheets4::read_sheet(
+    ss = "https://docs.google.com/spreadsheets/d/14RxWGtmXL-ZAhYZlnvarn5CBqIp0DcGr7wkbatY8oWs/edit#gid=0", 
+    na = "NA")
+
+# ACLED data
+acled <- 
+  read.csv2(
+    paste0(
+      here::here(),
+      "/public/posts/2019-01-29-2022-02-02-Eastern_Africa-Middle_Africa-Northern_Africa-Southern_Africa-Western_Africa.csv"), 
+    sep = ";") 
+
+# Get a list of countries from acled
+countries_acled <- readRDS(paste0(here::here(), "/public/posts/acled_countries.rds"))
+countries_acled <- countries_acled$Country
+countries_acled <- sub(" \\(.*| of | & | and | the |  ", " ", countries_acled)
+countries_acled <- sub(" \\(.*| of | & | and | the |  ", " ", countries_acled)
+countries_acled <- unique(countries_acled)
+countries_acled
+```
+
+```{r clean, eval=TRUE, eval=FALSE}
+# Create a new column that contains information in parentheses in the actor1 column
+acled %<>% 
+  dplyr::mutate(
+    actor1_location_temp = stringr::str_extract_all(
+      string = actor1, pattern = "\\([^()]+\\)", simplify = FALSE),
+    actor1_location_temp = stringr::str_remove_all(
+      string = actor1_location_temp, 
+      pattern = "\\(|\\)|\\-|\\d+|\\W\\W|character")) %>% 
+  dplyr::mutate(
+    actor1_location = countrycode::countryname(
+      sourcevar = actor1_location_temp))
+
+# Return a list of missing locations to manually investigate
+actor1_missing_locations <- acled$actor1[is.na(acled$actor1_location)] 
+actor1_missing_locations <- tibble::as_tibble(unique(actor1_missing_locations[actor1_missing_locations != ""]))
+
+# Manually add countries if information is missing. Jot down sources to verify information
+find_country <- function(name, root = TRUE) {
+  
+  # Display keywords you are searching for
+  print(paste0("Searching for keyphrase: ", name))
+  
+  # Generate URL
+  url  <- URLencode(paste0("https://www.google.com/search?q=", name, " wikipedia"))
+  page <- xml2::read_html(url)
+  
+  # Extract all relevant links
+  nodes <- rvest::html_nodes(page, "a")
+  links <- rvest::html_attr(nodes,"href")
+  
+  # Iterate over possible links to find country
+  for(x in 1:length(links)){
+    
+    # Extract first link of the search results
+    link <- links[startsWith(links, "/url?q=")][x]
+    
+    # Clean link
+    link <- sub("^/url\\?q\\=(.*?)\\&sa.*$","\\1", link)
+    link <- sub("25","", link)
+    link <- sub("%E2%2580%2593", "–", link)
+    link <- sub("%25C3%25A9", "é", link)
+    
+    # Tell user which link you're trying 
+    print(paste0("Trying link ", link))
+    
+    # Enter site
+    site <- try(expr = link %>% httr::GET(., httr::timeout(10)) %>% rvest::read_html(.), silent = TRUE)
+    
+    # If list of links is exhausted, break and go to next keyphrase
+    if(sum(class(site) == "try-error") == 1 & x == length(links)){
+      country <- NA 
+      break
+    }
+
+    # If link times out or is bad, go to next link
+    if(sum(class(site) == "try-error") == 1){
+      next
+    }
+    
+    # Pull all words from first few paragraphs of site 
+    text <- try(expr = site %>% 
+      html_nodes("p") %>% 
+      html_text() %>% 
+      .[nchar(.) > 150] %>%
+      strsplit(split = " ") %>% 
+      unlist(.) %>%
+      stringr::str_remove_all(., pattern = "\\W+|\\d+") %>%
+      tibble::as_tibble(.) %>% 
+      dplyr::mutate(order = dplyr::row_number()) %>% 
+      dplyr::group_by(value) %>%
+      dplyr::summarize(count = dplyr::n()) %>%
+      dplyr::arrange(desc(count)),
+      silent = TRUE)
+    
+    # If link error, go to next link
+    if(sum(class(text) == "try-error") == 1){
+      next
+    }
+    
+    # If data has 0 observations, go to next link
+    if(nrow(text) == 0){
+      next
+    }
+    
+    # Generate vectors for partial string matching
+    countries_acled_unlist <- unlist(strsplit(countries_acled, " "))
+    
+    for(y in 1:length(countries_acled_unlist)){
+      text[[paste0("partial_match", y)]] <- lapply(X = 1:length(text$value), FUN = function(x)text$value[x] %like% countries_acled_unlist[y])
+    }
+    
+    text %<>% dplyr::rowwise() %>% 
+      dplyr::mutate(sum_match = sum(dplyr::c_across(dplyr::starts_with("partial_match")))) %>%
+      dplyr::select(-dplyr::starts_with("partial_match")) %>% 
+      dplyr::mutate(weight_match = count * sum_match) %>% 
+      dplyr::filter(weight_match > 0)
+
+    partial_match <- fuzzyjoin::stringdist_left_join(x = text, y = tibble::as_tibble(countries_acled_unlist), distance_col = "dst", by = "value") %>% 
+      dplyr::arrange(desc(weight_match)) %>% 
+      dplyr::filter(dst <= 1) %>%
+      dplyr::distinct(value.y) %>%
+      dplyr::pull(value.y)
+    
+    # Loop through strings to find country match
+    i <- 1
+    for(i in 1:length(partial_match)){
+      
+      name <- paste(partial_match[1:i], collapse = " ")
+      
+      # If we get a match, break inner loop
+      if(sum(stringr::str_detect(pattern = countries_acled, string = name)) > 0){
+        country <- countries_acled[stringr::str_detect(pattern = countries_acled, string = name)]
+        
+        # Calculate string distances for multiple cases
+        stringdists <- stringdist::stringdist(country, name)
+        
+        # Select country with minimum Levenshtein distance
+        country <- country[which(stringdists == min(stringdists))]
+        break
+      }
+    }
+    
+    # If we get a match, break outer loop 
+    if(exists("country")){
+      break
+    }
+  }
+  
+  # Print likely match and return value 
+  print(paste0("Most likely country: ", country, "."))
+  return(country)
+}
+
+# Individual examples
+find_country(name = "Oyo State Park Management System")
+find_country(name = "TPLF: Tigray People's Liberation Front")
+find_country(name = "CNDD-FDD-Imbonerakure: National Council for the Defence of Democracy (Imbonerakure Faction)")
+find_country(name = "Wagner group")
+find_country(name = "Levelling up")
+
+actor1_missing_locations$guess <- lapply(X = actor1_missing_locations$value, FUN = find_country)
+```
+
+
+```{r electon, eval=TRUE}
+elec %>% 
+  ggplot(., mapping = aes(x = year, y = pres1_votes, color = factor(poll))) +
+  scale_x_continuous(breaks = seq(1992, 2020, 2)) + 
+  geom_point() + 
+  theme_classic()
+```
+
+## Conclusion

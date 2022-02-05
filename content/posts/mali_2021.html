@@ -1,0 +1,170 @@
+---
+title: "What's happening in Mali?"
+author: "Tom Brailey"
+date: "2021-06-04"
+categories: ["Misc"]
+tags: ["Mali", "Paramilitary"]
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction---work-in-progress" class="section level2">
+<h2>Introduction - WORK IN PROGRESS</h2>
+<p>After conducting extensive research into Mali’s political system for my senior thesis, I have been staying up to date with Mali’s current events. One particular event stuck out for me in 2021. This was a report on the Russian paramilitary group Wagner operating in Mali, and the Mali government announcing it’s support for their intervention. The Mali government even went so far as to proclaim their preference for Wagner’s operations over the French military, who, even now, are slowly withdrawing their troops from the region. I was struck by how overt, and how positively-received (at least by the hosts), this display of foreign intervention was, and I wanted to learn more about the Wagner group, and foreign paramilitary movements more generally.</p>
+</div>
+<div id="exploratory-analysis" class="section level2">
+<h2>Exploratory analysis</h2>
+<p>I started by downloading ACLED data on conflict types in Africa. ACLED provides information on paramilitary groups (you can see Wagner come up a bunch of times), but it doesn’t provide explicit information on the country of origin of these paramilitary groups. So the first step is to download the data and back out these countries of origin.</p>
+<pre class="r"><code># Create a new column that contains information in parentheses in the actor1 column
+acled %&lt;&gt;% 
+  dplyr::mutate(
+    actor1_location_temp = stringr::str_extract_all(
+      string = actor1, pattern = &quot;\\([^()]+\\)&quot;, simplify = FALSE),
+    actor1_location_temp = stringr::str_remove_all(
+      string = actor1_location_temp, 
+      pattern = &quot;\\(|\\)|\\-|\\d+|\\W\\W|character&quot;)) %&gt;% 
+  dplyr::mutate(
+    actor1_location = countrycode::countryname(
+      sourcevar = actor1_location_temp))
+
+# Return a list of missing locations to manually investigate
+actor1_missing_locations &lt;- acled$actor1[is.na(acled$actor1_location)] 
+actor1_missing_locations &lt;- tibble::as_tibble(unique(actor1_missing_locations[actor1_missing_locations != &quot;&quot;]))
+
+# Manually add countries if information is missing. Jot down sources to verify information
+find_country &lt;- function(name, root = TRUE) {
+  
+  # Display keywords you are searching for
+  print(paste0(&quot;Searching for keyphrase: &quot;, name))
+  
+  # Generate URL
+  url  &lt;- URLencode(paste0(&quot;https://www.google.com/search?q=&quot;, name, &quot; wikipedia&quot;))
+  page &lt;- xml2::read_html(url)
+  
+  # Extract all relevant links
+  nodes &lt;- rvest::html_nodes(page, &quot;a&quot;)
+  links &lt;- rvest::html_attr(nodes,&quot;href&quot;)
+  
+  # Iterate over possible links to find country
+  for(x in 1:length(links)){
+    
+    # Extract first link of the search results
+    link &lt;- links[startsWith(links, &quot;/url?q=&quot;)][x]
+    
+    # Clean link
+    link &lt;- sub(&quot;^/url\\?q\\=(.*?)\\&amp;sa.*$&quot;,&quot;\\1&quot;, link)
+    link &lt;- sub(&quot;25&quot;,&quot;&quot;, link)
+    link &lt;- sub(&quot;%E2%2580%2593&quot;, &quot;–&quot;, link)
+    link &lt;- sub(&quot;%25C3%25A9&quot;, &quot;é&quot;, link)
+    
+    # Tell user which link you&#39;re trying 
+    print(paste0(&quot;Trying link &quot;, link))
+    
+    # Enter site
+    site &lt;- try(expr = link %&gt;% httr::GET(., httr::timeout(10)) %&gt;% rvest::read_html(.), silent = TRUE)
+    
+    # If list of links is exhausted, break and go to next keyphrase
+    if(sum(class(site) == &quot;try-error&quot;) == 1 &amp; x == length(links)){
+      country &lt;- NA 
+      break
+    }
+
+    # If link times out or is bad, go to next link
+    if(sum(class(site) == &quot;try-error&quot;) == 1){
+      next
+    }
+    
+    # Pull all words from first few paragraphs of site 
+    text &lt;- try(expr = site %&gt;% 
+      html_nodes(&quot;p&quot;) %&gt;% 
+      html_text() %&gt;% 
+      .[nchar(.) &gt; 150] %&gt;%
+      strsplit(split = &quot; &quot;) %&gt;% 
+      unlist(.) %&gt;%
+      stringr::str_remove_all(., pattern = &quot;\\W+|\\d+&quot;) %&gt;%
+      tibble::as_tibble(.) %&gt;% 
+      dplyr::mutate(order = dplyr::row_number()) %&gt;% 
+      dplyr::group_by(value) %&gt;%
+      dplyr::summarize(count = dplyr::n()) %&gt;%
+      dplyr::arrange(desc(count)),
+      silent = TRUE)
+    
+    # If link error, go to next link
+    if(sum(class(text) == &quot;try-error&quot;) == 1){
+      next
+    }
+    
+    # If data has 0 observations, go to next link
+    if(nrow(text) == 0){
+      next
+    }
+    
+    # Generate vectors for partial string matching
+    countries_acled_unlist &lt;- unlist(strsplit(countries_acled, &quot; &quot;))
+    
+    for(y in 1:length(countries_acled_unlist)){
+      text[[paste0(&quot;partial_match&quot;, y)]] &lt;- lapply(X = 1:length(text$value), FUN = function(x)text$value[x] %like% countries_acled_unlist[y])
+    }
+    
+    text %&lt;&gt;% dplyr::rowwise() %&gt;% 
+      dplyr::mutate(sum_match = sum(dplyr::c_across(dplyr::starts_with(&quot;partial_match&quot;)))) %&gt;%
+      dplyr::select(-dplyr::starts_with(&quot;partial_match&quot;)) %&gt;% 
+      dplyr::mutate(weight_match = count * sum_match) %&gt;% 
+      dplyr::filter(weight_match &gt; 0)
+
+    partial_match &lt;- fuzzyjoin::stringdist_left_join(x = text, y = tibble::as_tibble(countries_acled_unlist), distance_col = &quot;dst&quot;, by = &quot;value&quot;) %&gt;% 
+      dplyr::arrange(desc(weight_match)) %&gt;% 
+      dplyr::filter(dst &lt;= 1) %&gt;%
+      dplyr::distinct(value.y) %&gt;%
+      dplyr::pull(value.y)
+    
+    # Loop through strings to find country match
+    i &lt;- 1
+    for(i in 1:length(partial_match)){
+      
+      name &lt;- paste(partial_match[1:i], collapse = &quot; &quot;)
+      
+      # If we get a match, break inner loop
+      if(sum(stringr::str_detect(pattern = countries_acled, string = name)) &gt; 0){
+        country &lt;- countries_acled[stringr::str_detect(pattern = countries_acled, string = name)]
+        
+        # Calculate string distances for multiple cases
+        stringdists &lt;- stringdist::stringdist(country, name)
+        
+        # Select country with minimum Levenshtein distance
+        country &lt;- country[which(stringdists == min(stringdists))]
+        break
+      }
+    }
+    
+    # If we get a match, break outer loop 
+    if(exists(&quot;country&quot;)){
+      break
+    }
+  }
+  
+  # Print likely match and return value 
+  print(paste0(&quot;Most likely country: &quot;, country, &quot;.&quot;))
+  return(country)
+}
+
+# Individual examples
+find_country(name = &quot;Oyo State Park Management System&quot;)
+find_country(name = &quot;TPLF: Tigray People&#39;s Liberation Front&quot;)
+find_country(name = &quot;CNDD-FDD-Imbonerakure: National Council for the Defence of Democracy (Imbonerakure Faction)&quot;)
+find_country(name = &quot;Wagner group&quot;)
+find_country(name = &quot;Levelling up&quot;)
+
+actor1_missing_locations$guess &lt;- lapply(X = actor1_missing_locations$value, FUN = find_country)</code></pre>
+<pre class="r"><code>elec %&gt;% 
+  ggplot(., mapping = aes(x = year, y = pres1_votes, color = factor(poll))) +
+  scale_x_continuous(breaks = seq(1992, 2020, 2)) + 
+  geom_point() + 
+  theme_classic()</code></pre>
+<pre><code>## Warning: Removed 30 rows containing missing values (geom_point).</code></pre>
+<p><img src="/posts/mali_2021_files/figure-html/electon-1.png" width="672" /></p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+</div>
