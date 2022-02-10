@@ -3,31 +3,43 @@ slug: music
 title: Reading and listening
 ---
 
-# What I'm reading 
-**Passing**: Nella Larsen
+# What I'm reading
+**Fathers and Sons**: Ivan Turgenev:
 
-**Regarding the Pain of Others**: Susan Sontag
+**Jihadists of North Africa and the Sahel**: Alexander Thurston:
 
-**Essays in Idleness**: Yoshida Kenkō
+**The Art of Not Being Governed**: James C. Scott:
 
-**The Wretched of the Earth**: Frantz Fanon
+**Passing**: Nella Larsen:
 
-**My Struggle (Books 1-6)**: Karl Ove Knausgård
+**Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Notes from Underground**: Fyodor Dostoevsky
+**Essays in Idleness**: Yoshida Kenkō:
 
-**Conservative Parties and the Birth of Democracy**: Daniel Ziblatt
+**The Wretched of the Earth**: Frantz Fanon:
 
-**Say Nothing: A True Story of Murder and Memory in Northern Ireland**: Patrick Radden Keefe 
+**The My Struggle Hexalogy**: Karl Ove Knausgård: 
 
-**Working**: Studs Turkel
+**The Southern Reach Trilogy**: Jeff VanderMeer: 
 
-**Euphoria**: Lily King
+**Notes from Underground**: Fyodor Dostoevsky:
 
-**The Africa Trilogy**: Chinua Achebe
+**Conservative Parties and the Birth of Democracy**: Daniel Ziblatt: What I consider to be the embodiment of exceptional social science research, Ziblatt's book gives an excellent set of comparative case studies intertwined with rigorous empirical analysis.  
+
+**Say Nothing: A True Story of Murder and Memory in Northern Ireland**: Patrick Radden Keefe:
+
+**Working**: Studs Turkel: A really unique, but quite harrowing, read---Turkel listens to the real America tell it's story.
+
+**Euphoria**: Lily King: A sort of fictionalized version of pioneering anthropologist Margaret Mead's life, Euphoria describes the flora, fauna, and people of Papua New Guinea in vivid detail.
+
+**The Africa Trilogy**: Chinua Achebe: Three generations of African life---from pre- to post-colonialism---are covered in Achebe's devastating but essential trilogy.
 
 
 # What I'm listening to
+**Herbie Hancock**: Thrust: Four tracks of synth-y, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
+
+**Little Simz**: GREY Area: British rapper Little Simz manages to traverse the entire spectrum of emotions in her dense and rewarding 30-minute record---101 FM and Flowers are particular highlights. 
+
 **The Physics House Band**: Incident on 3rd: Brighton-based experimental rock outfit evoke the thrills and anxieties of roaming a big city at night. 
 
 **Laura Mvula**: Pink Noise: I love the 80's aesthetic of Mvula's new record---it manages to balance homage and authenticity with ease.
