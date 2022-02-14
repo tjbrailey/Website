@@ -10,10 +10,13 @@
 find_country <- function(name, root = TRUE) {
   
   # Display keywords you are searching for
-  print(paste0("Searching for keyphrase: ", name))
+  #print(paste0("Searching for keyphrase: ", name))
   
   # Generate URL
-  url  <- URLencode(paste0("https://www.google.com/search?q=", name, " wikipedia"))
+  url  <- URLencode(
+    paste0("https://www.google.com/search?q=", 
+           name, 
+           " wikipedia"))
   page <- xml2::read_html(url)
   
   # Extract all relevant links
@@ -33,13 +36,18 @@ find_country <- function(name, root = TRUE) {
     link <- sub("%25C3%25A9", "é", link)
     
     # Tell user which link you're trying 
-    print(paste0("Trying link ", link))
+    #print(paste0("Trying link ", link))
     
     # Enter site
-    site <- try(expr = link %>% httr::GET(., httr::timeout(10)) %>% rvest::read_html(.), silent = TRUE)
+    site <- try(
+      expr = link %>% 
+        httr::GET(., httr::timeout(10)) %>% 
+        rvest::read_html(.), 
+      silent = TRUE)
     
     # If list of links is exhausted, break and go to next keyphrase
-    if(sum(class(site) == "try-error") == 1 & x == length(links)){
+    if(sum(class(site) == "try-error") == 1 & 
+       x == length(links)){
       country <- NA 
       break
     }
@@ -50,17 +58,20 @@ find_country <- function(name, root = TRUE) {
     }
     
     # Pull all words from first few paragraphs of site 
-    text <- try(expr = site %>% 
-                  html_nodes("p") %>% 
-                  html_text() %>% 
-                  .[nchar(.) > 150] %>%
-                  strsplit(split = " ") %>% 
-                  unlist(.) %>%
-                  stringr::str_replace_all(., pattern = "of|the", "") %>%
-                  stringr::str_replace_all(., pattern = "\\W+|\\d+", " ") %>%
-                  stringr::str_c(., collapse = " ") %>%
-                  stringr::str_squish(.),
-                silent = TRUE)
+    text <- try(
+      expr = site %>% 
+      html_nodes("p") %>% 
+      html_text() %>% 
+      .[nchar(.) > 150] %>%
+      strsplit(split = " ") %>% 
+      unlist(.) %>%
+      stringr::str_replace_all(
+        ., pattern = "of|the", "") %>%
+      stringr::str_replace_all(
+        ., pattern = "\\W+|\\d+", " ") %>%
+      stringr::str_c(., collapse = " ") %>%
+      stringr::str_squish(.),
+      silent = TRUE)
     
     # If link error, go to next link
     if(sum(class(text) == "try-error") == 1){
@@ -73,7 +84,14 @@ find_country <- function(name, root = TRUE) {
     }
     
     # Pull key country names from text
-    matching_dat <- tibble::as_tibble(unlist(stringr::str_match_all(text, stringr::str_c(countries_acled, collapse="|")))) %>% 
+    matching_dat <- 
+      tibble::as_tibble(
+        unlist(
+          stringr::str_match_all(
+            text, 
+            stringr::str_c(
+              countries_acled, 
+              collapse="|")))) %>% 
       dplyr::filter(!is.na(value)) %>%
       dplyr::distinct(value)
     
@@ -87,8 +105,13 @@ find_country <- function(name, root = TRUE) {
       pm <- paste(partial_match[1:i], collapse = " ")
       
       # If we get a match, break inner loop
-      if(sum(stringr::str_detect(pattern = countries_acled, string = pm)) > 0){
-        country <- countries_acled[stringr::str_detect(pattern = pm, string = countries_acled)]
+      if(sum(stringr::str_detect(
+        pattern = countries_acled, 
+        string = pm)) > 0){
+        country <- 
+          countries_acled[stringr::str_detect(
+            pattern = pm, 
+            string = countries_acled)]
         break
       }
     }
@@ -100,6 +123,7 @@ find_country <- function(name, root = TRUE) {
   }
   
   # Print likely match and return value 
-  print(paste0("Most likely country: ", country, "."))
+  #print(paste0("Most likely country: ", country, "."))
+  Sys.sleep(2)
   return(country)
 }
