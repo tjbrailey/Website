@@ -4,29 +4,33 @@ title: Reading and listening
 ---
 
 # What I'm reading
-**Fathers and Sons**: Ivan Turgenev:
+**I Know why the Caged Bird Sings**: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there's not really anything I can say about the gravity of this book that has not been said before. 
 
-**Jihadists of North Africa and the Sahel**: Alexander Thurston:
+**The Infernal Desire Machines of Doctor Hoffman**: Angela Carter: Definitely the strangest book I have read in a while. Jeff VanderMeer cited Carter's work as a big influence when writing Annihilation and it shows. 
 
-**The Art of Not Being Governed**: James C. Scott:
+**Fathers and Sons**: Ivan Turgenev: A story of generational divides, Fathers and Sons is a brief but immersive read that serves as a microcosm for the burgeoning nihilist movement in Russia in the mid to late 1800s.
 
-**Passing**: Nella Larsen:
+**Jihadists of North Africa and the Sahel**: Alexander Thurston: Another example of excellent social science research. Predominantly qualitative, but supported by an array of evidence, Thurston's work on clandestine movements in Northern Africa is a great read.  
+
+**The Art of Not Being Governed**: James C. Scott: Scott addresses "stateless" peoples and their tactics to avoid integration into the state. Why do certain groups wish to remain stateless? Is it anarchy and barbarism? Perhaps, but maybe it is more about 
+
+**Passing**: Nella Larsen: Tragic and, like much of the literature I have been consuming recently, shockingly applicable to current affairs.
 
 **Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Essays in Idleness**: Yoshida Kenkō:
+**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is slightly let down by some of Kenkō's musings, particularly about women, which are grotesquely outmoded.
 
-**The Wretched of the Earth**: Frantz Fanon:
+**The Wretched of the Earth**: Frantz Fanon: Fanon's discussion of the impacts of colonialism and imperialism on collective mental health are both ahead of their time and upsettingly prescient of current affairs. This was my foray into Fanon's work, and I have been hooked ever since.
 
-**The My Struggle Hexalogy**: Karl Ove Knausgård: 
+**The My Struggle Hexalogy**: Karl Ove Knausgård: Across six engrossing volumes, Knausgård recounts his childhood, adolescence, and adult life through to the present day. It is scandalous, joyous, and often difficult to wrestle with. 
 
-**The Southern Reach Trilogy**: Jeff VanderMeer: 
+**The Southern Reach Trilogy**: Jeff VanderMeer: Annihilation, the first in the trilogy, is certainly the high point, but VanderMeer's surreal and evocative description of Area X and the Southern Reach organization makes the trilogy difficult to put down. 
 
-**Notes from Underground**: Fyodor Dostoevsky:
+**Notes from Underground**: Fyodor Dostoevsky: Whether this is the first work of existential fiction is up for debate, but in any case this is a gripping novella, and a good introduction to Dostoevsky for those who haven't read his work before. 
 
 **Conservative Parties and the Birth of Democracy**: Daniel Ziblatt: What I consider to be the embodiment of exceptional social science research, Ziblatt's book gives an excellent set of comparative case studies intertwined with rigorous empirical analysis.  
 
-**Say Nothing: A True Story of Murder and Memory in Northern Ireland**: Patrick Radden Keefe:
+**Say Nothing: A True Story of Murder and Memory in Northern Ireland**: Patrick Radden Keefe: A fantastic and thorough piece of research on the Troubles, Keefe is a true wordsmith, able to navigate difficult and intense moments with finesse.
 
 **Working**: Studs Turkel: A really unique, but quite harrowing, read---Turkel listens to the real America tell it's story.
 
@@ -50,13 +54,13 @@ title: Reading and listening
 
 **Dinner Party**: Dinner Party: Some of the hottest names in jazz/RnB conform to create a relaxed, minimalist, and highly enjoyable, if a little brief, album.   
 
-**Haru Nemuri**: harutosyura: J-rock artist Haru Nemuri is exhilarating---catchy vocal lines, blistering guitar work, and very well-paced. 
+**Haru Nemuri**: Haru to Shura: J-rock artist Haru Nemuri is exhilarating---catchy vocal lines, blistering guitar work, and very well-paced. 
 
 **Stargazer**: Perihelion: 8-bit synths, quintuplet swings, and constant polyrhythms, Stargazer's second album is a marked improvement over their first outing and a really fun listen.
 
 **JPEGMAFIA**: Veteran: Aggressive and progressive, Peggy's second full length is a overwhelming but highly addictive adventure.
 
-**Jean-Luc Ponty**: Cosmic Messenger: 70's prog rock and electric violin is a surprising but wonderful pairing.
+**Jean-Luc Ponty**: Cosmic Messenger: 70's prog rock and electric violin are a surprising but wonderful pairing.
 
 **Hugh Masekela**: Pure Sounds of Africa: A collection of Masekela's greatest tunes---Don't Go Lose It is an absolute jam that is way ahead of it's time---that are sure to lift your spirits.
 
@@ -64,5 +68,3 @@ title: Reading and listening
 
 # My own music
 In addition to doing political science research and data analysis and such, I like to write and record music. I'm currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10. I write music for [The Water Chestnuts](https://thewaterchestnuts.bandcamp.com/).
-
-![](/tom1.jpg)

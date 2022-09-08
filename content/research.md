@@ -3,7 +3,7 @@ slug: research
 title: Research
 ---
 
-Here is a list of my projects and works in progress. Feel free to give them a read through and leave comments/suggestions! 
+Here is a list of my projects and works in progress. Comments and suggestions are appreciated. 
 
 ## Working Papers
 Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy \

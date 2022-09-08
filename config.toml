@@ -21,7 +21,7 @@ pygmentscodefencesguesssyntax = true
     description = "Tom Brailey's personal website"
     keywords = "research associate,political science,personal"
     info = "Political Researcher"
-    avatarurl = "/images/tom1.jpeg"
+    #avatarurl = "/images/tom1.jpeg"
     #gravatar = "john.doe@example.com"
     #footercontent = "'The real lessons are the institutions we destroy along the way.'"
 

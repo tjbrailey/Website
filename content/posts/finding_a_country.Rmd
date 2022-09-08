@@ -255,7 +255,7 @@ ggplot(
 
 ```
 
-Hmm, 68%, not bad. Let's try something more challenging:
+Hmm, 67%, not bad. Let's try something more challenging:
 
 ```{r empirical test 3, eval=FALSE,include=TRUE}
 
