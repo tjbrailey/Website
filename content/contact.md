@@ -3,7 +3,7 @@ slug: contact
 title: Contact
 ---
 
-Thank you for reaching out! Whether it be to talk about politics, music, or just to say "hi", it would be nice to chat.
+Whether it be to talk about politics, music, or just to say "hi", it would be nice to chat.
 
 You can reach me at:
 
