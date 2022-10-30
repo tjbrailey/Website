@@ -12,13 +12,13 @@ title: Reading and listening
 
 **Jihadists of North Africa and the Sahel**: Alexander Thurston: Another example of excellent social science research. Predominantly qualitative, but supported by an array of evidence, Thurston's work on clandestine movements in Northern Africa is a great read.  
 
-**The Art of Not Being Governed**: James C. Scott: Scott addresses "stateless" peoples and their tactics to avoid integration into the state. Why do certain groups wish to remain stateless? Is it anarchy and barbarism? Perhaps, but maybe it is more about 
+**The Art of Not Being Governed**: James C. Scott: Scott addresses "stateless" peoples and their tactics to avoid integration into the state. Why do certain groups wish to remain stateless? Is it because these people are inherently anarchistic and barbarous? Perhaps, but it is also about the preservation of culture and identity. 
 
 **Passing**: Nella Larsen: Tragic and, like much of the literature I have been consuming recently, shockingly applicable to current affairs.
 
 **Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is slightly let down by some of Kenkō's musings, particularly about women, which are grotesquely outmoded.
+**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are grotesquely outmoded.
 
 **The Wretched of the Earth**: Frantz Fanon: Fanon's discussion of the impacts of colonialism and imperialism on collective mental health are both ahead of their time and upsettingly prescient of current affairs. This was my foray into Fanon's work, and I have been hooked ever since.
 
@@ -40,7 +40,7 @@ title: Reading and listening
 
 
 # What I'm listening to
-**Herbie Hancock**: Thrust: Four tracks of synth-y, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
+**Herbie Hancock**: Thrust: Four tracks of synthy, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
 
 **Little Simz**: GREY Area: British rapper Little Simz manages to traverse the entire spectrum of emotions in her dense and rewarding 30-minute record---101 FM and Flowers are particular highlights. 
 
@@ -67,4 +67,4 @@ title: Reading and listening
 **Three Trapped Tigers**: Numbers: 1-13: Cinematic instrumental math rock that really stands out from the pack; 5 and 6 are particular highlights for me. 
 
 # My own music
-In addition to doing political science research and data analysis and such, I like to write and record music. I'm currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10. I write music for [The Water Chestnuts](https://thewaterchestnuts.bandcamp.com/).
+In addition to doing political science research and data analysis and such, I like to write and record music. I'm currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10.
