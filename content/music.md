@@ -18,7 +18,7 @@ title: Reading and listening
 
 **Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are grotesquely outmoded.
+**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are, though a product of it's time, grotesquely outmoded.
 
 **The Wretched of the Earth**: Frantz Fanon: Fanon's discussion of the impacts of colonialism and imperialism on collective mental health are both ahead of their time and upsettingly prescient of current affairs. This was my foray into Fanon's work, and I have been hooked ever since.
 
@@ -40,6 +40,8 @@ title: Reading and listening
 
 
 # What I'm listening to
+**DJ Sabrina the Teenage DJ**: Charmed: DJSTTDJ's 2020 record is mammoth; 33 tracks and a run time of over three hours, this record sucks you in with its layered, nostalgic, and hypnotic house beats.
+
 **Herbie Hancock**: Thrust: Four tracks of synthy, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
 
 **Little Simz**: GREY Area: British rapper Little Simz manages to traverse the entire spectrum of emotions in her dense and rewarding 30-minute record---101 FM and Flowers are particular highlights. 
@@ -48,7 +50,7 @@ title: Reading and listening
 
 **Laura Mvula**: Pink Noise: I love the 80's aesthetic of Mvula's new record---it manages to balance homage and authenticity with ease.
 
-**Allan Holdsworth**: Live in Japan 1984: The much-missed fusion virtuoso and his band, I.O.U., melt faces in one of my favorite live performances of any band ever.
+**Allan Holdsworth**: Live in Japan 1984: The much-missed fusion virtuoso and his band, I.O.U., melt faces in one of my favourite live performances of any band ever.
 
 **Flowered Up**: A Life with Brian & Weekender: Savagely underrated London rock quartet Flowered Up brought Madchester down to London with a punchy debut (A Life with Brian) and epic swansong single Weekender (the accompanying short film directed by W.I.Z. is also a must-watch).  
 

@@ -40,12 +40,6 @@ world_map %<>% dplyr::mutate(country = countrycode::countryname(sourcevar = name
 # Set up googlesheets connection
 googlesheets4::gs4_deauth()
 
-# Election data
-elec  <- 
-  googlesheets4::read_sheet(
-    ss = "https://docs.google.com/spreadsheets/d/14RxWGtmXL-ZAhYZlnvarn5CBqIp0DcGr7wkbatY8oWs/edit#gid=0", 
-    na = "NA")
-
 # ACLED data
 acled <- 
   read.csv2(
@@ -191,3 +185,5 @@ ggplot() +
 Notice that Mali isn't actually being picked up by the ACLED data. This is probably because reports of the Wagner group in Mali are just surfacing, and so we are unsure as to their exact involvement in any conflicts. Russia's Wagner group have been deployed in three countries, from north to south: Libya, Central African Republic, and Mozambique, with the majority of conflicts occurring in the Central African Republic.
 
 ## Conclusion
+
+The Wagner Group appears to be expanding its presence across African states. Under the guise of providing efficient and cheap solutions to domestic issues, their actual functionalities and reach appears to be far broader. Wide reports of mis-information campaigns in CAR and involvement in anti-government operations in Libya suggests that their role in Africa is not simply that of a private military company. They may be, in fact, simply an extension of the Russian military, and a vehicle for Russian influence in the region. 
