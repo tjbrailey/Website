@@ -100,9 +100,14 @@ tags: ["R", "electoral proximity", "making votes count"]
   labs(title = paste0(&quot;Electoral Proximity in &quot;, unique(burkina_faso$country_name)),
        x = &quot;Year&quot;, 
        y = &quot;Electoral Proximity (Cox, 1997)&quot;) +
-  theme_classic()</code></pre>
+  theme_classic()
+## Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+## ℹ Please use `linewidth` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+## generated.</code></pre>
 <p><img src="/posts/cox_proximity_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I’m going to plot a few more countries and see if I find any more intresting patterns.</p>
+<p>Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I’m going to plot a few more countries and see if I find any more interesting patterns.</p>
 <p>In the meantime, feel free to check out the related code for this post <a href="https://github.com/tjbrailey/Functions">here</a>. Please leave any comments and feedback in the “Issues” section of GitHub.</p>
 <p>Thanks for reading!</p>
 </div>

@@ -2,50 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on thomasjbrailey</title>
-    <link>/categories/</link>
+    <link>https://tjbrailey.netlify.app/categories/</link>
     <description>Recent content in Categories on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://tjbrailey.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
+      <link>https://tjbrailey.netlify.app/categories/r/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/r/</guid>
+      <guid>https://tjbrailey.netlify.app/categories/r/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>ArcGIS</title>
-      <link>/categories/arcgis/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/arcgis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Misc</title>
-      <link>/categories/misc/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/misc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>/categories/writing/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/writing/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

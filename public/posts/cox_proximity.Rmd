@@ -49,6 +49,7 @@ So our unit of analysis is country-year. The variables we need for this function
 Here is a step-by-step run-through of how I calculated electoral proximity in Burkina Faso. Note that I use dplyr:: partly because I love it and partly because it might be easier to follow compared with using base-R functions. 
 
 1. We have information on legislative election and previous/concurrent presidential election, now it's time to calculate the next presidential election ($P_{t+1}$).  
+
 ```{r}
 burkina_faso <- burkina_faso %>% 
   
@@ -113,7 +114,7 @@ ggplot(burkina_faso, aes(x = year)) +
   theme_classic()
 ```
 
-Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I'm going to plot a few more countries and see if I find any more intresting patterns. 
+Interesting! Following independence, BK had concurrent elections which became progressively less concurrent until 2015, when they aligned once again. I'm going to plot a few more countries and see if I find any more interesting patterns. 
 
 In the meantime, feel free to check out the related code for this post [here](https://github.com/tjbrailey/Functions). Please leave any comments and feedback in the "Issues" section of GitHub. 
 

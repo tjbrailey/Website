@@ -25,6 +25,7 @@ The first step was to randomly generate point data that, when visualized, would 
 I also decided to randomly assign NA values into the data to make sure the staff was not overpopulated with notes. 
 
 I settled for the function below:
+
 ```{r}
 generate_data <- function(){
   
@@ -42,6 +43,7 @@ generate_data <- function(){
 ```
 
 Next, I wanted the function to spit out a random mode so that I would be forced to think creatively with the notes I was given:
+
 ```{r}
 generate_mode <- function(){
  
@@ -56,6 +58,7 @@ generate_mode <- function(){
 ```
 
 Lastly, I take the two previous functions and throw them into ggplot2. I set hlines at the 2, 4, 6, 8, and 10 values on the y-axis to create the appearance of a staff, and vlines help me to estimate how close together the notes are. This method gives me *some* flexibilty when determining the rhythm and time-signature of the melody. 
+
 ```{r}
 plot_music <- function(){
   
@@ -111,8 +114,4 @@ Here's where I exert some "creative control" shall we say. Somewhere between tha
 
 ![](/posts/seed_music_files/full_melody.png)
 
-And here is what it sounds like (with a little hi-hat in the background). 
-
-![](/posts/seed_music_files/Seed 1.wav)
-
-As you can tell, I can't really call a twelve-second excerpt a song. But these four bars give some insight into the flavor of this tune. In any case, I am pretty chuffed that I actually managed to get something workable out of this idea. Seed Music is a project that I will be continuing for the foreseeable future, and I will try to post reguarly my ideas and creations. More to follow! 
+As you can imagine, I can't really call a twelve-second excerpt a song. But these four bars give some insight into the flavor of this tune. In any case, I am pretty chuffed that I actually managed to get something workable out of this idea. Seed Music is a project that I will be continuing for the foreseeable future, and I will try to post regularly my ideas and creations. More to follow! 

@@ -6,8 +6,6 @@ categories: ["R"]
 tags: ["R", "kmeans", "hierarchical-clustering"]
 ---
 
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <p>I’ve been learning a lot about randomization over the past few weeks. Specifically, I have been reading up on the benefits of matched-pair designs over basic randomization. Bai (2020a, 2020b), Athey and Imbens (2016), and Imai et al. (2020), each provide theoretical and practical insights into the benefits of matched-pair randomization, where, in a simple treatment-control design, the researcher creates pairs of units at the level of randomization based on some baseline characteristic (e.g. income, population, geographic size, proximity, etc.), and then randomly assigns one of the pairs into the treatment, and the other into the control.</p>
@@ -17,8 +15,10 @@ tags: ["R", "kmeans", "hierarchical-clustering"]
 <p>The second challenge arose during a discussion with the PIs at PGRP. Say we were creating groups of units based on geographical proximity and population size. We would be matching on three variables, the latitude, longitude, and population number. If these covariates were all equally weighted, we wouldn’t reap the logistical benefits of keeping the units close together, as the population variable might cause the algorithm to match units that end up being pretty far away. We also have reason to believe that geographically proximate units are more likely to be similar on other baseline characteristics. The problem then becomes coming up with a good way to weight the covariates on which we are clustering. This problem will be addressed as a separate article at a later date…</p>
 <p>After a good deal of having no idea of what was going on, several discussions with my co-workers, and literally days of stackoverflow digging, I arrived at a solution.</p>
 <p>First, let’s get set up:</p>
-<pre class="r"><code>library(magrittr)
-library(ggplot2)</code></pre>
+<pre class="r"><code>library(magrittr)</code></pre>
+<pre><code>## Warning: package &#39;magrittr&#39; was built under R version 4.2.3</code></pre>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.2.3</code></pre>
 <p>Now, let’s generate some datums:</p>
 <pre class="r"><code># Set seed for reproducibility
 set.seed(1234)
@@ -53,7 +53,7 @@ dat &lt;-
   dplyr::ungroup()</code></pre>
 <p>Let’s look at dat:</p>
 <pre class="r"><code>dat</code></pre>
-<pre><code>## # A tibble: 532 x 10
+<pre><code>## # A tibble: 532 × 10
 ##    district sub_district sub_sub_district village_id tot_pop p_schl p_road
 ##       &lt;int&gt;        &lt;int&gt;            &lt;int&gt;      &lt;int&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;int&gt;
 ##  1        1            1                1          1  -5935.  0.361      1
@@ -66,8 +66,8 @@ dat &lt;-
 ##  8        2            4                1          1  -9075.  6.04       0
 ##  9        1            5                1          1   8294. -4.69       1
 ## 10        2            5                1          1   2888. -2.48       1
-## # ... with 522 more rows, and 3 more variables: town_hec &lt;dbl&gt;, x_cent &lt;dbl&gt;,
-## #   y_cent &lt;dbl&gt;</code></pre>
+## # ℹ 522 more rows
+## # ℹ 3 more variables: town_hec &lt;dbl&gt;, x_cent &lt;dbl&gt;, y_cent &lt;dbl&gt;</code></pre>
 <p>dat looks good.</p>
 <p>Now, above I mentioned that the whole “figuring out a way to apply econometrically sensible/not totally arbitrary weights to our covariates” conundrum would be tackled in a later article, so for the time being, we can be very arbitrary in how we apply weights. In any case, we want to apply a larger weight to the spatial variables as we believe that spatial covariates are more important than aspatial ones when it comes to clustering. Below, we see that the latitude and longitude are weighted 10:1 with the population variable.</p>
 <pre class="r"><code>dat &lt;- 
@@ -91,14 +91,14 @@ dist &lt;- distances::distances(as.data.frame(dat))</code></pre>
   dplyr::bind_cols(dat, clust) %&gt;% 
   dplyr::rename(block = `...4`)</code></pre>
 <pre><code>## New names:
-## * NA -&gt; ...4</code></pre>
+## • `` -&gt; `...4`</code></pre>
 <p>Let’s have a quick peek at the output to make sure it’s doing what we hope it’s doing:</p>
 <pre class="r"><code>investigate_cluster &lt;- 
   dplyr::group_by(final, block) %&gt;% 
-  dplyr::summarise(count = length(block))</code></pre>
-<pre><code>## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
-<pre class="r"><code>investigate_cluster</code></pre>
-<pre><code>## # A tibble: 106 x 2
+  dplyr::summarise(count = length(block))
+
+investigate_cluster</code></pre>
+<pre><code>## # A tibble: 106 × 2
 ##    block     count
 ##    &lt;scclust&gt; &lt;int&gt;
 ##  1 0             5
@@ -111,7 +111,7 @@ dist &lt;- distances::distances(as.data.frame(dat))</code></pre>
 ##  8 7             5
 ##  9 8             5
 ## 10 9             5
-## # ... with 96 more rows</code></pre>
+## # ℹ 96 more rows</code></pre>
 <p>Looks good. It looks like each block is of size 5. Let’s double check:</p>
 <pre class="r"><code>max(investigate_cluster$count)</code></pre>
 <pre><code>## [1] 7</code></pre>
@@ -215,9 +215,13 @@ treated_visual &lt;-
     color = &quot;Treatment group&quot;
     ) +
   guides(fill = FALSE) + 
-  theme_bw()
-
-treated_visual</code></pre>
+  theme_bw()</code></pre>
+<pre><code>## Warning: The `&lt;scale&gt;` argument of `guides()` cannot be `FALSE`. Use &quot;none&quot; instead as
+## of ggplot2 3.3.4.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+## generated.</code></pre>
+<pre class="r"><code>treated_visual</code></pre>
 <p><img src="/posts/constrained_kmeans_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>That concludes today’s post. This will lead us nicely into the next ridiculously niche plot post, which will give an overview of calculating optimal euclidean distances between units within a cluster. Stay tuned!</p>
 </div>

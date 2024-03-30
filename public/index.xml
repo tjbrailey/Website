@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>thomasjbrailey</title>
+    <link>https://tjbrailey.netlify.app/</link>
+    <description>Recent content on thomasjbrailey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tjbrailey.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constrained K-means Clustering for Stratification</title>
+      <link>https://tjbrailey.netlify.app/posts/constrained_kmeans/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/posts/constrained_kmeans/</guid>
+      <description>I’ve been learning a lot about randomization over the past few weeks. Specifically, I have been reading up on the benefits of matched-pair designs over basic randomization. Bai (2020a, 2020b), Athey and Imbens (2016), and Imai et al. (2020), each provide theoretical and practical insights into the benefits of matched-pair randomization, where, in a simple treatment-control design, the researcher creates pairs of units at the level of randomization based on some baseline characteristic (e.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://tjbrailey.netlify.app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/about/</guid>
+      <description>My name is Thomas and I am an MPhil student in Comparative Government at the University of Oxford.&#xA;From 2020 to 2022, I served as a pre-doctoral fellow with J-PAL&amp;rsquo;s Payments and Governance Research Program. I received a Bachelor of Science in political science and data analytics from UC San Diego in 2020.&#xA;I have also served as a research assistant for the Center for the Study of African Political Economy and as a lab assistant for the Center for Peace and Security Studies.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://tjbrailey.netlify.app/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/contact/</guid>
+      <description>Whether it be to talk about politics, music, or just to say &amp;ldquo;hi&amp;rdquo;, it would be nice to chat.&#xA;You can reach me at:&#xA;Email: thomasjbrailey@gmail.com Cell: +1 (858) 610-2437&#xA;Or feel free to follow me on GitHub or LinkedIn (links on my homepage).</description>
+    </item>
+    <item>
+      <title>Reading and listening</title>
+      <link>https://tjbrailey.netlify.app/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/music/</guid>
+      <description>What I&amp;rsquo;m reading I Know why the Caged Bird Sings: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there&amp;rsquo;s not really anything I can say about the gravity of this book that has not been said before.&#xA;The Infernal Desire Machines of Doctor Hoffman: Angela Carter: Definitely the strangest book I have read in a while. Jeff VanderMeer cited Carter&amp;rsquo;s work as a big influence when writing Annihilation and it shows.</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://tjbrailey.netlify.app/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/research/</guid>
+      <description>Here is a list of my projects and works in progress. Comments and suggestions are appreciated.&#xA;Working Papers Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy Paper Replication Package Awarded the Sanford Lakoff award for most outstanding thesis Presented at ISA 2021, MPSA 2021&#xA;Works in Progress After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali&amp;rsquo;s Autonomous Region Paper Replication Package Predicting Rogue State Missile Launches Paper Replication Package</description>
+    </item>
+  </channel>
+</rss>

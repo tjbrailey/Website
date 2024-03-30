@@ -21,9 +21,6 @@ pygmentscodefencesguesssyntax = true
     description = "Tom Brailey's personal website"
     keywords = "research associate,political science,personal"
     info = "Political Researcher"
-    #avatarurl = "/images/tom1.jpeg"
-    #gravatar = "john.doe@example.com"
-    #footercontent = "'The real lessons are the institutions we destroy along the way.'"
 
     dateformat = "January 2, 2006"
 
@@ -73,18 +70,16 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/tjbrailey/"
-[[params.social]]
-    name = "OSF"
-    icon = "fab fa-twitter"
-    weight = 4
-    url = "https://osf.io/c9ptf/"
 #[[params.social]]
-#    name = "RSS"
-#    icon = "fas fa-rss"
-#    weight = 6
-#    url = "https://rss.app/feeds/JPPbq02GMOROJtcy.xml"
-#    rel = "alternate"
-#    type = "application/rss+xml"
+#    name = "OSF"
+#    icon = "fab fa-osf"
+#    weight = 4
+#    url = "https://osf.io/c9ptf/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter"
+    weight = 6
+    url = "https://twitter.com/tjbrailey"
 
 
 [languages]
@@ -97,62 +92,23 @@ pygmentscodefencesguesssyntax = true
             name = "About"
             weight = 1
             url = "about/"
-
-            [[languages.en.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
             
             [[languages.en.menu.main]]
             name = "Research"
-            weight = 3
+            weight = 2
             url = "research/"
             
             [[languages.en.menu.main]]
             name = "Reading and Listening"
-            weight = 4
+            weight = 3
             url = "music/"
 
             [[languages.en.menu.main]]
             name = "Contact Me"
-            weight = 5
-            url = "contact/"
-
-
-    [languages.pt-br]
-        languagename = "Français"
-        title = "thomasjbrailey"
-
-        [languages.pt-br.params]
-            author = "Thomas J. Brailey"
-            info = "Chercheur en Sciences Politiques"
-            description = "Site Web Personnel de Tom"
-            keywords = "associé de recherche, science politique, personnel"
-            #footercontent = "'Les véritables leçons sont les institutions que nous détruisons en cours de route.'"
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "À propos de Moi"
-            weight = 1
-            url = "about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projets"
-            weight = 3
-            url = "research/"
-            
-            [[languages.pt-br.menu.main]]
-            name = "Reading and listening"
             weight = 4
-            url = "music/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contactez Moi"
-            weight = 5
             url = "contact/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

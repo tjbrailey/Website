@@ -1,0 +1,189 @@
+---
+title: "What's happening in Mali?"
+author: "Tom Brailey"
+date: "2021-06-04"
+categories: ["Misc"]
+tags: ["Mali", "Paramilitary"]
+---
+
+```{r setup, include=FALSE}
+
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Introduction
+
+After conducting extensive research into Mali's political system for my senior thesis, I have been staying up to date with Mali's current events. One particular event stuck out for me in 2021. This was a report on the Russian paramilitary group Wagner operating in Mali, and the Mali government announcing it's support for their intervention. The Mali government even went so far as to proclaim their preference for Wagner's operations over the French military, who, even now, are slowly withdrawing their troops from the region. I was struck by how overt, and how positively-received (at least by the hosts), this display of foreign intervention was, and I wanted to learn more about the Wagner group, and foreign paramilitary movements more generally.
+
+## Exploratory analysis
+
+I started by downloading ACLED data on conflict types in Africa. ACLED provides information on paramilitary groups (you can see Wagner come up a bunch of times), but it doesn't provide explicit information on the country of origin of these paramilitary groups. So the first step is to download the data and back out these countries of origin. To learn more about my (very much a work in progress) country finder function, read about it [here](https://tjbrailey.netlify.app/posts/finding_a_country/).
+
+```{r data, eval=TRUE, include=TRUE}
+
+# Let's load our essential packages
+library(magrittr)
+library(ggplot2)
+library(rvest)
+library(httr)
+library(data.table)
+
+# Source our country-finder function
+source(paste0(here::here(), "/content/find_country.R"))
+
+# Read in shapefile data
+world_map <- rnaturalearth::ne_countries(scale = "medium", type = "map_units", returnclass = "sf")
+world_map %<>% dplyr::mutate(country = countrycode::countryname(sourcevar = name))
+
+# Set up googlesheets connection
+googlesheets4::gs4_deauth()
+
+# ACLED data
+acled <- 
+  read.csv2(
+    paste0(
+      here::here(),
+      "/public/posts/2019-01-29-2022-02-02-Eastern_Africa-Middle_Africa-Northern_Africa-Southern_Africa-Western_Africa.csv"), 
+    sep = ";") 
+
+# Get a list of countries from acled
+countries_acled <- readRDS(paste0(here::here(), "/public/posts/acled_countries.rds"))
+countries_acled <- countries_acled$Country
+countries_acled <- sub(" \\(.*| of | & | and | the |  ", " ", countries_acled)
+countries_acled <- sub(" \\(.*| of | & | and | the |  ", " ", countries_acled)
+countries_acled <- unique(countries_acled)
+countries_acled <- sort(countries_acled, decreasing = TRUE)
+
+```
+
+```{r clean, eval=FALSE, include=TRUE}
+
+# Create a new column that contains information in parentheses in the actor1 column
+acled %<>% 
+  dplyr::mutate(
+    actor1_location_temp = stringr::str_extract_all(
+      string = actor1, pattern = "\\([^()]+\\)", simplify = FALSE),
+    actor1_location_temp = stringr::str_remove_all(
+      string = actor1_location_temp, 
+      pattern = "\\(|\\)|\\-|\\d+|\\W\\W|character")) %>% 
+  dplyr::mutate(
+    actor1_location = countrycode::countryname(
+      sourcevar = actor1_location_temp))
+
+# Return a list of missing locations to manually investigate
+actor1_missing_locations <- acled$actor1[is.na(acled$actor1_location)] 
+actor1_missing_locations <- tibble::as_tibble(unique(actor1_missing_locations[actor1_missing_locations != ""]))
+
+# Individual examples
+find_country(name = "Oyo State Park Management System") # should be Nigeria
+find_country(name = "TPLF: Tigray People's Liberation Front") # Should be Ethiopia
+find_country(name = "CNDD-FDD-Imbonerakure: National Council for the Defence of Democracy (Imbonerakure Faction)") # Should be Burundi
+find_country(name = "Wagner group") # Should be Russia
+find_country(name = "Levelling up") # Should be United Kingdom
+find_country(name = "Mayi Mayi Militia") # Should be DRC
+
+# Use our (WIP) country finder function 
+actor1_missing_locations$guess <- lapply(X = actor1_missing_locations$value, FUN = find_country)
+
+# Join data
+joined <- dplyr::left_join(acled, actor1_missing_locations, by = c("actor1" = "value")) %>% 
+  dplyr::mutate(guess = sapply(guess, toString),
+                guess = ifelse(guess == "", NA, guess),
+                guess = countrycode::countryname(sourcevar = guess),
+                actor1_location  = dplyr::coalesce(guess, actor1_location),
+                country = countrycode::countryname(sourcevar = country)) %>% 
+  dplyr::select(-actor1_location_temp, -guess)
+
+```
+
+Okay, so we have created a new variable that is our best guess of the country of origin of the paramilitary groups that are involved in instances of conflict in Africa. Now let's ensure that we have all the relevant coordinates that will allow us to create a flow map. 
+
+```{r save data, eval=FALSE,include=TRUE}
+
+sf::sf_use_s2(FALSE)
+
+# Dataset of country locations
+origin_locations <- world_map %>%
+  dplyr::select(name, country, geometry) %>% 
+  dplyr::filter(!is.na(country)) %>%
+  dplyr::mutate(
+    centroid = sf::st_centroid(.),
+    orig_lon = sf::st_coordinates(centroid)[,1],
+    orig_lat = sf::st_coordinates(centroid)[,2]) %>%
+  dplyr::rename(actor1_location = country)
+
+# Join to main acled dataset
+to_save <- joined %>% 
+  dplyr::left_join(., origin_locations, by = "actor1_location") %>% 
+  sf::st_as_sf(.) %>% 
+  dplyr::mutate(latitude = as.numeric(latitude),
+                longitude = as.numeric(longitude))
+
+# Save dataset so we don't have to keep running intensive code
+saveRDS(object = to_save, file = paste0(here::here(), "/content/acled_prepped.rds"))
+
+# Remove intermediary datasets
+rm(acled, actor1_missing_locations, joined, locations, to_save)
+
+```
+
+Now the data are ready, let's plot a flow map:
+
+```{r plot flow, eval=TRUE,include=TRUE}
+
+# Re-read data back in for convenience
+dat <- readRDS(file = paste0(here::here(), "/content/acled_prepped.rds"))
+
+# Plot
+plot <- ggplot() + 
+  geom_sf(data = world_map, fill = NA) + 
+  geom_curve(
+    data = dat, 
+    color = "purple",
+    alpha = 0.1, 
+    curvature = 0.2,
+    aes(
+      x = orig_lon,
+      y = orig_lat,
+      xend = longitude,
+      yend = latitude)) + 
+  geom_point(data = dat, mapping = aes(x = longitude, y = latitude), color = "purple", alpha = 0.1, show.legend = TRUE) +
+  geom_point(data = dat, mapping = aes(x = orig_lon,  y = orig_lat), color = "orange", alpha = 0.3, show.legend = TRUE) + 
+  labs(x = "", y = "") + 
+  theme_minimal()
+plot
+
+```
+
+It's a bit busy, but you can glean from this plot that the majority of foreign militias are coming from _within_ Africa, but that the US and Russia have their fingers in many conflict pies so to speak.  Since I wanted to look into Russian paramilitaries in particular, let's look just at African conflicts with Russian involvement:
+
+```{r russia intervention, eval=FALSE,include=TRUE}
+
+# Subset to include only African states with Russian intervention
+ac1_russia <- dat %>%
+  dplyr::filter(actor1_location == "Russia") 
+
+russia_int <- unique(ac1_russia$country)
+
+world_map_sub <- dplyr::filter(world_map, continent %in% c("Europe", "Africa"))
+
+world_map_sub$russia_int <- ifelse(world_map_sub$country %in% c(russia_int), 1, 0)
+
+# Plot African states with Russian intervention
+ggplot() +
+  geom_sf(data = world_map_sub, mapping = aes(fill = factor(russia_int))) +
+  scale_fill_manual(values = c("0" = "white", "1" = "black"), labels = c("No", "Yes")) +
+  geom_point(data = ac1_russia, mapping = aes(x = longitude, y = latitude), alpha = 0.3, color = "purple") + 
+  coord_sf(xlim = c(-20, 60), ylim = c(-30, 35)) + 
+  labs(x = "", y = "", fill = "Russian involvement?") + 
+  theme_minimal()
+
+```
+
+Notice that Mali isn't actually being picked up by the ACLED data. This is probably because reports of the Wagner group in Mali are just surfacing, and so we are unsure as to their exact involvement in any conflicts. Russia's Wagner group have been deployed in three countries, from north to south: Libya, Central African Republic, and Mozambique, with the majority of conflicts occurring in the Central African Republic.
+
+## Conclusion
+
+The Wagner Group appears to be expanding its presence across African states. Under the guise of providing efficient and cheap solutions to domestic issues, their actual functionalities and reach appears to be far broader. Wide reports of mis-information campaigns in CAR and involvement in anti-government operations in Libya suggests that their role in Africa is not simply that of a private military company. They may be, in fact, simply an extension of the Russian military, and a vehicle for Russian influence in the region. 

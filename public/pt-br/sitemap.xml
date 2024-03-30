@@ -1,61 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/pt-br/categories/</loc>
+    <loc>https://tjbrailey.netlify.app/pt-br/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://tjbrailey.netlify.app/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/categories/"
+                href="https://tjbrailey.netlify.app/pt-br/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>/pt-br/series/</loc>
+  </url><url>
+    <loc>https://tjbrailey.netlify.app/pt-br/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/series/"
+                href="https://tjbrailey.netlify.app/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/series/"
+                href="https://tjbrailey.netlify.app/pt-br/series/"
                 />
-  </url>
-  
-  <url>
-    <loc>/pt-br/tags/</loc>
+  </url><url>
+    <loc>https://tjbrailey.netlify.app/pt-br/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://tjbrailey.netlify.app/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/tags/"
+                href="https://tjbrailey.netlify.app/pt-br/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/pt-br/</loc>
+  </url><url>
+    <loc>https://tjbrailey.netlify.app/pt-br/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://tjbrailey.netlify.app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="/pt-br/"
+                href="https://tjbrailey.netlify.app/pt-br/"
                 />
   </url>
-  
 </urlset>

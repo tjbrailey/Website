@@ -2,176 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on thomasjbrailey</title>
-    <link>/tags/</link>
+    <link>https://tjbrailey.netlify.app/tags/</link>
     <description>Recent content in Tags on thomasjbrailey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://tjbrailey.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hierarchical-clustering</title>
+      <link>https://tjbrailey.netlify.app/tags/hierarchical-clustering/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/tags/hierarchical-clustering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>kmeans</title>
+      <link>https://tjbrailey.netlify.app/tags/kmeans/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://tjbrailey.netlify.app/tags/kmeans/</guid>
+      <description></description>
+    </item>
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://tjbrailey.netlify.app/tags/r/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/r/</guid>
+      <guid>https://tjbrailey.netlify.app/tags/r/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>strings</title>
-      <link>/tags/strings/</link>
-      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/strings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>variables</title>
-      <link>/tags/variables/</link>
-      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/variables/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ArcGIS</title>
-      <link>/tags/arcgis/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/arcgis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>path distance</title>
-      <link>/tags/path-distance/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/path-distance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research assistant</title>
-      <link>/tags/research-assistant/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research-assistant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research assoicate</title>
-      <link>/tags/research-assoicate/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research-assoicate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>replication</title>
-      <link>/tags/replication/</link>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/replication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>axis.text</title>
-      <link>/tags/axis.text/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/axis.text/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scale_fill_identity</title>
-      <link>/tags/scale_fill_identity/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/scale_fill_identity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elections</title>
-      <link>/tags/elections/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/elections/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>papuea new guinea</title>
-      <link>/tags/papuea-new-guinea/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/papuea-new-guinea/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>electoral proximity</title>
-      <link>/tags/electoral-proximity/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/electoral-proximity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>making votes count</title>
-      <link>/tags/making-votes-count/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/making-votes-count/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>power sharing</title>
-      <link>/tags/power-sharing/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/power-sharing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>segmental autonomy</title>
-      <link>/tags/segmental-autonomy/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/segmental-autonomy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>senior thesis</title>
-      <link>/tags/senior-thesis/</link>
-      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/senior-thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ontology</title>
-      <link>/tags/ontology/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ontology/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

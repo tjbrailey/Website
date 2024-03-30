@@ -103,7 +103,7 @@
   }
   \item[]
 }{
-  \end{list}
+  \end{list}\par
 }
 
 %----------------------------------------------------------------------------------------
@@ -119,8 +119,8 @@
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \end{list}\par
+  %\vspace{0.5em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
