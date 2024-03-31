@@ -1,9 +1,16 @@
 ---
 slug: music
-title: Reading and listening
+title: Reading and Listening
 ---
 
-# What I'm reading
+Here is a bit of an overview of what I'm reading and listening to, academic or otherwise. 
+
+# Academic Stuff
+I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 
+* [Read inspiring article here](http://www.raulpacheco.org/resources/literature-reviews/). 
+* [View my own CSED spreadsheet here](https://docs.google.com/spreadsheets/d/1OV1zvSEG_ZgbOzszf24NK0bsescvAICYEsPyYdo1Szw/edit#gid=788107640).
+
+# What I'm Reading for Fun
 **I Know why the Caged Bird Sings**: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there's not really anything I can say about the gravity of this book that has not been said before. 
 
 **The Infernal Desire Machines of Doctor Hoffman**: Angela Carter: Definitely the strangest book I have read in a while. Jeff VanderMeer cited Carter's work as a big influence when writing Annihilation and it shows. 
@@ -38,8 +45,7 @@ title: Reading and listening
 
 **The Africa Trilogy**: Chinua Achebe: Three generations of African life---from pre- to post-colonialism---are covered in Achebe's devastating but essential trilogy.
 
-
-# What I'm listening to
+# What I'm Listening To
 **DJ Sabrina the Teenage DJ**: Charmed: DJSTTDJ's 2020 record is mammoth; 33 tracks and a run time of over three hours, this record sucks you in with its layered, nostalgic, and hypnotic house beats.
 
 **Herbie Hancock**: Thrust: Four tracks of synthy, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
