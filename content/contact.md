@@ -9,4 +9,4 @@ You can reach me at:
 
 Email:  thomasjbrailey [at] gmail [dot] com
 
-Or feel free to follow me on GitHub or LinkedIn (links on my homepage). 
+Or feel free to follow me on GitHub, Twitter, or LinkedIn (links on my homepage). 

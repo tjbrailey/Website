@@ -6,11 +6,24 @@ title: Reading and Listening
 Here is a bit of an overview of what I'm reading and listening to, academic or otherwise. 
 
 # Academic Stuff
+
+## Reading
+
 I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 
 * [Read inspiring article here](http://www.raulpacheco.org/resources/literature-reviews/). 
 * [View my own CSED spreadsheet here](https://docs.google.com/spreadsheets/d/1OV1zvSEG_ZgbOzszf24NK0bsescvAICYEsPyYdo1Szw/edit#gid=788107640).
 
+## Other Public Goods
+
+I'm also compiling documentation on things (mostly datasets) that I often find myself searching for. Hopefully this will speed up the process for others. 
+
+**Spatial Datasets**
+* [AfroGrid]()
+* [Data in Space]()
+* [Blackmarbler]()
+
 # What I'm Reading for Fun
+
 **I Know why the Caged Bird Sings**: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there's not really anything I can say about the gravity of this book that has not been said before. 
 
 **The Infernal Desire Machines of Doctor Hoffman**: Angela Carter: Definitely the strangest book I have read in a while. Jeff VanderMeer cited Carter's work as a big influence when writing Annihilation and it shows. 
@@ -25,7 +38,7 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 
 **Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are, though a product of it's time, grotesquely outmoded.
+**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are, though a product of their time, grotesquely outmoded.
 
 **The Wretched of the Earth**: Frantz Fanon: Fanon's discussion of the impacts of colonialism and imperialism on collective mental health are both ahead of their time and upsettingly prescient of current affairs. This was my foray into Fanon's work, and I have been hooked ever since.
 
@@ -46,6 +59,7 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 **The Africa Trilogy**: Chinua Achebe: Three generations of African life---from pre- to post-colonialism---are covered in Achebe's devastating but essential trilogy.
 
 # What I'm Listening To
+
 **DJ Sabrina the Teenage DJ**: Charmed: DJSTTDJ's 2020 record is mammoth; 33 tracks and a run time of over three hours, this record sucks you in with its layered, nostalgic, and hypnotic house beats.
 
 **Herbie Hancock**: Thrust: Four tracks of synthy, groovy, spacey keyboards---one of Hancock's lesser known records, but an absolute journey nonetheless. 
@@ -75,4 +89,5 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 **Three Trapped Tigers**: Numbers: 1-13: Cinematic instrumental math rock that really stands out from the pack; 5 and 6 are particular highlights for me. 
 
 # My own music
+
 In addition to doing political science research and data analysis and such, I like to write and record music. I'm currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10.

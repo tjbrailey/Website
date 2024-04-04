@@ -10,8 +10,8 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy 
 * [Paper](https://github.com/tjbrailey/SeniorThesis/blob/master/paper/psp.pdf) 
 * [Replication Package](https://github.com/tjbrailey/SeniorThesis) 
-* *Awarded the Sanford Lakoff award for most outstanding thesis* 
-* *Presented at ISA 2021, MPSA 2021*
+* *Awarded the Sanford Lakoff award for most outstanding thesis*. 
+* *Presented at ISA 2021, MPSA 2021*.
 
 ## Works in Progress
 
