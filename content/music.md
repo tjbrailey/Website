@@ -9,18 +9,29 @@ Here is a bit of an overview of what I'm reading and listening to, academic or o
 
 ## Reading
 
+**Reading Lists**
+
 I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 
 * [Read inspiring article here](http://www.raulpacheco.org/resources/literature-reviews/). 
 * [View my own CSED spreadsheet here](https://docs.google.com/spreadsheets/d/1OV1zvSEG_ZgbOzszf24NK0bsescvAICYEsPyYdo1Szw/edit#gid=788107640).
+
+**Favourite Papers**
+
+* [The Development Effects of the Extractive Colonial Economy: The Dutch Cultivation System in Java](https://scholar.harvard.edu/sites/scholar.harvard.edu/files/CSpaper.pdf)
+* [Tilly Goes to Church: The Religious and Medieval Roots of European State Fragmentation](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4EEE3598EF17E46DF0050C375C9FDD45/S0003055423000278a.pdf/tilly-goes-to-church-the-religious-and-medieval-roots-of-european-state-fragmentation.pdf)
+* [Urban Public Works in Spatial Equilibrium: Experimental Evidence from Ethiopia](https://www.qmul.ac.uk/sef/media/econ/research/workingpapers/wp957.pdf)
+* [Identification of and Correction for Publication Bias](https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20180310)
+* [Does UN Peacekeeping Prevent Communal Violence? Evidence from Disputes in Burkina Faso and Mali](https://ideas.repec.org/p/osf/osfxxx/m7s45.html)
 
 ## Other Public Goods
 
 I'm also compiling documentation on things (mostly datasets) that I often find myself searching for. Hopefully this will speed up the process for others. 
 
 **Spatial Datasets**
-* [AfroGrid]()
-* [Data in Space]()
-* [Blackmarbler]()
+
+* [AfroGrid](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LDI5TK)
+* [Data in Space](https://datainspace.org/index.php/global-nighttime-lights-at-adm2-level-1992-2013/)
+* [Blackmarbler](https://github.com/worldbank/blackmarbler)
 
 # What I'm Reading for Fun
 
