@@ -22,6 +22,7 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 * [Urban Public Works in Spatial Equilibrium: Experimental Evidence from Ethiopia](https://www.qmul.ac.uk/sef/media/econ/research/workingpapers/wp957.pdf)
 * [Identification of and Correction for Publication Bias](https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20180310)
 * [Does UN Peacekeeping Prevent Communal Violence? Evidence from Disputes in Burkina Faso and Mali](https://ideas.repec.org/p/osf/osfxxx/m7s45.html)
+* [Nested Analysis as a Mixed-Method Strategy for Comparative Research](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/nested-analysis-as-a-mixedmethod-strategy-for-comparative-research/D4FF59D175D761C20BD6CE440AFD700B)
 
 ## Other Public Goods
 
