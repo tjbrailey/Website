@@ -1,0 +1,313 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Thomas J. Brailey}{}
+
+\position{MPhil in Politics}
+\address{Oxford, United Kingdom}
+
+\email{\href{mailto:thomasjbrailey@gmail.com}{\nolinkurl{thomasjbrailey@gmail.com}}}
+\github{tjbrailey}
+\linkedin{tjbrailey}
+\twitter{tjbrailey}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{2em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {April, 2024}
+    {Thomas J. Brailey~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{MPhil, Comparative Government}{University of Oxford}{Oxford, United Kingdom}{2022-2024}{}\vspace{-4.0mm}
+    \cventry{Bachelor of Science, Political Science/Data Analytics}{University of California, San Diego}{San Diego, United States}{2016-2020}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\begin{cventries}
+    \cventry{Research Assistant}{University of Oxford}{Oxford, United Kingdom}{2022-Present}{\begin{cvitems}
+\item Co-authoring research with the Departments of Sociology and of Politics and International Relations.
+\item Conducting data cleaning, exploratory data analysis, and testing theoretical mechanisms with data.
+\item Transferring codebases to version-controlled GitHub setup.
+\end{cvitems}}
+    \cventry{Pre-Doctoral Fellow}{Payments and Governance Research Program}{San Diego, United States}{2020-2022}{\begin{cvitems}
+\item Conducted exploratory data analysis and data visualization across several research projects.
+\item Coordinated the transition of all code to GitHub and introducing RAs/GSRs to version control.
+\item Edited manuscripts and preparing presentations for government leaders and other stakeholders.
+\end{cvitems}}
+    \cventry{Research Assistant}{Center for the Study of African Political Economy}{San Diego, United States}{2018-2020}{\begin{cvitems}
+\item Independently developed a large-N database of election statistics across all recognized states.
+\item Used R to combine and reshape multiple datasets, visualize the data, and perform statistical analysis.
+\item Manually inputted missing data from newspapers and reports to ensure completeness of data.
+\end{cvitems}}
+    \cventry{Research/Lab Assistant}{Center for Peace and Security Studies}{San Diego, United States}{2018-2020}{\begin{cvitems}
+\item Used R to conduct quantitative analyses on large-N datasets.
+\item Generated graphs, tables, and figures in R and LaTeX for research papers and conference presentations.
+\item Wrote briefs on my data analysis and code and presented findings.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications-as-author}{%
+\subsection{Publications-As Author}\label{publications-as-author}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-Brodeur2024}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Brodeur, A., Mikola, D., Cook, N., Brailey, T., Briggs,
+R., De Gendre, A., Dupraz, Y., Fiala, L., Gabani, J., Gauriot, R.,
+Haddad, J., Lima, G., Ankel-Peters, J., \& Dreber, A. (2024). \emph{Mass
+Reproducibility and Replicability: A New Hope}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Brailey2023}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Brailey, T., Hepplewhite, M., \& Moser, S. (2023).
+\emph{Direct Replication and Additional Sensitivity and Robustness
+Analyses for Frederiksen (2022): A Replication Report from the
+Nottingham Replication Games}.
+\url{https://doi.org/10.2139/ssrn.4437368}}
+
+\hypertarget{publications-as-research-assistant}{%
+\subsection{Publications-As Research
+Assistant}\label{publications-as-research-assistant}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-Gannon2024}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Gannon, J. A., Gartzke, E., Lindsay, J. R., \& Schram,
+P. (2024). The Shadow of Deterrence: Why Capable Actors Engage in
+Contests Short of War. \emph{Journal of Conflict Resolution},
+\emph{68}(2-3), 230--268.
+\url{https://doi.org/10.1177/00220027231166345}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gannon2023}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Gannon, J. A. (2023). Planes, Trains, and Armored
+Mobiles: Introducing a Dataset of the Global Distribution of Military
+Capabilities. \emph{International Studies Quarterly}, \emph{67}(4).
+\url{https://doi.org/10.1093/isq/sqad081}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Muralidharan2023}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Muralidharan, K., Niehaus, P., \& Sukhtankar, S. (2023).
+General Equilibrium Effects of (Improving) Public Employment Programs:
+Experimental Evidence From India. \emph{Econometrica}, \emph{91}(4),
+1261--1295. \url{https://doi.org/10.3982/ecta18181}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Faridani2022}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Faridani, S., \& Niehaus, P. (2022). \emph{Rate-optimal
+linear estimation of average global effects}.
+\url{https://arxiv.org/abs/2209.14181v2}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gannon2022}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{Gannon, J. A. (2022). One if by Land, and Two if by Sea:
+Cross-Domain Contests and the Escalation of International Crises.
+\emph{International Studies Quarterly}, \emph{66}(4), 474--475.
+\url{https://doi.org/10.1093/isq/sqac065}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gaikwad2021}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{Gaikwad, N., \& Nellis, G. (2021). Overcoming the
+Political Exclusion of Migrants: Theory and Experimental Evidence from
+India. \emph{American Political Science Review}, \emph{115}, 1--18.
+\url{https://doi.org/10.1017/S0003055421000435}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Muralidharan2020}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{Muralidharan, K., Niehaus, P., \& Sukhtankar, S. (2021).
+\emph{Identity Verification Standards in Welfare Programs: Experimental
+Evidence from India}.
+\url{https://www.socialscienceregistry.org/trials/1620}}
+
+\hypertarget{conference-invites}{%
+\section{Conference Invites}\label{conference-invites}}
+
+\begin{cvhonors}
+    \cvhonor{}{Midwestern Political Science Association}{Chicago}{2024}
+    \cvhonor{}{Political Science Association}{Virtual}{2023}
+    \cvhonor{}{American Political Science Association}{Virtual}{2021}
+    \cvhonor{}{International Studies Association}{Virtual}{2021}
+    \cvhonor{}{Midwestern Political Science Association}{Chicago, cancelled}{2020}
+    \cvhonor{}{International Studies Association}{Honolulu, cancelled}{2020}
+    \cvhonor{}{Souther California Research Conference}{San Diego}{2019}
+    \cvhonor{}{Western Political Science Association}{San Diego}{2019}
+\end{cvhonors}
+
+\hypertarget{scholarship-and-awards}{%
+\section{Scholarship and Awards}\label{scholarship-and-awards}}
+
+\begin{cvhonors}
+    \cvhonor{}{Cyril Foster Award}{University of Oxford}{2024}
+    \cvhonor{}{Research Grant}{University of Oxford}{2023}
+    \cvhonor{}{Clarendon Scholarship}{University of Oxford}{2022-2024}
+    \cvhonor{}{Catalyst Grant}{Berkeley Institute for Transparency in the Social Sciences}{2021}
+    \cvhonor{}{Sanford Lakoff Award for the Most Outstanding Thesis}{UC San Diego}{2020}
+    \cvhonor{}{Pi Sigma Alpha}{UC San Diego}{2017-2020}
+    \cvhonor{}{Provost Honors}{UC San Diego}{2016-2020}
+    \cvhonor{}{Outstanding Resident}{UC San Diego}{2017}
+\end{cvhonors}
+
+\hypertarget{volunteer-experience}{%
+\section{Volunteer Experience}\label{volunteer-experience}}
+
+\begin{cvhonors}
+    \cvhonor{}{Volunteer data scientist for DataKind UK}{}{}
+    \cvhonor{}{Co-found of the Political Science Student Association at UCSD}{}{}
+    \cvhonor{}{Employment Assistant at the International Rescue Committee}{}{}
+    \cvhonor{}{Tutor for San Diego's Refugee Tutoring Program}{}{}
+\end{cvhonors}
+
+\hypertarget{training-and-skills}{%
+\section{Training and Skills}\label{training-and-skills}}
+
+\hypertarget{training}{%
+\subsection{Training}\label{training}}
+
+\begin{cvhonors}
+    \cvhonor{}{Oxford Spring School for Advanced Research Methods (Qualitative Methods, 2024)}{}{}
+    \cvhonor{}{European Consortium for Political Research (Bayesian Statistics, 2023)}{}{}
+    \cvhonor{}{Oxford Spring School for Advanced Research Methods (Machine Learning, 2023)}{}{}
+\end{cvhonors}
+
+\hypertarget{skills}{%
+\subsection{Skills}\label{skills}}
+
+\hypertarget{spoken-languages}{%
+\subsubsection{Spoken Languages}\label{spoken-languages}}
+
+\begin{cvhonors}
+    \cvhonor{}{English (Native), French (Beginner), Arabic (Beginner)}{}{}
+\end{cvhonors}
+
+\hypertarget{technical-languages}{%
+\subsubsection{Technical Languages}\label{technical-languages}}
+
+\begin{cvhonors}
+    \cvhonor{}{Proficient: ArcGIS, Git, Latex, R, SPSS, STATA}{}{}
+    \cvhonor{}{Beginner: Python, SQL, Tableau, Stan, Julia}{}{}
+\end{cvhonors}
+
+\hypertarget{softwares}{%
+\subsubsection{Softwares}\label{softwares}}
+
+\begin{cvhonors}
+    \cvhonor{}{Amazon Web Services, Microsoft Office}{}{}
+\end{cvhonors}
+
+
+
+\end{document}
