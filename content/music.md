@@ -33,6 +33,7 @@ I'm also compiling documentation on things (mostly datasets) that I often find m
 * [AfroGrid](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LDI5TK)
 * [Data in Space](https://datainspace.org/index.php/global-nighttime-lights-at-adm2-level-1992-2013/)
 * [Blackmarbler](https://github.com/worldbank/blackmarbler)
+* [nightlightstats](https://github.com/JakobMie/nightlightstats)
 
 # What I'm Reading for Fun
 
@@ -50,7 +51,7 @@ I'm also compiling documentation on things (mostly datasets) that I often find m
 
 **Regarding the Pain of Others**: Susan Sontag: While Sontag discusses war photography from a moral, ethical, and feminist perspective, I think her most profound discussion is on our collective memory of horrific events.
 
-**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are, though a product of their time, grotesquely outmoded.
+**Essays in Idleness**: Yoshida Kenkō: Beautifully written and serving as a unique window into medieval Japan, Essays in Idleness is let down by some of Kenkō's musings, particularly about women, which are, though a product of their time, pretty outmoded.
 
 **The Wretched of the Earth**: Frantz Fanon: Fanon's discussion of the impacts of colonialism and imperialism on collective mental health are both ahead of their time and upsettingly prescient of current affairs. This was my foray into Fanon's work, and I have been hooked ever since.
 
