@@ -17,9 +17,9 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 * *Presented at PSA 2023, MPSA 2024*.
 
 **Coups and Social Trust**
-* With Robin Harding and Thomas Isbell
 * [Paper]()
 * [Code]()
+* *With Robin Harding and Thomas Isbell.* 
 * *Presented at MPSA 2024*.
 
 **Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy** 
