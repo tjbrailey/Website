@@ -12,13 +12,13 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 * *Fourth author. I4R Discussion Paper Series, Number 107. Institute for Replication (I4R).*
 
 **Conceptualising Non-State Security**
-* [Paper]()
-* [Code]()
+* [Paper]() - Not yet public. 
+* [Code]() - Not yet public. 
 * *Presented at PSA 2023, MPSA 2024*.
 
-**Coups and Social Trust**
-* [Paper]()
-* [Code]()
+**Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso**
+* [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802214)
+* [Code] - Not yet public. 
 * *With Robin Harding and Thomas Isbell.* 
 * *Presented at MPSA 2024*.
 
