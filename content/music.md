@@ -5,10 +5,6 @@ title: Reading and Listening
 
 Here is a bit of an overview of what I'm reading and listening to, academic or otherwise. 
 
-# Academic Stuff
-
-## Reading
-
 **Reading Lists**
 
 I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 
@@ -24,11 +20,9 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 * [Does UN Peacekeeping Prevent Communal Violence? Evidence from Disputes in Burkina Faso and Mali](https://ideas.repec.org/p/osf/osfxxx/m7s45.html)
 * [Nested Analysis as a Mixed-Method Strategy for Comparative Research](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/nested-analysis-as-a-mixedmethod-strategy-for-comparative-research/D4FF59D175D761C20BD6CE440AFD700B)
 
-## Other Public Goods
-
 I'm also compiling documentation on things (mostly datasets) that I often find myself searching for. Hopefully this will speed up the process for others. 
 
-**Spatial Datasets**
+**Nightlight Datasets**
 
 * [AfroGrid](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LDI5TK)
 * [Data in Space](https://datainspace.org/index.php/global-nighttime-lights-at-adm2-level-1992-2013/)
