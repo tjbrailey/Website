@@ -37,3 +37,8 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 **Predicting Rogue State Missile Launches**
 * [Paper](https://github.com/tjbrailey/MissileTest/blob/master/paper/rouge_state_missiles.pdf) 
 * [Code](https://github.com/tjbrailey/MissileTest)
+
+## Other Publications
+
+## Papers I've RA'd On
+
