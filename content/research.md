@@ -7,20 +7,20 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 
 ## Working Papers
 
+**Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso**
+* [Paper](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
+* [Code] - Not yet public. 
+* *With Robin Harding and Thomas Isbell.* 
+* *Presented at MPSA 2024*.
+
 **Mass Reproducibility and Replicability: A New Hope**
 * [Paper](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
 * *Fourth author. I4R Discussion Paper Series, Number 107. Institute for Replication (I4R).*
 
-**Conceptualising Non-State Security**
-* [Paper]() - Not yet public. 
-* [Code]() - Not yet public. 
+**Conceptualising Non-State Security (Master's Thesis)**
+* [Paper](https://github.com/tjbrailey/dpir-mphil/blob/main/docs/_main.pdf) 
+* [Code](https://github.com/tjbrailey/dpir-rdp)
 * *Presented at PSA 2023, MPSA 2024*.
-
-**Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso**
-* [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802214)
-* [Code] - Not yet public. 
-* *With Robin Harding and Thomas Isbell.* 
-* *Presented at MPSA 2024*.
 
 **Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy** 
 * [Paper](https://github.com/tjbrailey/SeniorThesis/blob/master/paper/psp.pdf) 
@@ -40,5 +40,22 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 
 ## Other Publications
 
-## Papers I've RA'd On
+* [Building a comprehensive database on conflict: Ethiopia, 1997–2017](https://osf.io/6vkm8/)
 
+## Papers I've RA'd For
+
+* J. Andres Gannon, Erik Gartzke, Jon R Lindsay, and Peter Schram. The Shadow of Deterrence: Why
+Capable Actors Engage in Contests Short of War. Journal of Conflict Resolution, 68(2-3):230–268, apr
+2024
+* J. Andres Gannon. Planes, Trains, and Armored Mobiles: Introducing a Dataset of the Global Distribution
+of Military Capabilities. International Studies Quarterly, 67(4), sep 2023
+* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. General Equilibrium Effects of (Improving)
+Public Employment Programs: Experimental Evidence From India. Econometrica, 91(4):1261–1295, jul
+2023
+* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. Identity Verification Standards in Welfare
+Programs: Experimental Evidence from India. The Review of Economics and Statistics, pages 1–46, 02
+2023
+* Stefan Faridani and Paul Niehaus. Rate-optimal linear estimation of average global effects. 2022
+* J. Andres Gannon. One if by Land, and Two if by Sea: Cross-Domain Contests and the Escalation of
+International Crises. International Studies Quarterly, 66(4):474–475, sep 2022
+* Nikhar Gaikwad and Gareth Nellis. Overcoming the Political Exclusion of Migrants: Theory and Experimental Evidence from India. American Political Science Review, 115:1–18, 2021
