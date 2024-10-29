@@ -7,26 +7,42 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 
 ## Working Papers
 
-**Predicting Floor Time in the South African Parliament: A User-Generated Observational Pre-Analysis Plan**
-* [PAP](https://osf.io/yuqcj/)
+### African Politics
 
-**Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso**
-* [Paper](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
+Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso
+* [Afrobarometer Working Paper](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
 * [Code] - Not yet public. 
 * *With Robin Harding and Thomas Isbell.* 
 * *Presented at MPSA 2024*.
 
-**Mass Reproducibility and Replicability: A New Hope**
-* [Paper](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
-* *Fourth author. I4R Discussion Paper Series, Number 107. Institute for Replication (I4R).*
+Predicting Floor Time in the South African Parliament: A User-Generated Observational Pre-Analysis Plan
+* [PAP](https://osf.io/yuqcj/)
+* [Code] - Not yet public. 
 
-**Conceptualising Non-State Security (Master's Thesis)**
-* [Paper](https://github.com/tjbrailey/dpir-mphil/blob/main/docs/_main.pdf) 
+### Non-State Security
+
+Conceptualising Non-State Security (Master's Thesis)
+* [Working Paper](https://osf.io/dg28z) 
+* [Thesis](https://osf.io/ubw42)
 * [Code](https://github.com/tjbrailey/dpir-rdp)
 * *Presented at PSA 2023, MPSA 2024*.
 
-**Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy** 
-* [Paper](https://github.com/tjbrailey/SeniorThesis/blob/master/paper/psp.pdf) 
+### Replication
+
+Mass Reproducibility and Replicability: A New Hope
+* [Working Paper](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
+* *Fourth author. I4R Discussion Paper Series, Number 107. Institute for Replication (I4R).*
+
+#### I4R Replication Reports
+
+* [Reproduction and robustness of Kao et al.(2024): "Female representation and legitimacy". A report from the 2024 UC Berkeley Replication Games](https://osf.io/294cs)
+* [Why Do Citizens Tolerate Undemocratic Behaviour? A Commenton Frederiksen (2022)](https://osf.io/fevgw)
+* [A Robustness Reproduction of Tappin, Berinsky and Rand (2023): "Partisans' receptivity to persuasive messaging is undiminished by countervailing party leader cues"](https://osf.io/9m4n6)
+
+### Other Working Papers
+
+Provisions of Power-Sharing: Assessing the Impacts of Segmental Autonomy 
+* [Thesis](https://github.com/tjbrailey/SeniorThesis/blob/master/paper/psp.pdf) 
 * [Code](https://github.com/tjbrailey/SeniorThesis) 
 * *Awarded the Sanford Lakoff award for most outstanding thesis*. 
 * *Presented at ISA 2021, MPSA 2021*.
@@ -37,13 +53,13 @@ Here is a list of my projects and works in progress. Comments and suggestions ar
 
 ## Works in Progress
 
-**After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's Autonomous Region**
-* [Paper](https://github.com/tjbrailey/RegionalAutonomyGIS/blob/master/paper/reg_aut_mali.pdf) 
-* [Code](https://github.com/tjbrailey/RegionalAutonomyGIS) 
+* Mapping Political Science Dataset Citations and Usage
 
-**Predicting Rogue State Missile Launches**
-* [Paper](https://github.com/tjbrailey/MissileTest/blob/master/paper/rouge_state_missiles.pdf) 
-* [Code](https://github.com/tjbrailey/MissileTest)
+* Recording Bias in Conflict Datasets
+
+* After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's Autonomous Region
+
+* Predicting Rogue State Missile Launches
 
 ## Papers I've RA'd For
 
