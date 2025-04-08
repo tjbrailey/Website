@@ -35,8 +35,8 @@ Tracing Dataset Usage in Political Science
 * *Presented at MPSA 2025*.
 
 Mass Reproducibility and Replicability: A New Hope
-* [Working Paper](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
-* *Fourth author. I4R Discussion Paper Series, Number 107. Institute for Replication (I4R).*
+* *Fourth author.*
+* [I4R Discussion Paper Series, Number 107](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
 
 *I4R Replication Reports*
 
@@ -50,16 +50,18 @@ Mass Reproducibility and Replicability: A New Hope
 
 ## Works in progress
 
-* Mapping Political Science Dataset Citations and Usage
-
 * Recording Bias in Conflict Datasets
+
+* Government Legitimisation of Non-State Security in South Africa
+
+* Mapping Coercive Capacity over Time
 
 ## Papers I've RA'd for
 
-* J. Andres Gannon, Erik Gartzke, Jon R Lindsay, and Peter Schram. The Shadow of Deterrence: Why Capable Actors Engage in Contests Short of War. Journal of Conflict Resolution, 68(2-3):230–268, apr 2024
-* J. Andres Gannon. Planes, Trains, and Armored Mobiles: Introducing a Dataset of the Global Distribution of Military Capabilities. International Studies Quarterly, 67(4), sep 2023
-* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. General Equilibrium Effects of (Improving) Public Employment Programs: Experimental Evidence From India. Econometrica, 91(4):1261–1295, jul 2023
-* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. Identity Verification Standards in Welfare Programs: Experimental Evidence from India. The Review of Economics and Statistics, pages 1–46, 02 2023
-* Stefan Faridani and Paul Niehaus. Rate-optimal linear estimation of average global effects. 2022
-* J. Andres Gannon. One if by Land, and Two if by Sea: Cross-Domain Contests and the Escalation of International Crises. International Studies Quarterly, 66(4):474–475, sep 2022
-* Nikhar Gaikwad and Gareth Nellis. Overcoming the Political Exclusion of Migrants: Theory and Experimental Evidence from India. American Political Science Review, 115:1–18, 2021
+* J. Andres Gannon, Erik Gartzke, Jon R Lindsay, and Peter Schram. The Shadow of Deterrence: Why Capable Actors Engage in Contests Short of War. *Journal of Conflict Resolution, 68*(2-3):230–268, apr 2024
+* J. Andres Gannon. Planes, Trains, and Armored Mobiles: Introducing a Dataset of the Global Distribution of Military Capabilities. *International Studies Quarterly, 67*(4), sep 2023
+* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. General Equilibrium Effects of (Improving) Public Employment Programs: Experimental Evidence From India. *Econometrica, 91*(4):1261–1295, jul 2023
+* Karthik Muralidharan, Paul Niehaus, and Sandip Sukhtankar. Identity Verification Standards in Welfare Programs: Experimental Evidence from India. *The Review of Economics and Statistics*, feb 2023
+* Stefan Faridani and Paul Niehaus. *Rate-optimal linear estimation of average global effects.* 2022
+* J. Andres Gannon. One if by Land, and Two if by Sea: Cross-Domain Contests and the Escalation of International Crises. *International Studies Quarterly, 66*(4):474–475, sep 2022
+* Nikhar Gaikwad and Gareth Nellis. Overcoming the Political Exclusion of Migrants: Theory and Experimental Evidence from India. *American Political Science Review, 115*:1–18, 2021
