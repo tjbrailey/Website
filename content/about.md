@@ -15,7 +15,7 @@ I am broadly interested in three strands of political science:
 
 # CV
 
-My CV can be found [here](/tb.pdf).
+My CV can be found [here](https://www.dropbox.com/scl/fi/jir4zzny1x8dpt9q8q0c4/tb_cv.pdf?rlkey=1jc89vt1cs8qidzsq4ijfwtct&dl=0).
 
 # Tutoring and Consulting
 

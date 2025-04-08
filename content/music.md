@@ -3,15 +3,15 @@ slug: music
 title: Reading and Listening
 ---
 
-Here is a bit of an overview of what I'm reading and listening to, academic or otherwise. 
+Here is a bit of an overview of what I'm reading and listening to, academic and otherwise. 
 
-**Reading Lists**
+**Reading lists**
 
 I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 
 * [Read inspiring article here](http://www.raulpacheco.org/resources/literature-reviews/). 
 * [View my own CSED spreadsheet here](https://docs.google.com/spreadsheets/d/1OV1zvSEG_ZgbOzszf24NK0bsescvAICYEsPyYdo1Szw/edit#gid=788107640).
 
-**Favourite Papers**
+**Favourite papers**
 
 * [The Development Effects of the Extractive Colonial Economy: The Dutch Cultivation System in Java](https://scholar.harvard.edu/sites/scholar.harvard.edu/files/CSpaper.pdf)
 * [Tilly Goes to Church: The Religious and Medieval Roots of European State Fragmentation](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4EEE3598EF17E46DF0050C375C9FDD45/S0003055423000278a.pdf/tilly-goes-to-church-the-religious-and-medieval-roots-of-european-state-fragmentation.pdf)
@@ -22,14 +22,19 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 
 I'm also compiling documentation on things (mostly datasets) that I often find myself searching for. Hopefully this will speed up the process for others. 
 
-**Nightlight Datasets**
+**Nightlight datasets**
 
 * [AfroGrid](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LDI5TK)
 * [Data in Space](https://datainspace.org/index.php/global-nighttime-lights-at-adm2-level-1992-2013/)
 * [Blackmarbler](https://github.com/worldbank/blackmarbler)
 * [nightlightstats](https://github.com/JakobMie/nightlightstats)
 
-# What I'm Reading for Fun
+**Hidden cirriculum**
+* [Teaching the hidden cirriculum](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/teaching-the-hidden-curriculum-in-political-science/CDF4DD8FC2BD36FDDBE04210C52C200F)
+* [Gary King's course](https://gking.harvard.edu/Gov2020)
+* [ALPS blog post](https://activelearningps.com/2024/06/03/guest-post-uncovering-the-hidden-curriculum-embedding-academic-literacies-in-an-undergraduate-social-sciences-degree/)
+
+# What I'm reading for fun
 
 **I Know why the Caged Bird Sings**: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there's not really anything I can say about the gravity of this book that has not been said before. 
 
