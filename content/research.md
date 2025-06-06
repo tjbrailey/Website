@@ -5,38 +5,31 @@ title: Research
 
 Here is a list of my projects and works in progress. Comments and suggestions are appreciated. 
 
-## Working papers
+#### Politics of Sub-Saharan Africa
 
-### Politics of Sub-Saharan Africa
-
-Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso
+[Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
 * *With Robin Harding and Thomas Isbell.* 
-* [Afrobarometer Working Paper](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
-* [Code] - Not yet public. 
-* *Presented at MPSA 2024*.
+* [Code] - Not yet public.
 
-Predicting Floor Time in the South African Parliament
-* [User-Generated Observational Pre-Analysis Plan](https://osf.io/yuqcj/)
+[How the State Legitimizes Non-State Security Provision](https://osf.io/nvd24)
 * [Code] - Not yet public. 
 
-### Non-sate security
+[Predicting Floor Time in the South African Parliament](https://osf.io/yuqcj/)
+* [Code] - Not yet public. 
 
-Conceptualising Non-State Security (Master's Thesis)
+#### Non-sate security
+
+Conceptualizing Non-State Security (Master's Thesis)
 * [Working Paper](https://osf.io/dg28z) 
 * [Thesis](https://osf.io/ubw42)
 * [Code](https://github.com/tjbrailey/dpir-rdp)
-* *Presented at PSA 2023, MPSA 2024*.
 
-### Meta-science
+#### Meta-science
 
-Tracing Dataset Usage in Political Science
-* [Pre-Analysis Plan](https://osf.io/6mkfa)
+[Tracing Dataset Usage in Political Science](https://osf.io/6mkfa)
 * [Code] - Not yet public.
-* *Presented at MPSA 2025*.
 
-Mass Reproducibility and Replicability: A New Hope
-* *Fourth author.*
-* [I4R Discussion Paper Series, Number 107](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
+[Mass Reproducibility and Replicability: A New Hope](https://econpapers.repec.org/paper/zbwi4rdps/107.htm)
 
 *I4R Replication Reports*
 
@@ -44,19 +37,19 @@ Mass Reproducibility and Replicability: A New Hope
 * [Why Do Citizens Tolerate Undemocratic Behaviour? A Comment on Frederiksen (2022)](https://osf.io/fevgw)
 * [A Robustness Reproduction of Tappin, Berinsky and Rand (2023): "Partisans' receptivity to persuasive messaging is undiminished by countervailing party leader cues"](https://osf.io/9m4n6)
 
-## Other publications
+### Other publications
 
 * [Building a comprehensive database on conflict: Ethiopia, 1997–2017](https://osf.io/6vkm8/)
 
 ## Works in progress
 
-* Recording Bias in Conflict Datasets
+* Measuring the State's Security Equilibrium
 
-* Government Legitimisation of Non-State Security in South Africa
+* Recording Bias in Conflict Datasets
 
 * Mapping Coercive Capacity over Time
 
-## Papers I've RA'd for
+### Papers I've RA'd for
 
 * J. Andres Gannon, Erik Gartzke, Jon R Lindsay, and Peter Schram. The Shadow of Deterrence: Why Capable Actors Engage in Contests Short of War. *Journal of Conflict Resolution, 68*(2-3):230–268, apr 2024
 * J. Andres Gannon. Planes, Trains, and Armored Mobiles: Introducing a Dataset of the Global Distribution of Military Capabilities. *International Studies Quarterly, 67*(4), sep 2023
