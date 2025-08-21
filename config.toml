@@ -20,8 +20,8 @@ pygmentscodefencesguesssyntax = true
     author = "Thomas J. Brailey"
     description = "Tom Brailey's personal website"
     keywords = "research associate,political science,personal"
-    info = "Political Researcher"
-
+    info = "PhD student, Nuffield College"
+    avatarURL = "images/tb_headshot.jpg"
     dateformat = "January 2, 2006"
 
     hideCredits = false
@@ -75,11 +75,11 @@ pygmentscodefencesguesssyntax = true
 #    icon = "fab fa-osf"
 #    weight = 4
 #    url = "https://osf.io/c9ptf/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 6
-    url = "https://twitter.com/tjbrailey"
+#[[params.social]]
+#    name = "Twitter"
+#    icon = "fab fa-twitter"
+#    weight = 6
+#    url = "https://twitter.com/tjbrailey"
 
 
 [languages]

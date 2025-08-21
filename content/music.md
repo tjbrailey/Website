@@ -1,6 +1,6 @@
 ---
 slug: music
-title: Reading and Listening
+title: Misc
 ---
 
 Here is a bit of an overview of what I'm reading and listening to, academic and otherwise. 
@@ -11,7 +11,7 @@ I've put together a bunch of Excel sheets on different topics I am reading about
 * [Read inspiring article here](http://www.raulpacheco.org/resources/literature-reviews/). 
 * [View my own CSED spreadsheet here](https://docs.google.com/spreadsheets/d/1OV1zvSEG_ZgbOzszf24NK0bsescvAICYEsPyYdo1Szw/edit#gid=788107640).
 
-**Favourite papers**
+**Favorite papers**
 
 * [The Development Effects of the Extractive Colonial Economy: The Dutch Cultivation System in Java](https://scholar.harvard.edu/sites/scholar.harvard.edu/files/CSpaper.pdf)
 * [Tilly Goes to Church: The Religious and Medieval Roots of European State Fragmentation](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4EEE3598EF17E46DF0050C375C9FDD45/S0003055423000278a.pdf/tilly-goes-to-church-the-religious-and-medieval-roots-of-european-state-fragmentation.pdf)
@@ -34,7 +34,7 @@ I'm also compiling documentation on things (mostly datasets) that I often find m
 * [Gary King's course](https://gking.harvard.edu/Gov2020)
 * [ALPS blog post](https://activelearningps.com/2024/06/03/guest-post-uncovering-the-hidden-curriculum-embedding-academic-literacies-in-an-undergraduate-social-sciences-degree/)
 
-# What I'm reading for fun
+<!--# What I'm reading for fun
 
 **I Know why the Caged Bird Sings**: Maya Angelou: Catching up on essential reads that I missed out on in my early education, there's not really anything I can say about the gravity of this book that has not been said before. 
 
@@ -103,3 +103,5 @@ I'm also compiling documentation on things (mostly datasets) that I often find m
 # My own music
 
 In addition to doing political science research and data analysis and such, I like to write and record music. I'm currently recording through an Axe-Fx II, Focusrite Scarlett 2i2, and Cubase 10.
+
+-->
