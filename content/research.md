@@ -3,14 +3,15 @@ slug: research
 title: Research
 ---
 
-Here is a list of my projects and works in progress. Comments and suggestions are appreciated. 
+Here is a list of my projects and works in progress. Please feel free to email me if you are interested in discussing or collaborating on any of these projects. 
 
 Politics of Sub-Saharan Africa
-- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/)
-- [How the State Legitimizes Non-State Security Provision](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
+- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/). *Under review*
 
 Non-sate security
-- [Conceptualizing Non-State Security](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0)
+- [The centralization of security and citizen safety: evidence from Mozambique](https://www.dropbox.com/scl/fi/x3trep05g4gqj5klzwltb/XX_empirical_1.pdf?rlkey=ymky0gnevmim52elmfbd8vmu2&st=8te9tt60&dl=0)
+- [Conceptualizing Non-State Security](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0). *Under review*
+- [How the State Legitimizes Non-State Security Provision](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
 
 Meta-science
 - [Tracing Dataset Usage in Political Science](https://www.dropbox.com/scl/fi/5deapyqy71tzsq7xzhnj4/pap.pdf?rlkey=p8zss1ubycdm68sr5gs4ihnfi&dl=0)
@@ -25,9 +26,9 @@ Other publications
 - [Building a comprehensive database on conflict: Ethiopia, 1997–2017](https://osf.io/6vkm8/)
 
 Works in progress
-- Measuring the State's Security Equilibrium
-- Recording Bias in Conflict Datasets
-- Mapping Coercive Capacity over Time
+- Measuring the state's security equilibrium
+- Recording bias in conflict datasets
+- Mapping coercive capacity over time
 
 Papers I've RA'd for
 - J. Andres Gannon, Erik Gartzke, Jon R Lindsay, and Peter Schram. The Shadow of Deterrence: Why Capable Actors Engage in Contests Short of War. *Journal of Conflict Resolution, 68*(2-3):230–268, apr 2024
