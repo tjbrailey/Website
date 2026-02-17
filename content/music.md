@@ -3,8 +3,6 @@ slug: music
 title: Misc
 ---
 
-Here is a bit of an overview of what I'm reading and listening to, academic and otherwise. 
-
 **Reading lists**
 
 I've put together a bunch of Excel sheets on different topics I am reading about. Perhaps they will be useful for you as well. 

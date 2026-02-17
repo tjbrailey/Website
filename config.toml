@@ -99,12 +99,12 @@ pygmentscodefencesguesssyntax = true
             url = "research/"
             
             [[languages.en.menu.main]]
-            name = "Reading and Listening"
+            name = "Misc"
             weight = 3
             url = "music/"
 
             [[languages.en.menu.main]]
-            name = "Contact Me"
+            name = "Contact"
             weight = 4
             url = "contact/"
 
