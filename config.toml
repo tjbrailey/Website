@@ -83,7 +83,7 @@ pygmentscodefencesguesssyntax = true
 [[params.social]]
     name = "CV"
     weight = 4
-    url = "https://www.dropbox.com/scl/fo/lc2wwn7zt13zhohxwp2td/APpdAlF_4qo5LvwtaoqnyOU?rlkey=j3ojtncrin2g9i9ibug2hjoik&dl=0"
+    url = "/files/tb_cv.pdf"
     target = "_blank"
 
 [[params.social]]
