@@ -1,0 +1,45 @@
+{{ $research := .Site.GetPage "/research" }}
+
+<div class="container hero-layout">
+  <div class="hero-profile">
+    {{ if isset .Site.Params "avatarurl" }}
+      {{ if not (isset .Site.Params "gravatar") }}
+        <div class="avatar"><img src="{{ .Site.Params.avatarURL | relURL }}" alt="avatar"></div>
+      {{ end }}
+    {{ end }}
+    {{ with .Site.Params.gravatar }}
+      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{ . | md5 }}?s=240&d=mp" alt="gravatar"></div>
+    {{ end }}
+    <h1>{{ .Site.Params.author }}</h1>
+    <p class="hero-subtitle">{{ .Site.Params.info }}</p>
+    {{ with .Site.Params.email }}
+    <p class="hero-email"><a href="mailto:{{ . }}">{{ . }}</a></p>
+    {{ end }}
+    {{ with .Site.Params.social }}
+    <ul class="hero-social">
+      {{ range sort . "weight" }}
+        <li>
+          {{ if .icon }}
+            <a href="{{ .url }}" aria-label="{{ .name }}"{{ if eq (.target | default "") "_blank" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+              <i class="{{ .icon }}" aria-hidden="true"></i>
+            </a>
+          {{ else }}
+            <a href="{{ .url }}" class="hero-social-text"{{ if eq (.target | default "") "_blank" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .name }}</a>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+
+  <div class="hero-bio">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ with $research }}
+<section class="container single-page-section" id="publications">
+  <h2>Research</h2>
+  {{ .Content }}
+</section>
+{{ end }}

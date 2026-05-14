@@ -1,5 +1,5 @@
-baseurl = "https://tjbrailey.netlify.app"
-title = "thomasjbrailey"
+baseurl = "https://tjbrailey.org"
+title = ""
 
 theme = "hugo-coder"
 
@@ -20,7 +20,7 @@ pygmentscodefencesguesssyntax = true
     author = "Thomas J. Brailey"
     description = "Tom Brailey's personal website"
     keywords = "research associate,political science,personal"
-    info = "PhD Student (Nuffield College, University of Oxford)"
+    info = "PhD Candidate (Nuffield College, University of Oxford)"
     avatarURL = "images/tb_headshot.jpg"
     dateformat = "January 2, 2006"
 
@@ -38,13 +38,15 @@ pygmentscodefencesguesssyntax = true
     # "auto" (use preference set by browser)
     # "dark" (dark background, light foreground)
     # "light" (light background, dark foreground) (default)
-    colorscheme = "auto"
+    colorscheme = "light"
 
     # Series see also post count
     maxSeeAlsoItems = 5
 
+    email = "thomas.brailey@nuffield.ox.ac.uk"
+
     # Custom CSS
-    custom_css = []
+    custom_css = ["css/custom.css"]
 
     # Custom JS
     custom_js = []
@@ -65,48 +67,37 @@ pygmentscodefencesguesssyntax = true
     icon = "fab fa-github"
     weight = 1
     url = "https://github.com/tjbrailey/"
+
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
-    weight = 4
+    weight = 2
     url = "https://www.linkedin.com/in/tjbrailey/"
-#[[params.social]]
-#    name = "OSF"
-#    icon = "fab fa-osf"
-#    weight = 4
-#    url = "https://osf.io/c9ptf/"
-#[[params.social]]
-#    name = "Twitter"
-#    icon = "fab fa-twitter"
-#    weight = 6
-#    url = "https://twitter.com/tjbrailey"
+
+[[params.social]]
+    name = "Email"
+    icon = "fas fa-envelope"
+    weight = 3
+    url = "mailto:thomas.brailey@nuffield.ox.ac.uk"
+
+[[params.social]]
+    name = "CV"
+    weight = 4
+    url = "https://www.dropbox.com/scl/fi/t6kutk2o73fz7k1qfpfer/tb_cv.pdf?rlkey=7k2dt8ssv21x9ubpylg5bz70g&dl=0"
+    target = "_blank"
+
+[[params.social]]
+    name = "Consulting"
+    icon = "fas fa-briefcase"
+    weight = 5
+    url = "https://docs.google.com/forms/d/1tp1jNRNpip4RRQDhypXXhZbYM3NXZgyHjr62Z3dBEqE/edit"
+    target = "_blank"
 
 
 [languages]
     [languages.en]
         languagename = "English"
 
-        [languages.en.menu]
-
-            [[languages.en.menu.main]]
-            name = "About"
-            weight = 1
-            url = "about/"
-            
-            [[languages.en.menu.main]]
-            name = "Research"
-            weight = 2
-            url = "research/"
-            
-            [[languages.en.menu.main]]
-            name = "Misc"
-            weight = 3
-            url = "music/"
-
-            [[languages.en.menu.main]]
-            name = "Contact"
-            weight = 4
-            url = "contact/"
 
 [markup]
   [markup.goldmark]

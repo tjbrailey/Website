@@ -1,0 +1,130 @@
+/* Fix: theme's .content is flex-row by default, force column for single-page layout */
+.content {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Two-column hero */
+.hero-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 3rem 0 4rem 0;
+  align-items: flex-start;
+}
+
+.hero-profile {
+  flex: 0 0 18rem;
+  text-align: center;
+}
+
+.hero-profile .avatar img {
+  width: 14rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hero-profile h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 1.2rem 0 0.4rem;
+}
+
+.hero-subtitle {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin: 0.4rem 0 1.5rem;
+  color: #555;
+  text-align: center;
+}
+
+.hero-email {
+  font-size: 1.3rem;
+  margin: 0.2rem 0 1rem;
+  text-align: center;
+}
+
+.hero-email a {
+  color: #555;
+  text-decoration: none;
+}
+
+.hero-email a:hover,
+.hero-email a:focus {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.hero-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-social li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero-social a {
+  color: #212121;
+  font-size: 2.4rem;
+}
+
+.hero-social a:hover,
+.hero-social a:focus {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+.hero-social a.hero-social-text {
+  font-size: 1.25rem;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Bio text — slightly smaller and left-aligned */
+.hero-bio {
+  flex: 1;
+  font-size: 1.45rem;
+  line-height: 1.75em;
+}
+
+.hero-bio p {
+  text-align: left;
+  margin: 0.8rem 0;
+  hyphens: none;
+}
+
+/* Section dividers */
+.single-page-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 1.45rem;
+}
+
+.single-page-section h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Mobile: stack the hero vertically */
+@media only screen and (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-profile {
+    flex: unset;
+    width: 100%;
+  }
+}
