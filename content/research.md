@@ -1,6 +1,5 @@
 ---
 slug: research
-title: Research
 ---
 
 **Politics of Sub-Saharan Africa**
