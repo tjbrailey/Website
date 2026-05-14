@@ -24,7 +24,9 @@ slug: research
 - BITSS Blog Post: [Ensuring Reproducibility in Large Research Teams (2022).](https://www.bitss.org/ensuring-reproducibility-in-large-research-teams/)
 
 **Works in Progress**
+- Chiefs and Security Provision in Malawi (with Alexander Yeandle).
 - Rethinking Public Goods Provision: Functional Specialization and Security in Displacement Settings (with Pilar Sanchez-Bellosta).
 - Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
-- The Historical Persistence of Colonial Security: Evidence from Namibia.
+- Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.
 - Public Preferences for Security Provision in South Africa.
+- Explaining the Emergence of Security Regimes.
