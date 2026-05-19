@@ -7,7 +7,7 @@ slug: research
 
 **Non-Sate Security**
 - [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://www.dropbox.com/scl/fi/x3trep05g4gqj5klzwltb/XX_empirical_1.pdf?rlkey=ymky0gnevmim52elmfbd8vmu2&st=8te9tt60&dl=0)
-- [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Conditionally accepted at **Conflict Management and Peace Science**.*
+- [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Forthcoming at **Conflict Management and Peace Science**.*
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
 
 **Meta-Science**
