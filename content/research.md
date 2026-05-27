@@ -6,7 +6,7 @@ slug: research
 - [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *Under review.*
 
 **Non-Sate Security**
-- [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://www.dropbox.com/scl/fi/x3trep05g4gqj5klzwltb/XX_empirical_1.pdf?rlkey=ymky0gnevmim52elmfbd8vmu2&st=8te9tt60&dl=0)
+- [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
 - [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Forthcoming at **Conflict Management and Peace Science**.*
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
 
@@ -15,7 +15,8 @@ slug: research
 - Tracing Dataset Usage in Political Science [[Pre-Analysis Plan]](https://osf.io/k9zna/overview).
 
     *I4R Replication Reports*
-    - [Reproduction and Robustness of Kao et al.(2024): "Female Representation and Legitimacy". A Report from the 2024 UC Berkeley Replication Games](https://osf.io/294cs) (with Edmund Kelly, Angela Odermatt, and Albert Ward).
+    - [A Robustness Reproduction of Martel et al. (2024): "On the Efficacy of Accuracy Prompts Across Partisan Lines: An Adversarial Collaboration"](https://osf.io/j53p4) (with Edmund Kelly and Benedetta Giocoli).
+    - [Reproduction and Robustness of Kao et al. (2024): "Female Representation and Legitimacy". A Report from the 2024 UC Berkeley Replication Games](https://osf.io/294cs) (with Edmund Kelly, Angela Odermatt, and Albert Ward).
     - [Why Do Citizens Tolerate Undemocratic Behaviour? A Comment on Frederiksen (2022)](https://osf.io/fevgw) (with Matthew Hepplewhite and Scott Moser).
     - [A Robustness Reproduction of Tappin, Berinsky and Rand (2023): "Partisans' Receptivity to Persuasive Messaging is Undiminished by Countervailing Party Leader Cues"](https://osf.io/9m4n6) (with Edmund Kelly).
 
