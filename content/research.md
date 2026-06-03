@@ -6,8 +6,9 @@ slug: research
 - [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *Under review.*
 
 **Non-Sate Security**
-- [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
 - [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Forthcoming at **Conflict Management and Peace Science**.*
+- [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
+- Chiefs and Security Provision in Malawi (with Alexander Yeandle) [[Pre-Analysis Plan](https://osf.io/7y42d/overview)].
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
 
 **Meta-Science**
@@ -24,10 +25,9 @@ slug: research
 - Dataset: [Building a Comprehensive Database on Conflict: Ethiopia, 1997–2017.](https://osf.io/6vkm8/)
 - BITSS Blog Post: [Ensuring Reproducibility in Large Research Teams (2022).](https://www.bitss.org/ensuring-reproducibility-in-large-research-teams/)
 
-**Works in Progress**
-- Chiefs and Security Provision in Malawi (with Alexander Yeandle) [[Pre-Analysis Plan](https://osf.io/7y42d/overview)].
+**Selected Works in Progress**
 - Rethinking Public Goods Provision: Functional Specialization and Security in Displacement Settings (with Pilar Sanchez-Bellosta).
 - Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
 - Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.
-- Public Preferences for Security Provision in South Africa.
+- Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa.
 - Explaining the Emergence of Security Regimes.
