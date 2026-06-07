@@ -2,14 +2,15 @@
 slug: research
 ---
 
-**Politics of Sub-Saharan Africa**
-- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *Under review.*
-
 **Non-Sate Security**
 - [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Forthcoming at **Conflict Management and Peace Science**.*
+- [Rethinking Public Goods Provision: State and Non-State Security Provision in Displacement Settings](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6884060) (with Pilar Sanchez-Bellosta). *Under review.*
 - [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
 - Chiefs and Security Provision in Malawi (with Alexander Yeandle) [[Pre-Analysis Plan](https://osf.io/7y42d/overview)].
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
+
+**Politics of Sub-Saharan Africa**
+- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *Under review.*
 
 **Meta-Science**
 - [Reproducibility and Robustness of Economics and Political Science Research](https://www.nature.com/articles/s41586-026-10251-x) (5th author by contribution, with Abel Brodeur, Derek Mikola, Nikolai Cook, et al.). ***Nature***.
@@ -26,8 +27,8 @@ slug: research
 - BITSS Blog Post: [Ensuring Reproducibility in Large Research Teams (2022).](https://www.bitss.org/ensuring-reproducibility-in-large-research-teams/)
 
 **Selected Works in Progress**
-- Rethinking Public Goods Provision: Functional Specialization and Security in Displacement Settings (with Pilar Sanchez-Bellosta).
 - Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
 - Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.
 - Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa.
+- Aerial Campaigns and Civilian Victimization: Evidence from Nigeria.
 - Explaining the Emergence of Security Regimes.
