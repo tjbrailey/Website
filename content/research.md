@@ -3,7 +3,8 @@ slug: research
 ---
 
 **Non-Sate Security**
-- [Conceptualizing Private Military and Security Companies.](https://www.dropbox.com/scl/fi/lekk8s0510iceqzo8bash/202409_brailey_conceptualising_non_state_security.pdf?rlkey=tf88oekyoohbup7gdewiezjc1&dl=0) *Forthcoming at **Conflict Management and Peace Science**.*
+- [Conceptualizing Private Military and Security Companies.](https://journals.sagepub.com/doi/10.1177/07388942261457221) 
+***Conflict Management and Peace Science***.
 - [Rethinking Public Goods Provision: State and Non-State Security Provision in Displacement Settings](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6884060) (with Pilar Sanchez-Bellosta). *Under review.*
 - [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
 - Chiefs and Security Provision in Malawi (with Alexander Yeandle) [[Pre-Analysis Plan](https://osf.io/7y42d/overview)].
