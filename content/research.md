@@ -2,7 +2,7 @@
 slug: research
 ---
 
-**Non-Sate Security**
+**Security Provision**
 - [Conceptualizing Private Military and Security Companies.](https://journals.sagepub.com/doi/10.1177/07388942261457221) 
 ***Conflict Management and Peace Science***.
 - [Rethinking Public Goods Provision: State and Non-State Security Provision in Displacement Settings](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6884060) (with Pilar Sanchez-Bellosta). *Under review.*
@@ -11,7 +11,7 @@ slug: research
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
 
 **Politics of Sub-Saharan Africa**
-- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *Under review.*
+- [Coups and Social Trust: Evidence from a Natural Experiment in Burkina Faso](https://www.afrobarometer.org/publication/wp204-coups-and-social-trust-evidence-from-a-natural-experiment-in-burkina-faso/) (with Robin Harding and Thomas Isbell). *R&R at **World Politics**.*
 
 **Meta-Science**
 - [Reproducibility and Robustness of Economics and Political Science Research](https://www.nature.com/articles/s41586-026-10251-x) (5th author by contribution, with Abel Brodeur, Derek Mikola, Nikolai Cook, et al.). ***Nature***.
@@ -28,8 +28,9 @@ slug: research
 - BITSS Blog Post: [Ensuring Reproducibility in Large Research Teams (2022).](https://www.bitss.org/ensuring-reproducibility-in-large-research-teams/)
 
 **Selected Works in Progress**
+- Technology Shocks Reshape the Geography of Human Activity: Global Evidence Since 1750 (with Neil Lee and Yohan Iddawela).
 - Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
 - Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.
+- Explaining the Emergence of Security Regimes.
 - Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa.
 - Aerial Campaigns and Civilian Victimization: Evidence from Nigeria.
-- Explaining the Emergence of Security Regimes.
