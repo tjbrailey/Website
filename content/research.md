@@ -6,6 +6,7 @@ slug: research
 - [Conceptualizing Private Military and Security Companies.](https://journals.sagepub.com/doi/10.1177/07388942261457221) 
 ***Conflict Management and Peace Science***.
 - [Rethinking Public Goods Provision: State and Non-State Security Provision in Displacement Settings](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6884060) (with Pilar Sanchez-Bellosta). *Under review.*
+- [Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7344700)
 - [The Centralization of Security and Citizen Safety: Evidence from Mozambique.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=55781120)
 - Chiefs and Security Provision in Malawi (with Alexander Yeandle) [[Pre-Analysis Plan](https://osf.io/7y42d/overview)].
 - [How the State Legitimizes Non-State Security Provision.](https://www.dropbox.com/scl/fi/c73mr8s6x7bmvoea47rhr/sa_discourse_writeup.pdf?rlkey=2thsq9b0x7unsp2er6z4m72tz&dl=0)
@@ -30,7 +31,6 @@ slug: research
 **Selected Works in Progress**
 - Technology Shocks Reshape the Geography of Human Activity: Global Evidence Since 1750 (with Neil Lee and Yohan Iddawela).
 - Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
-- Policed to Distrust: Colonial Coercion and Contemporary Attitudes toward State Security.
 - Explaining the Emergence of Security Regimes.
 - Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa.
 - Aerial Campaigns and Civilian Victimization: Evidence from Nigeria.
