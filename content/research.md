@@ -29,8 +29,11 @@ slug: research
 - BITSS Blog Post: [Ensuring Reproducibility in Large Research Teams (2022).](https://www.bitss.org/ensuring-reproducibility-in-large-research-teams/)
 
 **Selected Works in Progress**
-- Technology Shocks Reshape the Geography of Human Activity: Global Evidence Since 1750 (with Neil Lee and Yohan Iddawela).
-- Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta).
-- Explaining the Emergence of Security Regimes.
-- Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa.
-- Aerial Campaigns and Civilian Victimization: Evidence from Nigeria.
+
+> Preliminary analysis (P) $\rightarrow$ Finalizing analysis (F) $\rightarrow$ Writing up the manuscript (W).
+
+- Technology Shocks Reshape the Geography of Human Activity: Global Evidence Since 1750 (with Neil Lee and Yohan Iddawela) [W].
+- Security Responses to Gender-Based Violence in Conflict: Evidence from IDP Camps in Nigeria (with Pilar Sanchez-Bellosta) [F].
+- Explaining the Emergence of Security Regimes [W].
+- Refugee Camp Onset, Development, and Conflict in Sub-Saharan Africa [W].
+- Aerial Campaigns and Civilian Victimization: Evidence from Nigeria [P].
