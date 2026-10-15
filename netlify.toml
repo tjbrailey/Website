@@ -1,6 +1,14 @@
 [build]
-  command = "hugo"
+  # Use the installed Hugo if present, otherwise fetch Hugo Extended (needed for the theme's Sass)
+  command = "command -v hugo >/dev/null 2>&1 || { mkdir -p /tmp/hugo-bin && curl -fsSL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz | tar -xz -C /tmp/hugo-bin hugo; export PATH=/tmp/hugo-bin:$PATH; }; hugo"
   publish = "public"
 
-[context.production.environment]
+[build.environment]
   HUGO_VERSION = "0.125.1"
+
+# Send visitors on the default Netlify subdomain to the custom domain
+[[redirects]]
+  from = "https://tjbrailey.netlify.app/*"
+  to = "https://tjbrailey.org/:splat"
+  status = 301
+  force = true
